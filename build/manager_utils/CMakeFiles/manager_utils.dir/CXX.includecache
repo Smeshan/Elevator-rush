@@ -103,21 +103,15 @@ utils/drawing/DrawParams.h
 ../sdl_utils/include/sdl_utils/utils/drawing/DrawParams.h
 
 ../sdl_utils/include/sdl_utils/config/ImageContainerConfig.h
-cstdint
+unordered_map
 -
-vector
--
-string
--
+utils/tools/config/ImageConfig.h
+../sdl_utils/include/sdl_utils/config/utils/tools/config/ImageConfig.h
 
 ../sdl_utils/include/sdl_utils/config/MonitorConfig.h
 cstdlib
 -
 string
--
-array
--
-unordered_map
 -
 utils/drawing/Point.h
 -
@@ -171,6 +165,8 @@ cstdint
 -
 utils/drawing/Point.h
 ../utils/include/utils/drawing/utils/drawing/Point.h
+utils/drawing/Rectangle.h
+../utils/include/utils/drawing/utils/drawing/Rectangle.h
 
 ../utils/include/utils/drawing/Point.h
 cstdlib
@@ -182,83 +178,93 @@ cstdlib
 utils/drawing/Point.h
 ../utils/include/utils/drawing/utils/drawing/Point.h
 
-/home/smeshan/workspace/console type/manager_utils/src/audio/Audio.cpp
+../utils/include/utils/tools/config/ImageConfig.h
+cstdint
+-
+string
+-
+vector
+-
+utils/drawing/Rectangle.h
+../utils/include/utils/tools/config/utils/drawing/Rectangle.h
+
+/home/smeshan/workspace/animations/manager_utils/src/audio/Audio.cpp
 manager_utils/audio/Audio.h
-/home/smeshan/workspace/console type/manager_utils/src/audio/manager_utils/audio/Audio.h
+/home/smeshan/workspace/animations/manager_utils/src/audio/manager_utils/audio/Audio.h
 iostream
 -
 manager_utils/managers/MediaMgr.h
-/home/smeshan/workspace/console type/manager_utils/src/audio/manager_utils/managers/MediaMgr.h
+/home/smeshan/workspace/animations/manager_utils/src/audio/manager_utils/managers/MediaMgr.h
 
-/home/smeshan/workspace/console type/manager_utils/src/audio/Sound.cpp
+/home/smeshan/workspace/animations/manager_utils/src/audio/Sound.cpp
 manager_utils/audio/Sound.h
-/home/smeshan/workspace/console type/manager_utils/src/audio/manager_utils/audio/Sound.h
+/home/smeshan/workspace/animations/manager_utils/src/audio/manager_utils/audio/Sound.h
 iostream
 -
 manager_utils/managers/MediaMgr.h
-/home/smeshan/workspace/console type/manager_utils/src/audio/manager_utils/managers/MediaMgr.h
+/home/smeshan/workspace/animations/manager_utils/src/audio/manager_utils/managers/MediaMgr.h
 
-/home/smeshan/workspace/console type/manager_utils/src/drawing/Image.cpp
+/home/smeshan/workspace/animations/manager_utils/src/drawing/Image.cpp
 manager_utils/drawing/Image.h
-/home/smeshan/workspace/console type/manager_utils/src/drawing/manager_utils/drawing/Image.h
+/home/smeshan/workspace/animations/manager_utils/src/drawing/manager_utils/drawing/Image.h
 iostream
 -
 manager_utils/managers/RsrcMgr.h
-/home/smeshan/workspace/console type/manager_utils/src/drawing/manager_utils/managers/RsrcMgr.h
+/home/smeshan/workspace/animations/manager_utils/src/drawing/manager_utils/managers/RsrcMgr.h
 
-/home/smeshan/workspace/console type/manager_utils/src/drawing/Text.cpp
+/home/smeshan/workspace/animations/manager_utils/src/drawing/Text.cpp
 manager_utils/drawing/Text.h
-/home/smeshan/workspace/console type/manager_utils/src/drawing/manager_utils/drawing/Text.h
+/home/smeshan/workspace/animations/manager_utils/src/drawing/manager_utils/drawing/Text.h
 iostream
 -
 manager_utils/managers/RsrcMgr.h
-/home/smeshan/workspace/console type/manager_utils/src/drawing/manager_utils/managers/RsrcMgr.h
+/home/smeshan/workspace/animations/manager_utils/src/drawing/manager_utils/managers/RsrcMgr.h
 
-/home/smeshan/workspace/console type/manager_utils/src/drawing/Widget.cpp
+/home/smeshan/workspace/animations/manager_utils/src/drawing/Widget.cpp
 manager_utils/drawing/Widget.h
-/home/smeshan/workspace/console type/manager_utils/src/drawing/manager_utils/drawing/Widget.h
+/home/smeshan/workspace/animations/manager_utils/src/drawing/manager_utils/drawing/Widget.h
 iostream
 -
 manager_utils/managers/DrawMgr.h
-/home/smeshan/workspace/console type/manager_utils/src/drawing/manager_utils/managers/DrawMgr.h
+/home/smeshan/workspace/animations/manager_utils/src/drawing/manager_utils/managers/DrawMgr.h
 
-/home/smeshan/workspace/console type/manager_utils/src/managers/DrawMgr.cpp
+/home/smeshan/workspace/animations/manager_utils/src/managers/DrawMgr.cpp
 manager_utils/managers/DrawMgr.h
-/home/smeshan/workspace/console type/manager_utils/src/managers/manager_utils/managers/DrawMgr.h
+/home/smeshan/workspace/animations/manager_utils/src/managers/manager_utils/managers/DrawMgr.h
 iostream
 -
 manager_utils/config/DrawMgrConfig.h
-/home/smeshan/workspace/console type/manager_utils/src/managers/manager_utils/config/DrawMgrConfig.h
+/home/smeshan/workspace/animations/manager_utils/src/managers/manager_utils/config/DrawMgrConfig.h
 manager_utils/managers/RsrcMgr.h
-/home/smeshan/workspace/console type/manager_utils/src/managers/manager_utils/managers/RsrcMgr.h
+/home/smeshan/workspace/animations/manager_utils/src/managers/manager_utils/managers/RsrcMgr.h
 
-/home/smeshan/workspace/console type/manager_utils/src/managers/ManagerHandler.cpp
+/home/smeshan/workspace/animations/manager_utils/src/managers/ManagerHandler.cpp
 manager_utils/managers/ManagerHandler.h
-/home/smeshan/workspace/console type/manager_utils/src/managers/manager_utils/managers/ManagerHandler.h
+/home/smeshan/workspace/animations/manager_utils/src/managers/manager_utils/managers/ManagerHandler.h
 iostream
 -
 manager_utils/config/ManagerHandlerConfig.h
-/home/smeshan/workspace/console type/manager_utils/src/managers/manager_utils/config/ManagerHandlerConfig.h
+/home/smeshan/workspace/animations/manager_utils/src/managers/manager_utils/config/ManagerHandlerConfig.h
 manager_utils/managers/DrawMgr.h
-/home/smeshan/workspace/console type/manager_utils/src/managers/manager_utils/managers/DrawMgr.h
+/home/smeshan/workspace/animations/manager_utils/src/managers/manager_utils/managers/DrawMgr.h
 manager_utils/managers/RsrcMgr.h
-/home/smeshan/workspace/console type/manager_utils/src/managers/manager_utils/managers/RsrcMgr.h
+/home/smeshan/workspace/animations/manager_utils/src/managers/manager_utils/managers/RsrcMgr.h
 manager_utils/managers/MediaMgr.h
-/home/smeshan/workspace/console type/manager_utils/src/managers/manager_utils/managers/MediaMgr.h
+/home/smeshan/workspace/animations/manager_utils/src/managers/manager_utils/managers/MediaMgr.h
 
-/home/smeshan/workspace/console type/manager_utils/src/managers/MediaMgr.cpp
+/home/smeshan/workspace/animations/manager_utils/src/managers/MediaMgr.cpp
 manager_utils/managers/MediaMgr.h
-/home/smeshan/workspace/console type/manager_utils/src/managers/manager_utils/managers/MediaMgr.h
+/home/smeshan/workspace/animations/manager_utils/src/managers/manager_utils/managers/MediaMgr.h
 iostream
 -
 manager_utils/config/MediaMgrConfig.h
-/home/smeshan/workspace/console type/manager_utils/src/managers/manager_utils/config/MediaMgrConfig.h
+/home/smeshan/workspace/animations/manager_utils/src/managers/manager_utils/config/MediaMgrConfig.h
 
-/home/smeshan/workspace/console type/manager_utils/src/managers/RsrcMgr.cpp
+/home/smeshan/workspace/animations/manager_utils/src/managers/RsrcMgr.cpp
 manager_utils/managers/RsrcMgr.h
-/home/smeshan/workspace/console type/manager_utils/src/managers/manager_utils/managers/RsrcMgr.h
+/home/smeshan/workspace/animations/manager_utils/src/managers/manager_utils/managers/RsrcMgr.h
 iostream
 -
 manager_utils/config/RsrcMgrConfig.h
-/home/smeshan/workspace/console type/manager_utils/src/managers/manager_utils/config/RsrcMgrConfig.h
+/home/smeshan/workspace/animations/manager_utils/src/managers/manager_utils/config/RsrcMgrConfig.h
 

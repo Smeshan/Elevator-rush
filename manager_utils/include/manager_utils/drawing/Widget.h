@@ -15,7 +15,10 @@ class Widget {
 public:
 	void draw();
 	void reset();
-
+	//TODO setFlipType
+	//TODO setRotation
+	//TODO getRotation
+	//TODO rotate() functions
 	void setWidth(int32_t width);
 	void setHeight(int32_t height);
 

@@ -62,6 +62,9 @@ void Renderer::renderTexture(SDL_Texture* texture, const DrawParams& drawParams)
     if (WidgetType::IMAGE == drawParams.widgetType) {
         drawImage(drawParams, texture);
     }
+    else if (WidgetType::SPRITE == drawParams.widgetType) {
+        drawImage(drawParams, texture);
+    }
     else if (WidgetType::TEXT == drawParams.widgetType) {
         drawText(drawParams, texture);
     }
@@ -79,7 +82,7 @@ void Renderer::setWidgetBlendMode(SDL_Texture* texture, BlendMode blendMode) {
 }
 
 void Renderer::setWidgetOpacity(SDL_Texture* texture, int32_t opacity) {
-	if (EXIT_SUCCESS != Texture::setAlphaTexture(texture, opacity)) {
+    if (EXIT_SUCCESS != Texture::setAlphaTexture(texture, opacity)) {
         std::cerr << "Texture::setAlpaTexture() failed." << std::endl;
     }
 }
@@ -88,9 +91,15 @@ void Renderer::drawImage(const DrawParams& drawParams, SDL_Texture* texture) {
     const SDL_Rect destRect = { .x = drawParams.pos.x, .y = drawParams.pos.y,
                                 .w = drawParams.width, .h = drawParams.height };
 
+    //std::cerr << "destRect: " << destRect.w << " x " << destRect.h << std::endl;  
+
+    const SDL_Rect* sourceRect =
+        reinterpret_cast<const SDL_Rect*>(&drawParams.frameRect);
+
     int32_t err = EXIT_SUCCESS;
     if (FULL_OPACITY != drawParams.opacity) {
-        err = SDL_RenderCopy(_sdlRenderer, texture, nullptr, &destRect);
+        //TODO SDL_RenderCopyEx with rotation and flipflag
+        err = SDL_RenderCopy(_sdlRenderer, texture, sourceRect, &destRect);
     }
     else {
         if (EXIT_SUCCESS != Texture::setAlphaTexture(texture, drawParams.opacity)) {
@@ -113,8 +122,10 @@ void Renderer::drawImage(const DrawParams& drawParams, SDL_Texture* texture) {
 void Renderer::drawText(const DrawParams& drawParams, SDL_Texture* texture) {
     const SDL_Rect destRect = { .x = drawParams.pos.x, .y = drawParams.pos.y,
                                 .w = drawParams.width, .h = drawParams.height };
+    const SDL_Rect* sourceRect =
+        reinterpret_cast<const SDL_Rect*>(&drawParams.frameRect);
 
-    int32_t err = SDL_RenderCopy(_sdlRenderer, texture, nullptr, &destRect);
+    int32_t err = SDL_RenderCopy(_sdlRenderer, texture, sourceRect, &destRect);
 
     if (EXIT_SUCCESS != err) {
         std::cerr << "SDL_RenderCopy() failed to draw text for resID: " << drawParams.resId

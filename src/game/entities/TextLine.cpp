@@ -37,7 +37,8 @@ void TextLine::procesLastWord() {
 void TextLine::addChar(const char* input) {
     _text += input;
     Text newChar;
-    newChar.create(input, _textFontId, Colors::WHITE, Point(100 + 10 * _currChar, 100 + 20 * _indx));
+    newChar.create(input, _textFontId, Colors::WHITE, Point(100 + (_textSize / 2) * _currChar,
+                         100 + (_textSize * _indx)));
     _line.push_back(newChar);
     _currChar++;
     //TODO add keyword check after ENTER
@@ -57,17 +58,23 @@ void TextLine::addTabSpace() {
     for (int i = 0; i < TAB_SPACES_COUNT; ++i) {
         _text += " ";
         Text newWhiteSpace;
-        newWhiteSpace.create(" ", _textFontId, Colors::WHITE, Point(100 + 10 * _currChar, 100 + 20 * _indx));
+        newWhiteSpace.create(" ", _textFontId, Colors::WHITE, Point(100 + (_textSize / 2) * _currChar,
+                         100 + (_textSize * _indx)));
         _currChar++;
         _line.push_back(newWhiteSpace);
     }
 }
 
-std::string TextLine::getLastWord(size_t& begin) const{
+std::string TextLine::getLastWord(size_t& begin) const {
     const size_t end = _text.length() - 1;
     begin = _text.rfind(' ', end) + 1;
     if (begin == std::string::npos) {
         begin = 0;
     }
     return _text.substr(begin, end - begin + 1);
+}
+
+void TextLine::increaseFontSize() {
+    _textFontId = FontId::TERMINAL_20;
+    _textSize = 20;
 }

@@ -23,12 +23,20 @@ void Image::create(int32_t resId, const Point& pos) {
             << resId << " was already created. Will not create twice." << std::endl;
         return;
     }
-    Rectangle rect = gRsrcMgr->getImageFrame(resId);
+    const Frames& frames = gRsrcMgr->getImageFrame(resId);
+    const auto& firstFrame = frames.front();
+    
     _drawParams.resId = resId;
-    _drawParams.width = rect.w;
-    _drawParams.height = rect.h;
+    _drawParams.frameRect = firstFrame;
+    _drawParams.width = firstFrame.w;
+    _drawParams.height = firstFrame.h;
     _drawParams.pos = pos;
-    _drawParams.widgetType = WidgetType::IMAGE;
+    if (frames.size() > 1) {
+        _drawParams.widgetType = WidgetType::SPRITE;
+    }
+    else {
+        _drawParams.widgetType = WidgetType::IMAGE;
+    }
 
     _isCreated = true;
     _isDestroyed = false;
@@ -36,11 +44,29 @@ void Image::create(int32_t resId, const Point& pos) {
 
 void Image::destroy() {
     if (_isDestroyed) {
-        std::cerr << "Error, image with resID: " << _drawParams.resId 
-        << "was already destroyed." << std::endl;
+        std::cerr << "Error, image with resID: " << _drawParams.resId
+            << "was already destroyed." << std::endl;
         return;
     }
     _isDestroyed = true;
     _isCreated = false;
     Widget::reset();
+}
+
+int32_t Image::getFrame() const {
+    return _currFrame;
+}
+
+void Image::nextFrame() {
+    _currFrame++;
+}
+
+void Image::prevFrame() {
+    _currFrame--;
+}
+
+void Image::setFrame(int32_t frameIndx) {
+    if (frameIndx >= 0 && frameIndx < _maxFrames) {
+        _currFrame = frameIndx;
+    }
 }

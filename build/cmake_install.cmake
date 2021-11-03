@@ -1,4 +1,4 @@
-# Install script for directory: /home/smeshan/workspace/console type
+# Install script for directory: /home/smeshan/workspace/animations
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,9 +39,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/smeshan/workspace/console type/build/utils/cmake_install.cmake")
-  include("/home/smeshan/workspace/console type/build/sdl_utils/cmake_install.cmake")
-  include("/home/smeshan/workspace/console type/build/manager_utils/cmake_install.cmake")
+  include("/home/smeshan/workspace/animations/build/utils/cmake_install.cmake")
+  include("/home/smeshan/workspace/animations/build/sdl_utils/cmake_install.cmake")
+  include("/home/smeshan/workspace/animations/build/manager_utils/cmake_install.cmake")
 
 endif()
 
@@ -53,5 +53,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/smeshan/workspace/console type/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/smeshan/workspace/animations/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -14,8 +14,7 @@
 
 /* Forward Declaration */
 
-class TextLine
-{
+class TextLine {
 public:
 	void setLineIndx(const int32_t indx);
 	void draw();
@@ -23,12 +22,14 @@ public:
 	void addChar(const char* input);
 	bool removeChar();
 	void addTabSpace();
+	void increaseFontSize();
 
 	std::string getLastWord(size_t& begin) const;
 
 private:
 	int32_t _indx;
-	int32_t _textFontId = FontId::TERMINAL;
+	int32_t _textFontId = FontId::TERMINAL_14;
+	int32_t _textSize = 14;
 	int32_t _currChar = 0;
 	std::vector<Text> _line;
 	std::string _text;

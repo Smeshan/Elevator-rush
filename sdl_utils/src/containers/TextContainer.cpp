@@ -59,7 +59,6 @@ void TextContainer::createText(const char* text, const Color& color, int32_t fon
 
 void TextContainer::reloadText(const char* text, const Color& color, int32_t fontId,
     int32_t textId, int32_t& outTextWidth, int32_t& outTextHeight) {
-
     auto it = _fonts.find(fontId);
     if (it == _fonts.end()) {
         std::cerr << "Error, fontId: " << fontId

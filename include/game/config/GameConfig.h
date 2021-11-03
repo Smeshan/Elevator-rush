@@ -9,17 +9,17 @@
 /* Third-party icnludes */
 
 /* Own icnludes */
-
+#include "common/CommonDefines.h"
 /* Forward Declaration */
+enum GameScreen{
+    MAINMENU,
+    GAME,
+    LEVELS,
+    SETTINGS
+};
 
 struct GameConfig{
-    int32_t gameMapId;
-    int32_t consoleId;
-
-    int32_t ringSFXId;
-    int32_t singleKeyTypeSndId;
-
-    int32_t textFondId;
+    //empty
 };
 
 #endif

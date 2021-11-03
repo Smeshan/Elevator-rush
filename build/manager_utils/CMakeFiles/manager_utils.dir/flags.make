@@ -6,5 +6,5 @@ CXX_FLAGS =   -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/home/smeshan/workspace/console type/manager_utils/include" -I"/home/smeshan/workspace/console type/sdl_utils/include" -I"/home/smeshan/workspace/console type/utils/include" 
+CXX_INCLUDES = -I/home/smeshan/workspace/animations/manager_utils/include -I/home/smeshan/workspace/animations/sdl_utils/include -I/home/smeshan/workspace/animations/utils/include 
 

@@ -14,6 +14,8 @@
 #include "manager_utils/audio/Sound.h"
 //#include "manager_utils/audio/Music.h"
 #include "game/entities/Console.h"
+#include "game/entities/SettingsScreen.h"
+#include "game/entities/Hero.h"
 
 /* Forward declaration */
 struct InputEvent;
@@ -26,12 +28,12 @@ public:
     void handleEvent(const InputEvent& e);
 
 private:
-    Image gameMapImg;
-
     Console _console;
-
-    Sound ringSFX;
-    //Music ringtoneMusic;
+    Image _map;
+    Image _wheel;
+    Hero _girl;
+    SettingsScreen _settingsScreen;
+    GameScreen _screen = GAME;
 };
 
 #endif

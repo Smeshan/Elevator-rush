@@ -21,6 +21,11 @@ namespace TextureId {
         DOWN,
         GAMEMAP,
         CONSOLE,
+        CHECK_BOX,
+        UNCHECK_BOX,
+        RUNNING_GIRL,
+        WHEEL,
+        //add new here
         RES_COUNT
     };
 
@@ -28,8 +33,9 @@ namespace TextureId {
 
 namespace FontId {
     enum FontIdKeys {
-        ANGELINE_VINTAGE,
-        TERMINAL,
+        TERMINAL_14,
+        TERMINAL_20,
+        //add new here
         FONT_COUNT
     };
 }
@@ -38,6 +44,7 @@ namespace MediaId {
     enum SoundIds {
         RING_SFX,
         SINGLE_KEY_TYPE,
+        //add new here
         SOUNDS_COUNT
     };
 }

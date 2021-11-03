@@ -21,11 +21,10 @@ add_library(
 	${_INC_DIR}/containers/SoundContainer.h
 
 	${_INC_DIR}/config/MonitorConfig.h
+	${_INC_DIR}/config/ConfigApplier.h
 	${_INC_DIR}/config/ImageContainerConfig.h
 	${_INC_DIR}/config/TextContainerConfig.h
 	${_INC_DIR}/config/SoundContainerConfig.h
-
-	${_INC_DIR}/tools/AutoResLoader.h
 
 	${_SRC_DIR}/SDLLoader.cpp
 	${_SRC_DIR}/Monitor.cpp
@@ -38,7 +37,8 @@ add_library(
 	${_SRC_DIR}/containers/TextContainer.cpp
 	${_SRC_DIR}/containers/SoundContainer.cpp
 
-	${_SRC_DIR}/tools/AutoResLoader.cpp
+	${_SRC_DIR}/config/ConfigApplier.cpp
+
 )
 
 set_target_cpp_standard(${PROJECT_NAME} 17)
