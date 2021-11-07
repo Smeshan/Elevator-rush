@@ -10,9 +10,12 @@
 /* Own icnludes */
 
 void DrawParams::reset() {
+    frameRect = Rectangle::ZERO;
     pos = Point::UNDEFINED;
     width = 0;
     height = 0;
+    rotationAngle = 0.0;
+    rotationCenter = Point::ZERO;
     opacity = FULL_OPACITY;
     resId = INVALID_RESOURCES_ID;
 }

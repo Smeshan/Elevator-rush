@@ -34,7 +34,7 @@ int32_t SDLLoader::init() {
 		return EXIT_FAILURE;
 	}
 
-	if (0 > Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 2048)) {
+	if (0 > Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 4096)) {
 		std::cerr << "SDL_mixer could not be initialised! SDL_mixer Error: " << Mix_GetError()
 				<< std::endl;
 

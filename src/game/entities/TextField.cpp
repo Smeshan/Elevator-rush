@@ -13,6 +13,7 @@
 
 int32_t TextField::init(int32_t config) {
     _keySound.create(config);
+    _cursor.create(TextureId::CURSOR);
     addLine();
     return EXIT_SUCCESS;
 }
@@ -29,6 +30,9 @@ void TextField::draw() {
     for (auto& line : _textLines) {
         line.draw();
     }
+    Point cursorPos = _textLines.back().getLastCharPos();
+    _cursor.setPosition(cursorPos);
+    _cursor.draw();
 }
 
 void TextField::addLine() {
@@ -43,6 +47,12 @@ void TextField::removeLine() {
     _currLine--;
 }
 
+void TextField::increaseTextSize() {
+    for (auto& textLine : _textLines) {
+        textLine.increaseFontSize();
+    }
+}
+
 void TextField::handleEvent(const InputEvent& e) {
     if (TouchEvent::UNKNOWN == e.type) {
         return;
@@ -55,6 +65,9 @@ void TextField::handleEvent(const InputEvent& e) {
         switch (e.key) {
         case Keyboard::KEY_SPACE:
             _textLines[_currLine].procesLastWord();
+            break;
+        case Keyboard::KEY_F5:
+            increaseTextSize();
             break;
         case Keyboard::KEY_BACKSPACE:
         {

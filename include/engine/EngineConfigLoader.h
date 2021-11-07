@@ -9,16 +9,20 @@
 
 /* Own icnludes */
 #include "engine/config/EngineConfig.h"
+#include "utils/tools/AutoResLoader.h"
 
 /* Forward Declaration */
 
 class EngineConfigLoader {
-private:
+
 
 public:
     EngineConfigLoader() = delete;
     ~EngineConfigLoader() = default;
 
     EngineConfig static loadConfig();
+
+private:
+    
 };
 #endif

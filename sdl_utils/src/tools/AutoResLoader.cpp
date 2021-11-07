@@ -46,7 +46,7 @@ std::vector<ImageConfig> AutoResLoader::getFileConfigFromFolder() {
         std::cerr << "Could not open resource directory: "
             << RES_FOLDER_PATH << std::endl;
     }
-
+    
     //TODO fix RESOURCES COUNT
     std::vector<ImageConfig> imageData(5);
     while ((file = readdir(dir)) != nullptr) {

@@ -11,12 +11,12 @@
 /* Own icnludes */
 #include "sdl_utils/Texture.h"
 
-int32_t ImageContainer::init(const ImageContainerConfig& configs) {
-    const size_t size = configs.imageData.size();
-    for (int32_t id = 0; id < (int32_t)size; ++id) {
-        const auto& element = configs.imageData[id];
+static const Frames EMPTY_FRAME{ Rectangle::ZERO };
 
-        if (EXIT_SUCCESS != loadSingleResource(element, id)) {
+int32_t ImageContainer::init(const ImageContainerConfig& configs) {
+    for (const auto& config : configs.imageConfigs) {
+        const auto& element = config.second;
+        if (EXIT_SUCCESS != loadSingleResource(element, config.first)) {
             std::cerr << "loadSingleResource() failed for file: " << element.location
                 << std::endl;
             return EXIT_FAILURE;
@@ -40,12 +40,12 @@ SDL_Texture* ImageContainer::getImageTexture(int32_t resId) const {
     return it->second;
 }
 
-Rectangle ImageContainer::getImageFrame(int32_t resId) const {
+const Frames& ImageContainer::getImageFrame(int32_t resId) const {
     auto it = _textureFrames.find(resId);
     if (it == _textureFrames.end()) {
         std::cerr << "Error, invalid resId: " << resId
-            << " requseted. Returning ZERO rectangle" << std::endl;
-        return Rectangle::ZERO;
+            << " requseted. Returning EMPTY FRAME" << std::endl;
+        return EMPTY_FRAME;
     }
     return it->second;
 }
@@ -57,13 +57,10 @@ int32_t ImageContainer::loadSingleResource(const ImageConfig& resConfig, const i
             << std::endl;
         return EXIT_FAILURE;
     }
+
     _textures[resId] = texture;
 
-    Rectangle& rect = _textureFrames[resId];
-    rect.x = 0;
-    rect.y = 0;
-    rect.w = resConfig.width;
-    rect.h = resConfig.height;
+    _textureFrames[resId] = resConfig.frames;
 
     return EXIT_SUCCESS;
 }

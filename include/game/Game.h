@@ -12,26 +12,30 @@
 #include "manager_utils/drawing/Image.h"
 #include "manager_utils/drawing/Text.h"
 #include "manager_utils/audio/Sound.h"
-//#include "manager_utils/audio/Music.h"
-#include "game/entities/Console.h"
+#include "manager_utils/audio/Music.h"
+#include "game/proxies/GameProxy.h"
+#include "game/screens/SettingsScreen.h"
+#include "game/screens/GameScreen.h"
+#include "game/screens/MenuScreen.h"
 
 /* Forward declaration */
 struct InputEvent;
 
-class Game {
+class Game : public GameProxy {
 public:
     int32_t init(const GameConfig& config);
     void deinit();
     void draw();
     void handleEvent(const InputEvent& e);
-
+    bool checkForExitRequest() const;
 private:
-    Image gameMapImg;
+    void onButtonPressed(int32_t buttonId) final;
 
-    Console _console;
-
-    Sound ringSFX;
-    //Music ringtoneMusic;
+    Screen _screen = MAINMENU;
+    Music _menuMusic;
+    MenuScreen _menuScreen;
+    GameScreen _gameScreen;
+    SettingsScreen _settingsScreen;
 };
 
 #endif

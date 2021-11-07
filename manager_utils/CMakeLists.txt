@@ -14,13 +14,21 @@ add_library(
     ${_INC_DIR}/managers/RsrcMgr.h
     ${_INC_DIR}/managers/MediaMgr.h
     ${_INC_DIR}/managers/ManagerHandler.h
+    ${_INC_DIR}/managers/TimerMgr.h
     
     ${_INC_DIR}/drawing/Widget.h
     ${_INC_DIR}/drawing/Image.h
     ${_INC_DIR}/drawing/Text.h
 
+    ${_INC_DIR}/time/TimerData.h
+    ${_INC_DIR}/time/Timer.h
+
+    ${_INC_DIR}/input/ButtonBase.h
+    ${_INC_DIR}/input/TextButtonBase.h
+
     ${_INC_DIR}/audio/Sound.h
     ${_INC_DIR}/audio/Audio.h
+    ${_INC_DIR}/audio/Music.h
 
     ${_INC_DIR}/config/DrawMgrConfig.h
     ${_INC_DIR}/config/RsrcMgrConfig.h
@@ -32,13 +40,20 @@ add_library(
 	${_SRC_DIR}/managers/RsrcMgr.cpp
 	${_SRC_DIR}/managers/MediaMgr.cpp
 	${_SRC_DIR}/managers/ManagerHandler.cpp
+	${_SRC_DIR}/managers/TimerMgr.cpp
 
 	${_SRC_DIR}/drawing/Widget.cpp
 	${_SRC_DIR}/drawing/Image.cpp
 	${_SRC_DIR}/drawing/Text.cpp
 
+    ${_SRC_DIR}/input/ButtonBase.cpp
+    ${_SRC_DIR}/input/TextButtonBase.cpp
+
 	${_SRC_DIR}/audio/Sound.cpp
 	${_SRC_DIR}/audio/Audio.cpp
+	${_SRC_DIR}/audio/Music.cpp
+
+	${_SRC_DIR}/time/Timer.cpp
 
 )
 

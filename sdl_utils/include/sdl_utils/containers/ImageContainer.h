@@ -15,11 +15,14 @@
 /* Forward Declaration */
 struct SDL_Texture;
 
+typedef std::vector<Rectangle> Frames;
+
 class ImageContainer {
 public:
 
 	SDL_Texture* getImageTexture(int32_t resId) const;
-	Rectangle getImageFrame(int32_t resId) const;
+
+	const Frames& getImageFrame(int32_t resId) const;
 
 protected:
 
@@ -31,6 +34,6 @@ private:
 	int32_t loadSingleResource(const ImageConfig& resConfig, const int32_t resId);
 
 	std::unordered_map<int32_t, SDL_Texture*> _textures;
-	std::unordered_map<int32_t, Rectangle> _textureFrames;
+	std::unordered_map<int32_t, Frames> _textureFrames;
 };
 #endif

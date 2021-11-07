@@ -26,13 +26,32 @@ void Widget::reset() {
     _drawParams.reset();
 }
 
+void Widget::setFlipType(WidgetFlip flipType) {
+    _drawParams.flipType = flipType;
+}
+
+void Widget::setRotation(double angle) {
+    _drawParams.rotationAngle = angle;
+}
+
+double Widget::getRotation() const {
+    return _drawParams.rotationAngle;
+}
+
+void Widget::rotate(double delta) {
+    _drawParams.rotationAngle += delta;
+}
+
+void Widget::setRotationCenter(const Point& rotCenter) {
+    _drawParams.rotationCenter = rotCenter;
+}
 
 void Widget::setWidth(int32_t width) {
-	_drawParams.width = width;
+    _drawParams.width = width;
 }
 
 void Widget::setHeight(int32_t height) {
-	_drawParams.height = height;
+    _drawParams.height = height;
 }
 
 void Widget::setOpacity(int32_t opacity) {
@@ -62,12 +81,12 @@ Point Widget::getPosition() const {
     return _drawParams.pos;
 }
 
-int32_t Widget::getWidth() const{
-	return _drawParams.width;
+int32_t Widget::getWidth() const {
+    return _drawParams.width;
 }
 
-int32_t Widget::getHeight() const{
-	return _drawParams.height;
+int32_t Widget::getHeight() const {
+    return _drawParams.height;
 }
 
 void Widget::activateAlphaModulation() {
@@ -99,11 +118,11 @@ void Widget::hide() {
 }
 
 void Widget::moveRight(int32_t delta) {
-    _drawParams.pos.x -= delta;
+    _drawParams.pos.x += delta;
 }
 
 void Widget::moveLeft(int32_t delta) {
-    _drawParams.pos.x += delta;
+    _drawParams.pos.x -= delta;
 }
 
 void Widget::moveUp(int32_t delta) {
@@ -112,4 +131,12 @@ void Widget::moveUp(int32_t delta) {
 
 void Widget::moveDown(int32_t delta) {
     _drawParams.pos.y += delta;
+}
+
+bool Widget::containsPoint(const Point& pos) const {
+    const Rectangle bound(_drawParams.pos.x,
+                        _drawParams.pos.y,
+                        _drawParams.width,
+                        _drawParams.height);
+    return bound.isPointInside(pos);
 }

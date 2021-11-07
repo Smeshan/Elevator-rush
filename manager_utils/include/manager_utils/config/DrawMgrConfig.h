@@ -15,7 +15,6 @@
 struct DrawMgrConfig {
 	MonitorConfig windowConfig;
     int64_t maxFrameRate;
-
 };
 
 #endif // DRAWMGRCONFIG_H

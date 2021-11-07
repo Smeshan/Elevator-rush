@@ -12,10 +12,10 @@
 #include "sdl_utils/InputEvent.h"
 #include "game/config/GameConfig.h"
 
-int32_t Console::init(const GameConfig& config) {
-    _consoleImg.create(config.consoleId);
+int32_t Console::init() {
+    _consoleImg.create(TextureId::CONSOLE);
 
-    if (EXIT_SUCCESS != _textField.init(config.singleKeyTypeSndId)) {
+    if (EXIT_SUCCESS != _textField.init(MediaId::SINGLE_KEY_TYPE)) {
         std::cerr << "Error, _textField.init() failed." << std::endl;
     }
     return EXIT_SUCCESS;

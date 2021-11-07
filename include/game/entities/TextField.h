@@ -21,17 +21,17 @@ public:
 	int32_t init(int32_t config);
 	void deinit();
 	void draw();
-
-	void addLine();
-	void removeLine();
-
 	void handleEvent(const InputEvent& e);
 
 private:
+	void addLine();
+	void removeLine();
+	void increaseTextSize();
 
 	int32_t _currLine = -1;
 	std::vector<TextLine> _textLines;
-
+	
+	Image _cursor;
 	Sound _keySound;
 };
 #endif

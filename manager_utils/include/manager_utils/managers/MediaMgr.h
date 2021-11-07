@@ -9,12 +9,14 @@
 /* Own icnludes */
 #include "manager_utils/managers/MgrBase.h"
 #include "sdl_utils/containers/SoundContainer.h"
+#include "sdl_utils/containers/MusicContainer.h"
 
 /* Forward Declaration */
 struct MediaMgrConfig;
 
 class MediaMgr : public MgrBase,
-				 public SoundContainer {
+				 public SoundContainer, 
+				 public MusicContainer {
 public:
 	MediaMgr() = default;
 
@@ -27,13 +29,17 @@ public:
 	int32_t init(const MediaMgrConfig& config);
 
 	void addPlaySoundCmd(const int32_t sndId);
+	void addPlayMusicCmd(const int32_t musicId);
+
+	void playPauseMusic();
+	void stopMusic();
+	void setVolumeMusic(const int32_t volume);
 
 	void deinit() final;
 	void process() final;
 
 private:
-	SoundContainer _soundContainer;
-	//MusicContainer _musicContainer;
+
 };
 
 extern MediaMgr* gMediaMgr;

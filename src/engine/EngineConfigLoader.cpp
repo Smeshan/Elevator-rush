@@ -4,60 +4,76 @@
 /* C system icnludes */
 
 /* C++ system icnludes */
-#include <string>
-#include <unordered_map>
+#include <cstdint>
 
 /* Third-party icnludes */
 
 /* Own icnludes */
-#include "utils/tools/ConfigApplier.h"
-#include "utils/tools/ConfigExtractor.h"
-#include "sdl_utils/tools/AutoResLoader.h"
+#include "sdl_utils/config/ConfigApplier.h"
+#include "utils/tools/ConfigProcessor.h"
 #include "common/CommonDefines.h"
 #include "utils/common/CommonPaths.h"
 
 constexpr auto MAX_FRAME_RATE = 30;
 
-typedef std::unordered_map<std::string, std::string> configData;
-
 static void populateMonitorConfig(MonitorConfig& outConfig) {
-    const configData data = ConfigExtractor::readFromFile(MONITOR_CFG_FILE);
-
-    outConfig.windowName = ConfigApplier::applyConfig(data, WINDOW_NAME, STRING);
-    outConfig.windowHeight = stoi(ConfigApplier::applyConfig(data, DISPLAY_HEIGHT, INT));
-    outConfig.windowWidth = stoi(ConfigApplier::applyConfig(data, DISPLAY_WIDTH, INT));
-
-    outConfig.windowFlags = WINDOW_SHOWN;
-    //outConfig.windowFlags = WINDOW_FULLSCREEN;
+    if (EXIT_SUCCESS != ConfigApplier::applyConfigs(outConfig)) {
+        std::cerr << "Error, ConfigApplier::applyConfigs() faild." << std::endl;
+    }
 }
 
 // CONTAINERS
 static void populateImageContainerConfig(ImageContainerConfig& cfg) {
-    cfg.imageData = AutoResLoader::getFileConfigFromFolder();
+    AutoResLoader resLoader;
+    resLoader.init();
 
-    /* for (const auto& image : cfg.imageData) {
-        std::cerr << "Current file info -> ID:" << image.id << " Name: "
-            << image.name << " Location: " << image.location << " Width: "
-            << image.width << " Height: " << image.height << std::endl;
+    const std::vector<Resource> imgFiles = resLoader.getResources(IMAGE_FOLDER);
+    std::vector<ImageConfig> imgConfigs = ConfigProcessor::processImageFiles(imgFiles);
+
+    for (auto& config : imgConfigs) {
+        cfg.imageConfigs.emplace(config.id, config);
+    }
+
+    /* for (const auto& image : cfg.imageConfigs) {
+        std::cerr << "File loaded -> ID:" << image.second.id << " Name: "
+            << image.second.name << " Location: " << image.second.location << " Width: "
+            << image.second.frames[0].w << " Height: " << image.second.frames[0].h
+            << " Frames: " << image.second.framesCount << std::endl;
     } */
 }
 
 static void populateTextContainerConfig(TextContainerConfig& cfg) {
     FontConfig fontConfig;
-    fontConfig.location = FONT_FILE;
+    fontConfig.location = TERMINAL_FONT_PATH;
+    fontConfig.fontSize = 14;
+    cfg.fontConfigs.insert(std::make_pair(FontId::TERMINAL_14, fontConfig));
+
+    fontConfig.location = TERMINAL_FONT_PATH;
     fontConfig.fontSize = 20;
-    cfg.fontConfigs.insert(std::make_pair(FontId::TERMINAL, fontConfig));
+    cfg.fontConfigs.insert(std::make_pair(FontId::TERMINAL_20, fontConfig));
+
+    fontConfig.location = MENU_FONT_PATH;
+    fontConfig.fontSize = 40;
+    cfg.fontConfigs.insert(std::make_pair(FontId::MENU_40, fontConfig));
 }
 
 static void populateSoundContainerConfig(SoundContainerConfig& cfg) {
     SoundConfig soundConfig;
-    soundConfig.location = SOUND_FILE_PATH;
-    soundConfig.length = 10;
-    cfg.soundConfigs.insert(std::make_pair(MediaId::RING_SFX, soundConfig));
-
     soundConfig.location = SINGLE_KEY_TYPE_PATH;
     soundConfig.length = 10;
     cfg.soundConfigs.insert(std::make_pair(MediaId::SINGLE_KEY_TYPE, soundConfig));
+
+    soundConfig.location = MOUSE_HOVER_PATH;
+    soundConfig.length = 10;
+    cfg.soundConfigs.insert(std::make_pair(MediaId::BUTTON_HOVER, soundConfig));
+}
+
+static void populateMusicContainerConfig(MusicContainerConfig& cfg) {
+    MusicConfig musicConfig;
+    musicConfig.location = MUSIC_FILE_PATH;
+    musicConfig.length = 10;
+    cfg.musicConfigs.insert(std::make_pair(MediaId::MENU_MUSIC, musicConfig));
+
 }
 
 // MANAGERS
@@ -73,6 +89,7 @@ static void populateRsrcMgrConfig(RsrcMgrConfig& outConfig) {
 
 static void populateMediaMgrConfig(MediaMgrConfig& outConfig) {
     populateSoundContainerConfig(outConfig.soundContainerConfig);
+    populateMusicContainerConfig(outConfig.musicContainerConfig);
 }
 
 static void populateManagerHandlerConfig(ManagerHandlerConfig& outConfig) {
@@ -83,17 +100,8 @@ static void populateManagerHandlerConfig(ManagerHandlerConfig& outConfig) {
 
 // GAME
 static void populateGameConfig(GameConfig& outConfig) {
-    outConfig.gameMapId = TextureId::GAMEMAP;
-
-    outConfig.textFondId = FontId::TERMINAL;
-
-    outConfig.ringSFXId = MediaId::RING_SFX;
-
-    outConfig.consoleId = TextureId::CONSOLE;
-
-    outConfig.singleKeyTypeSndId = MediaId::SINGLE_KEY_TYPE;
+    outConfig.movingUpAndDownTimerId = TimerId::BUUILDING_LIGHT_UPDOWN;
 }
-
 
 EngineConfig EngineConfigLoader::loadConfig() {
     EngineConfig cfg;

@@ -5,7 +5,7 @@
 /* C++ system icnludes */
 
 /* Third-party icnludes */
-#include <SDL_mixer.h>
+#include <SDL2/SDL_mixer.h>
 
 /* Own icnludes */
 

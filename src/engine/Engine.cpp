@@ -13,6 +13,7 @@
 #include "utils/thread/ThreadUtils.h"
 #include "utils/time/Time.h"
 #include "manager_utils/managers/DrawMgr.h"
+#include "manager_utils/managers/TimerMgr.h"
 
 const constexpr auto MICROSEC_IN_SECOND = 100000;
 
@@ -32,6 +33,8 @@ int32_t Engine::init(const EngineConfig& config) {
         std::cerr << "_game.init() failed." << std::endl;
         return EXIT_FAILURE;
     }
+
+    gTimerMgr->onInitEnd();
 
     return EXIT_SUCCESS;
 }
@@ -69,6 +72,9 @@ void Engine::drawFrame() {
 }
 
 bool Engine::processFrame() {
+    if (_game.checkForExitRequest()) {
+         return true;
+    }
     while (_event.pollEvent()) {
         if (_event.checkForExitRequest()) {
             return true;
@@ -76,7 +82,7 @@ bool Engine::processFrame() {
         handleEvent();
     }
     drawFrame();
-
+    _managerHandler.process();
     return false;
 }
 
@@ -86,7 +92,7 @@ void Engine::handleEvent() {
 
 /* working in microseconds */
 void Engine::limitFPS(const int64_t elapsedTime) {
-    constexpr auto maxFrames = 30;
+    constexpr auto maxFrames = 60;
     constexpr auto micSecondsPerFrame = MICROSEC_IN_SECOND / maxFrames;
     const int64_t sleepDuration = micSecondsPerFrame - elapsedTime;
     if (sleepDuration > 0) {

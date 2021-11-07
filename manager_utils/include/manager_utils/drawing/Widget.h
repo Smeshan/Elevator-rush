@@ -16,6 +16,12 @@ public:
 	void draw();
 	void reset();
 
+	void setFlipType(WidgetFlip flipType);
+	void setRotation(double angle);
+	double getRotation() const;
+	void rotate(double delta);
+	void setRotationCenter(const Point& rotCenter);
+
 	void setWidth(int32_t width);
 	void setHeight(int32_t height);
 
@@ -38,6 +44,8 @@ public:
 	void moveLeft(int32_t delta);
 	void moveUp(int32_t delta);
 	void moveDown(int32_t delta);
+
+	bool containsPoint(const Point& pos) const;
 protected:
 	DrawParams _drawParams;
 	bool _isCreated = false;

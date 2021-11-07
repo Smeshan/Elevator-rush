@@ -19,24 +19,41 @@ int32_t MediaMgr::init(const MediaMgrConfig& config) {
         return EXIT_FAILURE;
     }
 
-    /* if (EXIT_SUCCESS != MusicContainer::init(config.musicContainerConfig)) {
+    if (EXIT_SUCCESS != MusicContainer::init(config.musicContainerConfig)) {
         std::cerr << "MusicContainer::init() failed." << std::endl;
         return EXIT_FAILURE;
-    } */
-       
+    }
 
     return EXIT_SUCCESS;
 }
 
 void MediaMgr::addPlaySoundCmd(const int32_t sndId) {
-    SoundContainer::playSoundCmd(sndId);   
+    SoundContainer::playSoundCmd(sndId);
     //TODO remove one of the containers
     // why is not working with _soundContainer.playSoundCmd(sndId):
 }
 
+void MediaMgr::addPlayMusicCmd(const int32_t musicId) {
+    MusicContainer::playMusicCmd(musicId);
+    //TODO remove one of the containers
+    // why is not working with _soundContainer.playSoundCmd(sndId):
+}
+
+void MediaMgr::playPauseMusic() {
+    MusicContainer::playPauseMusic();
+}
+
+void MediaMgr::stopMusic() {
+    MusicContainer::stopMusic();
+}
+
+void MediaMgr::setVolumeMusic(const int32_t volume) {
+     MusicContainer::setVolume(volume);
+}
+
 void MediaMgr::deinit() {
     SoundContainer::deinit();
-    //MusicContainer::deinit();
+    MusicContainer::deinit();
 }
 
 void MediaMgr::process() {

@@ -11,18 +11,30 @@
 
 /* Forward Declaration */
 
+enum AudioType {
+	NONE,
+	SOUND,
+	MUSIC
+};
+
 class Audio {
 public:
 	void play();
-	void stop();
 	void reset();
+
+	void playPauseMusic();
+	void stopMusic();
+	void setVolumeMusic(const int32_t volume);
 
 protected:
 	bool _isCreated = false;
 	bool _isDestroyed = true;
 	bool _isPlaying = false;
 
-	int32_t _sndId;
+	int32_t _volume = 50;
+
+	int32_t _audioId;
+	AudioType _audioType = AudioType::NONE;
 };
 
 #endif

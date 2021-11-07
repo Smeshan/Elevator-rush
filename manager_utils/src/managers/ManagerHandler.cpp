@@ -13,6 +13,7 @@
 #include "manager_utils/managers/DrawMgr.h"
 #include "manager_utils/managers/RsrcMgr.h"
 #include "manager_utils/managers/MediaMgr.h"
+#include "manager_utils/managers/TimerMgr.h"
 
 int32_t ManagerHandler::init(const ManagerHandlerConfig& config) {
     gDrawMgr = new DrawMgr();
@@ -42,16 +43,25 @@ int32_t ManagerHandler::init(const ManagerHandlerConfig& config) {
         std::cerr << "Erorr, bad alloc for gMediaMgr" << std::endl;
         return EXIT_FAILURE;
     }
-
+    
     if (EXIT_SUCCESS != gMediaMgr->init(config.mediaMgrConfig)) {
         std::cerr << "gMediaMgr->init() failed." << std::endl;
         return EXIT_FAILURE;
     }
+    gTimerMgr = new TimerMgr();
+    if (gTimerMgr == nullptr) {
+        std::cerr << "Erorr, bad alloc for gTimerMgr" << std::endl;
+        return EXIT_FAILURE;
+    }
 
+    if (EXIT_SUCCESS != gTimerMgr->init()) {
+        std::cerr << "gTimerMgr->init() failed." << std::endl;
+        return EXIT_FAILURE;
+    }
     _managers[DRAW_MGR_INDX] = static_cast<MgrBase*>(gDrawMgr);
     _managers[RSRC_MGR_INDX] = static_cast<MgrBase*>(gRsrcMgr);
     _managers[MEDIA_MGR_INDX] = static_cast<MgrBase*>(gMediaMgr);
-
+    _managers[TIMER_MGR_INDX] = static_cast<MgrBase*>(gTimerMgr);
     return EXIT_SUCCESS;
 }
 
@@ -63,7 +73,7 @@ void ManagerHandler::deinit() {
 }
 
 void ManagerHandler::process() {
-    for (int32_t i; i < MANAGERS_COUNT; ++i) {
+    for (int32_t i = 0; i < MANAGERS_COUNT; ++i) {
         _managers[i]->process();
     }
 }
@@ -77,6 +87,14 @@ void ManagerHandler::nullifyGlobalMgr(int32_t mgrIdx) {
     case RSRC_MGR_INDX:
         delete gRsrcMgr;
         gRsrcMgr = nullptr;
+        break;
+    case MEDIA_MGR_INDX:
+        delete gMediaMgr;
+        gMediaMgr = nullptr;
+        break;
+    case TIMER_MGR_INDX:
+        delete gTimerMgr;
+        gTimerMgr = nullptr;
         break;
     default:
         std::cerr << "Recieved invalid mgrIdx: " << mgrIdx << std::endl;

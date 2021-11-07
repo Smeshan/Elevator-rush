@@ -22,7 +22,8 @@ void Sound::create(int32_t sndId) {
             << sndId << " was already created. Will not create twice." << std::endl;
         return;
     }
-    _sndId = sndId;
+    _audioId = sndId;
+    _audioType = AudioType::SOUND;
     _isCreated = true;
     _isDestroyed = false;
 }

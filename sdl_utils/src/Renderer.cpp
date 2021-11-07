@@ -62,6 +62,9 @@ void Renderer::renderTexture(SDL_Texture* texture, const DrawParams& drawParams)
     if (WidgetType::IMAGE == drawParams.widgetType) {
         drawImage(drawParams, texture);
     }
+    else if (WidgetType::SPRITE == drawParams.widgetType) {
+        drawImage(drawParams, texture);
+    }
     else if (WidgetType::TEXT == drawParams.widgetType) {
         drawText(drawParams, texture);
     }
@@ -79,47 +82,48 @@ void Renderer::setWidgetBlendMode(SDL_Texture* texture, BlendMode blendMode) {
 }
 
 void Renderer::setWidgetOpacity(SDL_Texture* texture, int32_t opacity) {
-	if (EXIT_SUCCESS != Texture::setAlphaTexture(texture, opacity)) {
+    if (EXIT_SUCCESS != Texture::setAlphaTexture(texture, opacity)) {
         std::cerr << "Texture::setAlpaTexture() failed." << std::endl;
     }
 }
 
 void Renderer::drawImage(const DrawParams& drawParams, SDL_Texture* texture) {
-    const SDL_Rect destRect = { .x = drawParams.pos.x, .y = drawParams.pos.y,
-                                .w = drawParams.width, .h = drawParams.height };
-
-    int32_t err = EXIT_SUCCESS;
-    if (FULL_OPACITY != drawParams.opacity) {
-        err = SDL_RenderCopy(_sdlRenderer, texture, nullptr, &destRect);
+    if (FULL_OPACITY == drawParams.opacity) {
+        drawTextureInternal(drawParams, texture);
     }
     else {
         if (EXIT_SUCCESS != Texture::setAlphaTexture(texture, drawParams.opacity)) {
             std::cerr << "Texture::setAlphaTexture() failed for resID: "
                 << drawParams.resId << std::endl;
         }
-        err = SDL_RenderCopy(_sdlRenderer, texture, nullptr, &destRect);
-
+        drawTextureInternal(drawParams, texture);
         if (EXIT_SUCCESS != Texture::setAlphaTexture(texture, FULL_OPACITY)) {
             std::cerr << "Texture::setAlphaTexture() failed for resID: "
                 << drawParams.resId << std::endl;
         }
     }
-    if (EXIT_SUCCESS != err) {
-        std::cerr << "SDL_RenderCopy() failed for resID: " << drawParams.resId
-            << ". Reason: " << SDL_GetError() << std::endl;
-    }
 }
 
 void Renderer::drawText(const DrawParams& drawParams, SDL_Texture* texture) {
-    const SDL_Rect destRect = { .x = drawParams.pos.x, .y = drawParams.pos.y,
-                                .w = drawParams.width, .h = drawParams.height };
+    drawTextureInternal(drawParams, texture);
+}
 
-    int32_t err = SDL_RenderCopy(_sdlRenderer, texture, nullptr, &destRect);
+void Renderer::drawTextureInternal(const DrawParams& drawParams,
+    SDL_Texture* texture) {
+    const SDL_Rect destRect = { .x = drawParams.pos.x, .y = drawParams.pos.y,
+                           .w = drawParams.width, .h = drawParams.height };
+    const SDL_Rect* sourceRect =
+        reinterpret_cast<const SDL_Rect*>(&drawParams.frameRect);
+
+    const SDL_Point* rotPoint =
+        reinterpret_cast<const SDL_Point*>(&drawParams.rotationCenter);
+
+    const int32_t err = SDL_RenderCopyEx(_sdlRenderer, texture, sourceRect,
+        &destRect, drawParams.rotationAngle, rotPoint,
+        static_cast<SDL_RendererFlip>(drawParams.flipType));
 
     if (EXIT_SUCCESS != err) {
-        std::cerr << "SDL_RenderCopy() failed to draw text for resID: " << drawParams.resId
-            << ". Reason: " << SDL_GetError() << std::endl;
+        std::cerr << "SDL_RenderCopy() failed to draw widget with resID: "
+            << drawParams.resId << ". Reason: " << SDL_GetError() << std::endl;
     }
-
-
 }

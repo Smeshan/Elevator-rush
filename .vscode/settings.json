@@ -45,6 +45,9 @@
         "ratio": "cpp",
         "filesystem": "cpp",
         "codecvt": "cpp",
-        "thread": "cpp"
-    }
+        "thread": "cpp",
+        "set": "cpp",
+        "map": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "Enabled"
 }

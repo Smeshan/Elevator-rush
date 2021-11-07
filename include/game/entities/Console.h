@@ -14,12 +14,11 @@
 
 /* Forward Declaration */
 struct InputEvent;
-struct GameConfig;
 
 class Console
 {
 public:
-	int32_t init(const GameConfig& config);
+	int32_t init();
 	void deinit();
 	void draw();
 	void handleEvent(const InputEvent& e);

@@ -36,8 +36,7 @@ bool InputEvent::pollEvent() {
 }
 
 bool InputEvent::checkForExitRequest() const {
-	return (_sdlEvent->type == EventType::QUIT)
-		|| (type == TouchEvent::KEYBOARD_PRESS && Keyboard::KEY_ESCAPE == key);
+	return (_sdlEvent->type == EventType::QUIT);
 }
 
 void InputEvent::setEventTypeInternal() {

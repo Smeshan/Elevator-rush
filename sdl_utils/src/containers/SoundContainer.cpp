@@ -39,11 +39,12 @@ int32_t SoundContainer::playSoundCmd(const int32_t sndId) {
          << " not in the SoundConntainer" << std::endl;
          return EXIT_FAILURE;
     }
-    if (EXIT_SUCCESS != Mix_PlayChannel( -1, it->second, 0 )) { // channel, chunk, loop
+    if (EXIT_SUCCESS != Mix_PlayChannel( 1, it->second, 0 )) { // channel, chunk, loop
         std::cerr << "Mix_PlayChannel() failed. Error: "
-        << Mix_GetError() << std::endl;
+        << SDL_GetError() << std::endl;
         return EXIT_FAILURE;
     } 
+
     return EXIT_SUCCESS;
 }
 

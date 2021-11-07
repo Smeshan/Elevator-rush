@@ -3,25 +3,16 @@
 /* C system icnludes */
 
 /* C++ system icnludes */
-#include <cstdint>
-#include <vector>
-#include <string>
+#include <unordered_map>
 
 /* Third-party icnludes */
 
 /* Own icnludes */
 
 /* Forward Declaration */
-
-struct ImageConfig {
-	std::string name;
-	std::string location;
-	int32_t width = 0;
-	int32_t height = 0;
-	int32_t id = 0;
-};
+#include "utils/tools/config/ImageConfig.h"
 
 struct ImageContainerConfig {
-	std::vector<ImageConfig> imageData;
+	std::unordered_map<int32_t, ImageConfig> imageConfigs;
 };
 #endif

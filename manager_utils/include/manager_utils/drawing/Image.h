@@ -16,5 +16,12 @@ public:
 	~Image();
 	void create(int32_t resId, const Point& pos = Point::ZERO);
 	void destroy();
+	int32_t getFrame() const;
+	void nextFrame();
+	void prevFrame();
+	void setFrame(int32_t frameIndx);
+private:
+	int32_t _currFrame {0};
+	int32_t _maxFrames {0};
 };
 #endif

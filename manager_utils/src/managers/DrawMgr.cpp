@@ -55,6 +55,9 @@ SDL_Texture* DrawMgr::getTextureIntern(const DrawParams& drawParams) const {
     if (WidgetType::IMAGE == drawParams.widgetType) {
         return gRsrcMgr->getImageTexture(drawParams.resId);
     }
+    else if (WidgetType::SPRITE == drawParams.widgetType) {
+        return gRsrcMgr->getImageTexture(drawParams.resId);
+    }
     else if (WidgetType::TEXT == drawParams.widgetType) {
         return gRsrcMgr->getTextTexture(drawParams.textId);
     }

@@ -18,7 +18,7 @@ Text::~Text() {
 }
 
 void Text::create(const char* text, int32_t fontId,
-    const Color& color, const Point& pos) {
+                  const Color& color, const Point& pos) {
     if (_isCreated) {
         std::cerr << "Error, text with fondId: "
             << fontId << " was already created. Will not create twice." << std::endl;
@@ -29,6 +29,11 @@ void Text::create(const char* text, int32_t fontId,
         _drawParams.width, _drawParams.height);
     _drawParams.pos = pos;
     _drawParams.widgetType = WidgetType::TEXT;
+
+    _drawParams.frameRect.x = 0;
+    _drawParams.frameRect.y = 0;
+    _drawParams.frameRect.w = _drawParams.width;
+    _drawParams.frameRect.h = _drawParams.height;
 
     _textContent = text;
     _color = color;
@@ -53,9 +58,12 @@ void Text::setText(const char* text) {
     if (text == _textContent) {
         return;
     }
+    _textContent = text;
     gRsrcMgr->reloadText(text, _color, _fontId, _drawParams.textId,
         _drawParams.width, _drawParams.height);
-    
+
+    _drawParams.frameRect.w = _drawParams.width;
+    _drawParams.frameRect.h = _drawParams.height;
 }
 
 void Text::setColor(const Color& color) {
