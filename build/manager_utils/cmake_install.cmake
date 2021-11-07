@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # Install script for directory: /home/smeshan/workspace/timers/manager_utils
-=======
-# Install script for directory: /home/smeshan/workspace/animations/manager_utils
->>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

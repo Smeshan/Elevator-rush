@@ -55,11 +55,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-<<<<<<< HEAD
-  "CMakeFiles/timers.dir/DependInfo.cmake"
-=======
   "CMakeFiles/animations.dir/DependInfo.cmake"
->>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
   "utils/CMakeFiles/utils.dir/DependInfo.cmake"
   "sdl_utils/CMakeFiles/sdl_utils.dir/DependInfo.cmake"
   "manager_utils/CMakeFiles/manager_utils.dir/DependInfo.cmake"

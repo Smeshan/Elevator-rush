@@ -6,5 +6,5 @@ CXX_FLAGS =   -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/smeshan/workspace/animations/include -I/home/smeshan/workspace/animations/manager_utils/include -I/home/smeshan/workspace/animations/sdl_utils/include -I/home/smeshan/workspace/animations/utils/include 
+CXX_INCLUDES = -I/home/smeshan/workspace/timers/include -I/home/smeshan/workspace/timers/manager_utils/include -I/home/smeshan/workspace/timers/sdl_utils/include -I/home/smeshan/workspace/timers/utils/include 
 

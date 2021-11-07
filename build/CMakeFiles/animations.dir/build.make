@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/smeshan/workspace/animations
+CMAKE_SOURCE_DIR = /home/smeshan/workspace/timers
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/smeshan/workspace/animations/build
+CMAKE_BINARY_DIR = /home/smeshan/workspace/timers/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/animations.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/animations.dir/flags.make
 
 CMakeFiles/animations.dir/src/main.cpp.o: CMakeFiles/animations.dir/flags.make
 CMakeFiles/animations.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/animations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/animations.dir/src/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/animations.dir/src/main.cpp.o -c /home/smeshan/workspace/animations/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/timers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/animations.dir/src/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/animations.dir/src/main.cpp.o -c /home/smeshan/workspace/timers/src/main.cpp
 
 CMakeFiles/animations.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/animations.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/smeshan/workspace/animations/src/main.cpp > CMakeFiles/animations.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/smeshan/workspace/timers/src/main.cpp > CMakeFiles/animations.dir/src/main.cpp.i
 
 CMakeFiles/animations.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/animations.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/animations/src/main.cpp -o CMakeFiles/animations.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/timers/src/main.cpp -o CMakeFiles/animations.dir/src/main.cpp.s
 
 CMakeFiles/animations.dir/src/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/animations.dir/src/main.cpp.o.provides.build: CMakeFiles/animations.d
 
 CMakeFiles/animations.dir/src/game/Game.cpp.o: CMakeFiles/animations.dir/flags.make
 CMakeFiles/animations.dir/src/game/Game.cpp.o: ../src/game/Game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/animations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/animations.dir/src/game/Game.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/animations.dir/src/game/Game.cpp.o -c /home/smeshan/workspace/animations/src/game/Game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/timers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/animations.dir/src/game/Game.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/animations.dir/src/game/Game.cpp.o -c /home/smeshan/workspace/timers/src/game/Game.cpp
 
 CMakeFiles/animations.dir/src/game/Game.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/animations.dir/src/game/Game.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/smeshan/workspace/animations/src/game/Game.cpp > CMakeFiles/animations.dir/src/game/Game.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/smeshan/workspace/timers/src/game/Game.cpp > CMakeFiles/animations.dir/src/game/Game.cpp.i
 
 CMakeFiles/animations.dir/src/game/Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/animations.dir/src/game/Game.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/animations/src/game/Game.cpp -o CMakeFiles/animations.dir/src/game/Game.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/timers/src/game/Game.cpp -o CMakeFiles/animations.dir/src/game/Game.cpp.s
 
 CMakeFiles/animations.dir/src/game/Game.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/animations.dir/src/game/Game.cpp.o.provides.build: CMakeFiles/animati
 
 CMakeFiles/animations.dir/src/game/entities/Console.cpp.o: CMakeFiles/animations.dir/flags.make
 CMakeFiles/animations.dir/src/game/entities/Console.cpp.o: ../src/game/entities/Console.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/animations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/animations.dir/src/game/entities/Console.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/animations.dir/src/game/entities/Console.cpp.o -c /home/smeshan/workspace/animations/src/game/entities/Console.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/timers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/animations.dir/src/game/entities/Console.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/animations.dir/src/game/entities/Console.cpp.o -c /home/smeshan/workspace/timers/src/game/entities/Console.cpp
 
 CMakeFiles/animations.dir/src/game/entities/Console.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/animations.dir/src/game/entities/Console.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/smeshan/workspace/animations/src/game/entities/Console.cpp > CMakeFiles/animations.dir/src/game/entities/Console.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/smeshan/workspace/timers/src/game/entities/Console.cpp > CMakeFiles/animations.dir/src/game/entities/Console.cpp.i
 
 CMakeFiles/animations.dir/src/game/entities/Console.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/animations.dir/src/game/entities/Console.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/animations/src/game/entities/Console.cpp -o CMakeFiles/animations.dir/src/game/entities/Console.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/timers/src/game/entities/Console.cpp -o CMakeFiles/animations.dir/src/game/entities/Console.cpp.s
 
 CMakeFiles/animations.dir/src/game/entities/Console.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/animations.dir/src/game/entities/Console.cpp.o.provides.build: CMakeF
 
 CMakeFiles/animations.dir/src/game/entities/KeyWords.cpp.o: CMakeFiles/animations.dir/flags.make
 CMakeFiles/animations.dir/src/game/entities/KeyWords.cpp.o: ../src/game/entities/KeyWords.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/animations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/animations.dir/src/game/entities/KeyWords.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/animations.dir/src/game/entities/KeyWords.cpp.o -c /home/smeshan/workspace/animations/src/game/entities/KeyWords.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/timers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/animations.dir/src/game/entities/KeyWords.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/animations.dir/src/game/entities/KeyWords.cpp.o -c /home/smeshan/workspace/timers/src/game/entities/KeyWords.cpp
 
 CMakeFiles/animations.dir/src/game/entities/KeyWords.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/animations.dir/src/game/entities/KeyWords.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/smeshan/workspace/animations/src/game/entities/KeyWords.cpp > CMakeFiles/animations.dir/src/game/entities/KeyWords.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/smeshan/workspace/timers/src/game/entities/KeyWords.cpp > CMakeFiles/animations.dir/src/game/entities/KeyWords.cpp.i
 
 CMakeFiles/animations.dir/src/game/entities/KeyWords.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/animations.dir/src/game/entities/KeyWords.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/animations/src/game/entities/KeyWords.cpp -o CMakeFiles/animations.dir/src/game/entities/KeyWords.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/timers/src/game/entities/KeyWords.cpp -o CMakeFiles/animations.dir/src/game/entities/KeyWords.cpp.s
 
 CMakeFiles/animations.dir/src/game/entities/KeyWords.cpp.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/animations.dir/src/game/entities/KeyWords.cpp.o.provides.build: CMake
 
 CMakeFiles/animations.dir/src/game/entities/TextField.cpp.o: CMakeFiles/animations.dir/flags.make
 CMakeFiles/animations.dir/src/game/entities/TextField.cpp.o: ../src/game/entities/TextField.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/animations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/animations.dir/src/game/entities/TextField.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/animations.dir/src/game/entities/TextField.cpp.o -c /home/smeshan/workspace/animations/src/game/entities/TextField.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/timers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/animations.dir/src/game/entities/TextField.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/animations.dir/src/game/entities/TextField.cpp.o -c /home/smeshan/workspace/timers/src/game/entities/TextField.cpp
 
 CMakeFiles/animations.dir/src/game/entities/TextField.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/animations.dir/src/game/entities/TextField.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/smeshan/workspace/animations/src/game/entities/TextField.cpp > CMakeFiles/animations.dir/src/game/entities/TextField.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/smeshan/workspace/timers/src/game/entities/TextField.cpp > CMakeFiles/animations.dir/src/game/entities/TextField.cpp.i
 
 CMakeFiles/animations.dir/src/game/entities/TextField.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/animations.dir/src/game/entities/TextField.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/animations/src/game/entities/TextField.cpp -o CMakeFiles/animations.dir/src/game/entities/TextField.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/timers/src/game/entities/TextField.cpp -o CMakeFiles/animations.dir/src/game/entities/TextField.cpp.s
 
 CMakeFiles/animations.dir/src/game/entities/TextField.cpp.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/animations.dir/src/game/entities/TextField.cpp.o.provides.build: CMak
 
 CMakeFiles/animations.dir/src/game/entities/TextLine.cpp.o: CMakeFiles/animations.dir/flags.make
 CMakeFiles/animations.dir/src/game/entities/TextLine.cpp.o: ../src/game/entities/TextLine.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/animations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/animations.dir/src/game/entities/TextLine.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/animations.dir/src/game/entities/TextLine.cpp.o -c /home/smeshan/workspace/animations/src/game/entities/TextLine.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/timers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/animations.dir/src/game/entities/TextLine.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/animations.dir/src/game/entities/TextLine.cpp.o -c /home/smeshan/workspace/timers/src/game/entities/TextLine.cpp
 
 CMakeFiles/animations.dir/src/game/entities/TextLine.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/animations.dir/src/game/entities/TextLine.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/smeshan/workspace/animations/src/game/entities/TextLine.cpp > CMakeFiles/animations.dir/src/game/entities/TextLine.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/smeshan/workspace/timers/src/game/entities/TextLine.cpp > CMakeFiles/animations.dir/src/game/entities/TextLine.cpp.i
 
 CMakeFiles/animations.dir/src/game/entities/TextLine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/animations.dir/src/game/entities/TextLine.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/animations/src/game/entities/TextLine.cpp -o CMakeFiles/animations.dir/src/game/entities/TextLine.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/timers/src/game/entities/TextLine.cpp -o CMakeFiles/animations.dir/src/game/entities/TextLine.cpp.s
 
 CMakeFiles/animations.dir/src/game/entities/TextLine.cpp.o.requires:
 
@@ -201,18 +201,210 @@ CMakeFiles/animations.dir/src/game/entities/TextLine.cpp.o.provides: CMakeFiles/
 CMakeFiles/animations.dir/src/game/entities/TextLine.cpp.o.provides.build: CMakeFiles/animations.dir/src/game/entities/TextLine.cpp.o
 
 
+CMakeFiles/animations.dir/src/game/entities/building/FloorTile.cpp.o: CMakeFiles/animations.dir/flags.make
+CMakeFiles/animations.dir/src/game/entities/building/FloorTile.cpp.o: ../src/game/entities/building/FloorTile.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/timers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/animations.dir/src/game/entities/building/FloorTile.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/animations.dir/src/game/entities/building/FloorTile.cpp.o -c /home/smeshan/workspace/timers/src/game/entities/building/FloorTile.cpp
+
+CMakeFiles/animations.dir/src/game/entities/building/FloorTile.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/animations.dir/src/game/entities/building/FloorTile.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/smeshan/workspace/timers/src/game/entities/building/FloorTile.cpp > CMakeFiles/animations.dir/src/game/entities/building/FloorTile.cpp.i
+
+CMakeFiles/animations.dir/src/game/entities/building/FloorTile.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/animations.dir/src/game/entities/building/FloorTile.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/timers/src/game/entities/building/FloorTile.cpp -o CMakeFiles/animations.dir/src/game/entities/building/FloorTile.cpp.s
+
+CMakeFiles/animations.dir/src/game/entities/building/FloorTile.cpp.o.requires:
+
+.PHONY : CMakeFiles/animations.dir/src/game/entities/building/FloorTile.cpp.o.requires
+
+CMakeFiles/animations.dir/src/game/entities/building/FloorTile.cpp.o.provides: CMakeFiles/animations.dir/src/game/entities/building/FloorTile.cpp.o.requires
+	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/building/FloorTile.cpp.o.provides.build
+.PHONY : CMakeFiles/animations.dir/src/game/entities/building/FloorTile.cpp.o.provides
+
+CMakeFiles/animations.dir/src/game/entities/building/FloorTile.cpp.o.provides.build: CMakeFiles/animations.dir/src/game/entities/building/FloorTile.cpp.o
+
+
+CMakeFiles/animations.dir/src/game/entities/building/Building.cpp.o: CMakeFiles/animations.dir/flags.make
+CMakeFiles/animations.dir/src/game/entities/building/Building.cpp.o: ../src/game/entities/building/Building.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/timers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/animations.dir/src/game/entities/building/Building.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/animations.dir/src/game/entities/building/Building.cpp.o -c /home/smeshan/workspace/timers/src/game/entities/building/Building.cpp
+
+CMakeFiles/animations.dir/src/game/entities/building/Building.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/animations.dir/src/game/entities/building/Building.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/smeshan/workspace/timers/src/game/entities/building/Building.cpp > CMakeFiles/animations.dir/src/game/entities/building/Building.cpp.i
+
+CMakeFiles/animations.dir/src/game/entities/building/Building.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/animations.dir/src/game/entities/building/Building.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/timers/src/game/entities/building/Building.cpp -o CMakeFiles/animations.dir/src/game/entities/building/Building.cpp.s
+
+CMakeFiles/animations.dir/src/game/entities/building/Building.cpp.o.requires:
+
+.PHONY : CMakeFiles/animations.dir/src/game/entities/building/Building.cpp.o.requires
+
+CMakeFiles/animations.dir/src/game/entities/building/Building.cpp.o.provides: CMakeFiles/animations.dir/src/game/entities/building/Building.cpp.o.requires
+	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/building/Building.cpp.o.provides.build
+.PHONY : CMakeFiles/animations.dir/src/game/entities/building/Building.cpp.o.provides
+
+CMakeFiles/animations.dir/src/game/entities/building/Building.cpp.o.provides.build: CMakeFiles/animations.dir/src/game/entities/building/Building.cpp.o
+
+
+CMakeFiles/animations.dir/src/game/animations/BuildingLigth.cpp.o: CMakeFiles/animations.dir/flags.make
+CMakeFiles/animations.dir/src/game/animations/BuildingLigth.cpp.o: ../src/game/animations/BuildingLigth.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/timers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/animations.dir/src/game/animations/BuildingLigth.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/animations.dir/src/game/animations/BuildingLigth.cpp.o -c /home/smeshan/workspace/timers/src/game/animations/BuildingLigth.cpp
+
+CMakeFiles/animations.dir/src/game/animations/BuildingLigth.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/animations.dir/src/game/animations/BuildingLigth.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/smeshan/workspace/timers/src/game/animations/BuildingLigth.cpp > CMakeFiles/animations.dir/src/game/animations/BuildingLigth.cpp.i
+
+CMakeFiles/animations.dir/src/game/animations/BuildingLigth.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/animations.dir/src/game/animations/BuildingLigth.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/timers/src/game/animations/BuildingLigth.cpp -o CMakeFiles/animations.dir/src/game/animations/BuildingLigth.cpp.s
+
+CMakeFiles/animations.dir/src/game/animations/BuildingLigth.cpp.o.requires:
+
+.PHONY : CMakeFiles/animations.dir/src/game/animations/BuildingLigth.cpp.o.requires
+
+CMakeFiles/animations.dir/src/game/animations/BuildingLigth.cpp.o.provides: CMakeFiles/animations.dir/src/game/animations/BuildingLigth.cpp.o.requires
+	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/animations/BuildingLigth.cpp.o.provides.build
+.PHONY : CMakeFiles/animations.dir/src/game/animations/BuildingLigth.cpp.o.provides
+
+CMakeFiles/animations.dir/src/game/animations/BuildingLigth.cpp.o.provides.build: CMakeFiles/animations.dir/src/game/animations/BuildingLigth.cpp.o
+
+
+CMakeFiles/animations.dir/src/game/ui_buttons/TestButton.cpp.o: CMakeFiles/animations.dir/flags.make
+CMakeFiles/animations.dir/src/game/ui_buttons/TestButton.cpp.o: ../src/game/ui_buttons/TestButton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/timers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/animations.dir/src/game/ui_buttons/TestButton.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/animations.dir/src/game/ui_buttons/TestButton.cpp.o -c /home/smeshan/workspace/timers/src/game/ui_buttons/TestButton.cpp
+
+CMakeFiles/animations.dir/src/game/ui_buttons/TestButton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/animations.dir/src/game/ui_buttons/TestButton.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/smeshan/workspace/timers/src/game/ui_buttons/TestButton.cpp > CMakeFiles/animations.dir/src/game/ui_buttons/TestButton.cpp.i
+
+CMakeFiles/animations.dir/src/game/ui_buttons/TestButton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/animations.dir/src/game/ui_buttons/TestButton.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/timers/src/game/ui_buttons/TestButton.cpp -o CMakeFiles/animations.dir/src/game/ui_buttons/TestButton.cpp.s
+
+CMakeFiles/animations.dir/src/game/ui_buttons/TestButton.cpp.o.requires:
+
+.PHONY : CMakeFiles/animations.dir/src/game/ui_buttons/TestButton.cpp.o.requires
+
+CMakeFiles/animations.dir/src/game/ui_buttons/TestButton.cpp.o.provides: CMakeFiles/animations.dir/src/game/ui_buttons/TestButton.cpp.o.requires
+	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/ui_buttons/TestButton.cpp.o.provides.build
+.PHONY : CMakeFiles/animations.dir/src/game/ui_buttons/TestButton.cpp.o.provides
+
+CMakeFiles/animations.dir/src/game/ui_buttons/TestButton.cpp.o.provides.build: CMakeFiles/animations.dir/src/game/ui_buttons/TestButton.cpp.o
+
+
+CMakeFiles/animations.dir/src/game/ui_buttons/MenuButton.cpp.o: CMakeFiles/animations.dir/flags.make
+CMakeFiles/animations.dir/src/game/ui_buttons/MenuButton.cpp.o: ../src/game/ui_buttons/MenuButton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/timers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/animations.dir/src/game/ui_buttons/MenuButton.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/animations.dir/src/game/ui_buttons/MenuButton.cpp.o -c /home/smeshan/workspace/timers/src/game/ui_buttons/MenuButton.cpp
+
+CMakeFiles/animations.dir/src/game/ui_buttons/MenuButton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/animations.dir/src/game/ui_buttons/MenuButton.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/smeshan/workspace/timers/src/game/ui_buttons/MenuButton.cpp > CMakeFiles/animations.dir/src/game/ui_buttons/MenuButton.cpp.i
+
+CMakeFiles/animations.dir/src/game/ui_buttons/MenuButton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/animations.dir/src/game/ui_buttons/MenuButton.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/timers/src/game/ui_buttons/MenuButton.cpp -o CMakeFiles/animations.dir/src/game/ui_buttons/MenuButton.cpp.s
+
+CMakeFiles/animations.dir/src/game/ui_buttons/MenuButton.cpp.o.requires:
+
+.PHONY : CMakeFiles/animations.dir/src/game/ui_buttons/MenuButton.cpp.o.requires
+
+CMakeFiles/animations.dir/src/game/ui_buttons/MenuButton.cpp.o.provides: CMakeFiles/animations.dir/src/game/ui_buttons/MenuButton.cpp.o.requires
+	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/ui_buttons/MenuButton.cpp.o.provides.build
+.PHONY : CMakeFiles/animations.dir/src/game/ui_buttons/MenuButton.cpp.o.provides
+
+CMakeFiles/animations.dir/src/game/ui_buttons/MenuButton.cpp.o.provides.build: CMakeFiles/animations.dir/src/game/ui_buttons/MenuButton.cpp.o
+
+
+CMakeFiles/animations.dir/src/game/screens/SettingsScreen.cpp.o: CMakeFiles/animations.dir/flags.make
+CMakeFiles/animations.dir/src/game/screens/SettingsScreen.cpp.o: ../src/game/screens/SettingsScreen.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/timers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/animations.dir/src/game/screens/SettingsScreen.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/animations.dir/src/game/screens/SettingsScreen.cpp.o -c /home/smeshan/workspace/timers/src/game/screens/SettingsScreen.cpp
+
+CMakeFiles/animations.dir/src/game/screens/SettingsScreen.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/animations.dir/src/game/screens/SettingsScreen.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/smeshan/workspace/timers/src/game/screens/SettingsScreen.cpp > CMakeFiles/animations.dir/src/game/screens/SettingsScreen.cpp.i
+
+CMakeFiles/animations.dir/src/game/screens/SettingsScreen.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/animations.dir/src/game/screens/SettingsScreen.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/timers/src/game/screens/SettingsScreen.cpp -o CMakeFiles/animations.dir/src/game/screens/SettingsScreen.cpp.s
+
+CMakeFiles/animations.dir/src/game/screens/SettingsScreen.cpp.o.requires:
+
+.PHONY : CMakeFiles/animations.dir/src/game/screens/SettingsScreen.cpp.o.requires
+
+CMakeFiles/animations.dir/src/game/screens/SettingsScreen.cpp.o.provides: CMakeFiles/animations.dir/src/game/screens/SettingsScreen.cpp.o.requires
+	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/screens/SettingsScreen.cpp.o.provides.build
+.PHONY : CMakeFiles/animations.dir/src/game/screens/SettingsScreen.cpp.o.provides
+
+CMakeFiles/animations.dir/src/game/screens/SettingsScreen.cpp.o.provides.build: CMakeFiles/animations.dir/src/game/screens/SettingsScreen.cpp.o
+
+
+CMakeFiles/animations.dir/src/game/screens/MenuScreen.cpp.o: CMakeFiles/animations.dir/flags.make
+CMakeFiles/animations.dir/src/game/screens/MenuScreen.cpp.o: ../src/game/screens/MenuScreen.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/timers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/animations.dir/src/game/screens/MenuScreen.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/animations.dir/src/game/screens/MenuScreen.cpp.o -c /home/smeshan/workspace/timers/src/game/screens/MenuScreen.cpp
+
+CMakeFiles/animations.dir/src/game/screens/MenuScreen.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/animations.dir/src/game/screens/MenuScreen.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/smeshan/workspace/timers/src/game/screens/MenuScreen.cpp > CMakeFiles/animations.dir/src/game/screens/MenuScreen.cpp.i
+
+CMakeFiles/animations.dir/src/game/screens/MenuScreen.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/animations.dir/src/game/screens/MenuScreen.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/timers/src/game/screens/MenuScreen.cpp -o CMakeFiles/animations.dir/src/game/screens/MenuScreen.cpp.s
+
+CMakeFiles/animations.dir/src/game/screens/MenuScreen.cpp.o.requires:
+
+.PHONY : CMakeFiles/animations.dir/src/game/screens/MenuScreen.cpp.o.requires
+
+CMakeFiles/animations.dir/src/game/screens/MenuScreen.cpp.o.provides: CMakeFiles/animations.dir/src/game/screens/MenuScreen.cpp.o.requires
+	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/screens/MenuScreen.cpp.o.provides.build
+.PHONY : CMakeFiles/animations.dir/src/game/screens/MenuScreen.cpp.o.provides
+
+CMakeFiles/animations.dir/src/game/screens/MenuScreen.cpp.o.provides.build: CMakeFiles/animations.dir/src/game/screens/MenuScreen.cpp.o
+
+
+CMakeFiles/animations.dir/src/game/screens/GameScreen.cpp.o: CMakeFiles/animations.dir/flags.make
+CMakeFiles/animations.dir/src/game/screens/GameScreen.cpp.o: ../src/game/screens/GameScreen.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/timers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/animations.dir/src/game/screens/GameScreen.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/animations.dir/src/game/screens/GameScreen.cpp.o -c /home/smeshan/workspace/timers/src/game/screens/GameScreen.cpp
+
+CMakeFiles/animations.dir/src/game/screens/GameScreen.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/animations.dir/src/game/screens/GameScreen.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/smeshan/workspace/timers/src/game/screens/GameScreen.cpp > CMakeFiles/animations.dir/src/game/screens/GameScreen.cpp.i
+
+CMakeFiles/animations.dir/src/game/screens/GameScreen.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/animations.dir/src/game/screens/GameScreen.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/timers/src/game/screens/GameScreen.cpp -o CMakeFiles/animations.dir/src/game/screens/GameScreen.cpp.s
+
+CMakeFiles/animations.dir/src/game/screens/GameScreen.cpp.o.requires:
+
+.PHONY : CMakeFiles/animations.dir/src/game/screens/GameScreen.cpp.o.requires
+
+CMakeFiles/animations.dir/src/game/screens/GameScreen.cpp.o.provides: CMakeFiles/animations.dir/src/game/screens/GameScreen.cpp.o.requires
+	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/screens/GameScreen.cpp.o.provides.build
+.PHONY : CMakeFiles/animations.dir/src/game/screens/GameScreen.cpp.o.provides
+
+CMakeFiles/animations.dir/src/game/screens/GameScreen.cpp.o.provides.build: CMakeFiles/animations.dir/src/game/screens/GameScreen.cpp.o
+
+
 CMakeFiles/animations.dir/src/game/entities/SettingsScreen.cpp.o: CMakeFiles/animations.dir/flags.make
 CMakeFiles/animations.dir/src/game/entities/SettingsScreen.cpp.o: ../src/game/entities/SettingsScreen.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/animations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/animations.dir/src/game/entities/SettingsScreen.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/animations.dir/src/game/entities/SettingsScreen.cpp.o -c /home/smeshan/workspace/animations/src/game/entities/SettingsScreen.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/timers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/animations.dir/src/game/entities/SettingsScreen.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/animations.dir/src/game/entities/SettingsScreen.cpp.o -c /home/smeshan/workspace/timers/src/game/entities/SettingsScreen.cpp
 
 CMakeFiles/animations.dir/src/game/entities/SettingsScreen.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/animations.dir/src/game/entities/SettingsScreen.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/smeshan/workspace/animations/src/game/entities/SettingsScreen.cpp > CMakeFiles/animations.dir/src/game/entities/SettingsScreen.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/smeshan/workspace/timers/src/game/entities/SettingsScreen.cpp > CMakeFiles/animations.dir/src/game/entities/SettingsScreen.cpp.i
 
 CMakeFiles/animations.dir/src/game/entities/SettingsScreen.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/animations.dir/src/game/entities/SettingsScreen.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/animations/src/game/entities/SettingsScreen.cpp -o CMakeFiles/animations.dir/src/game/entities/SettingsScreen.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/timers/src/game/entities/SettingsScreen.cpp -o CMakeFiles/animations.dir/src/game/entities/SettingsScreen.cpp.s
 
 CMakeFiles/animations.dir/src/game/entities/SettingsScreen.cpp.o.requires:
 
@@ -227,16 +419,16 @@ CMakeFiles/animations.dir/src/game/entities/SettingsScreen.cpp.o.provides.build:
 
 CMakeFiles/animations.dir/src/game/entities/Hero.cpp.o: CMakeFiles/animations.dir/flags.make
 CMakeFiles/animations.dir/src/game/entities/Hero.cpp.o: ../src/game/entities/Hero.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/animations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/animations.dir/src/game/entities/Hero.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/animations.dir/src/game/entities/Hero.cpp.o -c /home/smeshan/workspace/animations/src/game/entities/Hero.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/timers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/animations.dir/src/game/entities/Hero.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/animations.dir/src/game/entities/Hero.cpp.o -c /home/smeshan/workspace/timers/src/game/entities/Hero.cpp
 
 CMakeFiles/animations.dir/src/game/entities/Hero.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/animations.dir/src/game/entities/Hero.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/smeshan/workspace/animations/src/game/entities/Hero.cpp > CMakeFiles/animations.dir/src/game/entities/Hero.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/smeshan/workspace/timers/src/game/entities/Hero.cpp > CMakeFiles/animations.dir/src/game/entities/Hero.cpp.i
 
 CMakeFiles/animations.dir/src/game/entities/Hero.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/animations.dir/src/game/entities/Hero.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/animations/src/game/entities/Hero.cpp -o CMakeFiles/animations.dir/src/game/entities/Hero.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/timers/src/game/entities/Hero.cpp -o CMakeFiles/animations.dir/src/game/entities/Hero.cpp.s
 
 CMakeFiles/animations.dir/src/game/entities/Hero.cpp.o.requires:
 
@@ -251,16 +443,16 @@ CMakeFiles/animations.dir/src/game/entities/Hero.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/animations.dir/src/engine/Engine.cpp.o: CMakeFiles/animations.dir/flags.make
 CMakeFiles/animations.dir/src/engine/Engine.cpp.o: ../src/engine/Engine.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/animations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/animations.dir/src/engine/Engine.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/animations.dir/src/engine/Engine.cpp.o -c /home/smeshan/workspace/animations/src/engine/Engine.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/timers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/animations.dir/src/engine/Engine.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/animations.dir/src/engine/Engine.cpp.o -c /home/smeshan/workspace/timers/src/engine/Engine.cpp
 
 CMakeFiles/animations.dir/src/engine/Engine.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/animations.dir/src/engine/Engine.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/smeshan/workspace/animations/src/engine/Engine.cpp > CMakeFiles/animations.dir/src/engine/Engine.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/smeshan/workspace/timers/src/engine/Engine.cpp > CMakeFiles/animations.dir/src/engine/Engine.cpp.i
 
 CMakeFiles/animations.dir/src/engine/Engine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/animations.dir/src/engine/Engine.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/animations/src/engine/Engine.cpp -o CMakeFiles/animations.dir/src/engine/Engine.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/timers/src/engine/Engine.cpp -o CMakeFiles/animations.dir/src/engine/Engine.cpp.s
 
 CMakeFiles/animations.dir/src/engine/Engine.cpp.o.requires:
 
@@ -275,16 +467,16 @@ CMakeFiles/animations.dir/src/engine/Engine.cpp.o.provides.build: CMakeFiles/ani
 
 CMakeFiles/animations.dir/src/engine/EngineConfigLoader.cpp.o: CMakeFiles/animations.dir/flags.make
 CMakeFiles/animations.dir/src/engine/EngineConfigLoader.cpp.o: ../src/engine/EngineConfigLoader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/animations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/animations.dir/src/engine/EngineConfigLoader.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/animations.dir/src/engine/EngineConfigLoader.cpp.o -c /home/smeshan/workspace/animations/src/engine/EngineConfigLoader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/timers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/animations.dir/src/engine/EngineConfigLoader.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/animations.dir/src/engine/EngineConfigLoader.cpp.o -c /home/smeshan/workspace/timers/src/engine/EngineConfigLoader.cpp
 
 CMakeFiles/animations.dir/src/engine/EngineConfigLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/animations.dir/src/engine/EngineConfigLoader.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/smeshan/workspace/animations/src/engine/EngineConfigLoader.cpp > CMakeFiles/animations.dir/src/engine/EngineConfigLoader.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/smeshan/workspace/timers/src/engine/EngineConfigLoader.cpp > CMakeFiles/animations.dir/src/engine/EngineConfigLoader.cpp.i
 
 CMakeFiles/animations.dir/src/engine/EngineConfigLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/animations.dir/src/engine/EngineConfigLoader.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/animations/src/engine/EngineConfigLoader.cpp -o CMakeFiles/animations.dir/src/engine/EngineConfigLoader.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/timers/src/engine/EngineConfigLoader.cpp -o CMakeFiles/animations.dir/src/engine/EngineConfigLoader.cpp.s
 
 CMakeFiles/animations.dir/src/engine/EngineConfigLoader.cpp.o.requires:
 
@@ -305,6 +497,14 @@ animations_OBJECTS = \
 "CMakeFiles/animations.dir/src/game/entities/KeyWords.cpp.o" \
 "CMakeFiles/animations.dir/src/game/entities/TextField.cpp.o" \
 "CMakeFiles/animations.dir/src/game/entities/TextLine.cpp.o" \
+"CMakeFiles/animations.dir/src/game/entities/building/FloorTile.cpp.o" \
+"CMakeFiles/animations.dir/src/game/entities/building/Building.cpp.o" \
+"CMakeFiles/animations.dir/src/game/animations/BuildingLigth.cpp.o" \
+"CMakeFiles/animations.dir/src/game/ui_buttons/TestButton.cpp.o" \
+"CMakeFiles/animations.dir/src/game/ui_buttons/MenuButton.cpp.o" \
+"CMakeFiles/animations.dir/src/game/screens/SettingsScreen.cpp.o" \
+"CMakeFiles/animations.dir/src/game/screens/MenuScreen.cpp.o" \
+"CMakeFiles/animations.dir/src/game/screens/GameScreen.cpp.o" \
 "CMakeFiles/animations.dir/src/game/entities/SettingsScreen.cpp.o" \
 "CMakeFiles/animations.dir/src/game/entities/Hero.cpp.o" \
 "CMakeFiles/animations.dir/src/engine/Engine.cpp.o" \
@@ -319,6 +519,14 @@ animations: CMakeFiles/animations.dir/src/game/entities/Console.cpp.o
 animations: CMakeFiles/animations.dir/src/game/entities/KeyWords.cpp.o
 animations: CMakeFiles/animations.dir/src/game/entities/TextField.cpp.o
 animations: CMakeFiles/animations.dir/src/game/entities/TextLine.cpp.o
+animations: CMakeFiles/animations.dir/src/game/entities/building/FloorTile.cpp.o
+animations: CMakeFiles/animations.dir/src/game/entities/building/Building.cpp.o
+animations: CMakeFiles/animations.dir/src/game/animations/BuildingLigth.cpp.o
+animations: CMakeFiles/animations.dir/src/game/ui_buttons/TestButton.cpp.o
+animations: CMakeFiles/animations.dir/src/game/ui_buttons/MenuButton.cpp.o
+animations: CMakeFiles/animations.dir/src/game/screens/SettingsScreen.cpp.o
+animations: CMakeFiles/animations.dir/src/game/screens/MenuScreen.cpp.o
+animations: CMakeFiles/animations.dir/src/game/screens/GameScreen.cpp.o
 animations: CMakeFiles/animations.dir/src/game/entities/SettingsScreen.cpp.o
 animations: CMakeFiles/animations.dir/src/game/entities/Hero.cpp.o
 animations: CMakeFiles/animations.dir/src/engine/Engine.cpp.o
@@ -333,7 +541,7 @@ animations: /usr/lib/x86_64-linux-gnu/libSDL2_image.so
 animations: /usr/lib/x86_64-linux-gnu/libSDL2_ttf.so
 animations: /usr/lib/x86_64-linux-gnu/libSDL2_mixer.so
 animations: CMakeFiles/animations.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/smeshan/workspace/animations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable animations"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/smeshan/workspace/timers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable animations"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/animations.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -347,6 +555,14 @@ CMakeFiles/animations.dir/requires: CMakeFiles/animations.dir/src/game/entities/
 CMakeFiles/animations.dir/requires: CMakeFiles/animations.dir/src/game/entities/KeyWords.cpp.o.requires
 CMakeFiles/animations.dir/requires: CMakeFiles/animations.dir/src/game/entities/TextField.cpp.o.requires
 CMakeFiles/animations.dir/requires: CMakeFiles/animations.dir/src/game/entities/TextLine.cpp.o.requires
+CMakeFiles/animations.dir/requires: CMakeFiles/animations.dir/src/game/entities/building/FloorTile.cpp.o.requires
+CMakeFiles/animations.dir/requires: CMakeFiles/animations.dir/src/game/entities/building/Building.cpp.o.requires
+CMakeFiles/animations.dir/requires: CMakeFiles/animations.dir/src/game/animations/BuildingLigth.cpp.o.requires
+CMakeFiles/animations.dir/requires: CMakeFiles/animations.dir/src/game/ui_buttons/TestButton.cpp.o.requires
+CMakeFiles/animations.dir/requires: CMakeFiles/animations.dir/src/game/ui_buttons/MenuButton.cpp.o.requires
+CMakeFiles/animations.dir/requires: CMakeFiles/animations.dir/src/game/screens/SettingsScreen.cpp.o.requires
+CMakeFiles/animations.dir/requires: CMakeFiles/animations.dir/src/game/screens/MenuScreen.cpp.o.requires
+CMakeFiles/animations.dir/requires: CMakeFiles/animations.dir/src/game/screens/GameScreen.cpp.o.requires
 CMakeFiles/animations.dir/requires: CMakeFiles/animations.dir/src/game/entities/SettingsScreen.cpp.o.requires
 CMakeFiles/animations.dir/requires: CMakeFiles/animations.dir/src/game/entities/Hero.cpp.o.requires
 CMakeFiles/animations.dir/requires: CMakeFiles/animations.dir/src/engine/Engine.cpp.o.requires
@@ -359,6 +575,6 @@ CMakeFiles/animations.dir/clean:
 .PHONY : CMakeFiles/animations.dir/clean
 
 CMakeFiles/animations.dir/depend:
-	cd /home/smeshan/workspace/animations/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/smeshan/workspace/animations /home/smeshan/workspace/animations /home/smeshan/workspace/animations/build /home/smeshan/workspace/animations/build /home/smeshan/workspace/animations/build/CMakeFiles/animations.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/smeshan/workspace/timers/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/smeshan/workspace/timers /home/smeshan/workspace/timers /home/smeshan/workspace/timers/build /home/smeshan/workspace/timers/build /home/smeshan/workspace/timers/build/CMakeFiles/animations.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/animations.dir/depend
 

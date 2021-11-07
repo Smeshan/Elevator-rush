@@ -84,7 +84,6 @@ vector
 utils/drawing/Rectangle.h
 ../utils/include/utils/tools/config/utils/drawing/Rectangle.h
 
-<<<<<<< HEAD
 /home/smeshan/workspace/timers/utils/src/drawing/Color.cpp
 utils/drawing/Color.h
 /home/smeshan/workspace/timers/utils/src/drawing/utils/drawing/Color.h
@@ -104,33 +103,11 @@ utils/drawing/Rectangle.h
 /home/smeshan/workspace/timers/utils/src/thread/ThreadUtils.cpp
 utils/thread/ThreadUtils.h
 /home/smeshan/workspace/timers/utils/src/thread/utils/thread/ThreadUtils.h
-=======
-/home/smeshan/workspace/animations/utils/src/drawing/Color.cpp
-utils/drawing/Color.h
-/home/smeshan/workspace/animations/utils/src/drawing/utils/drawing/Color.h
-
-/home/smeshan/workspace/animations/utils/src/drawing/DrawParams.cpp
-utils/drawing/DrawParams.h
-/home/smeshan/workspace/animations/utils/src/drawing/utils/drawing/DrawParams.h
-
-/home/smeshan/workspace/animations/utils/src/drawing/Point.cpp
-utils/drawing/Point.h
-/home/smeshan/workspace/animations/utils/src/drawing/utils/drawing/Point.h
-
-/home/smeshan/workspace/animations/utils/src/drawing/Rectangle.cpp
-utils/drawing/Rectangle.h
-/home/smeshan/workspace/animations/utils/src/drawing/utils/drawing/Rectangle.h
-
-/home/smeshan/workspace/animations/utils/src/thread/ThreadUtils.cpp
-utils/thread/ThreadUtils.h
-/home/smeshan/workspace/animations/utils/src/thread/utils/thread/ThreadUtils.h
->>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 windows.h
 -
 thread
 -
 
-<<<<<<< HEAD
 /home/smeshan/workspace/timers/utils/src/time/Time.cpp
 utils/time/Time.h
 /home/smeshan/workspace/timers/utils/src/time/utils/time/Time.h
@@ -138,15 +115,6 @@ utils/time/Time.h
 /home/smeshan/workspace/timers/utils/src/tools/AutoResLoader.cpp
 utils/tools/AutoResLoader.h
 /home/smeshan/workspace/timers/utils/src/tools/utils/tools/AutoResLoader.h
-=======
-/home/smeshan/workspace/animations/utils/src/time/Time.cpp
-utils/time/Time.h
-/home/smeshan/workspace/animations/utils/src/time/utils/time/Time.h
-
-/home/smeshan/workspace/animations/utils/src/tools/AutoResLoader.cpp
-utils/tools/AutoResLoader.h
-/home/smeshan/workspace/animations/utils/src/tools/utils/tools/AutoResLoader.h
->>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 dirent.h
 -
 sstream
@@ -156,33 +124,19 @@ iostream
 cstdint
 -
 utils/common/CommonPaths.h
-<<<<<<< HEAD
 /home/smeshan/workspace/timers/utils/src/tools/utils/common/CommonPaths.h
 
 /home/smeshan/workspace/timers/utils/src/tools/ConfigExtractor.cpp
 utils/tools/ConfigExtractor.h
 /home/smeshan/workspace/timers/utils/src/tools/utils/tools/ConfigExtractor.h
-=======
-/home/smeshan/workspace/animations/utils/src/tools/utils/common/CommonPaths.h
-
-/home/smeshan/workspace/animations/utils/src/tools/ConfigExtractor.cpp
-utils/tools/ConfigExtractor.h
-/home/smeshan/workspace/animations/utils/src/tools/utils/tools/ConfigExtractor.h
->>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 iostream
 -
 fstream
 -
 
-<<<<<<< HEAD
 /home/smeshan/workspace/timers/utils/src/tools/ConfigProcessor.cpp
 utils/tools/ConfigProcessor.h
 /home/smeshan/workspace/timers/utils/src/tools/utils/tools/ConfigProcessor.h
-=======
-/home/smeshan/workspace/animations/utils/src/tools/ConfigProcessor.cpp
-utils/tools/ConfigProcessor.h
-/home/smeshan/workspace/animations/utils/src/tools/utils/tools/ConfigProcessor.h
->>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 string
 -
 iostream
@@ -190,7 +144,6 @@ iostream
 sstream
 -
 utils/tools/config/ImageConfig.h
-<<<<<<< HEAD
 /home/smeshan/workspace/timers/utils/src/tools/utils/tools/config/ImageConfig.h
 utils/tools/ConfigValidator.h
 /home/smeshan/workspace/timers/utils/src/tools/utils/tools/ConfigValidator.h
@@ -200,17 +153,6 @@ utils/tools/Resource.h
 /home/smeshan/workspace/timers/utils/src/tools/ConfigValidator.cpp
 utils/tools/ConfigValidator.h
 /home/smeshan/workspace/timers/utils/src/tools/utils/tools/ConfigValidator.h
-=======
-/home/smeshan/workspace/animations/utils/src/tools/utils/tools/config/ImageConfig.h
-utils/tools/ConfigValidator.h
-/home/smeshan/workspace/animations/utils/src/tools/utils/tools/ConfigValidator.h
-utils/tools/Resource.h
-/home/smeshan/workspace/animations/utils/src/tools/utils/tools/Resource.h
-
-/home/smeshan/workspace/animations/utils/src/tools/ConfigValidator.cpp
-utils/tools/ConfigValidator.h
-/home/smeshan/workspace/animations/utils/src/tools/utils/tools/ConfigValidator.h
->>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 iostream
 -
 

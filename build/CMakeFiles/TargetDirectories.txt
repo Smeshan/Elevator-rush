@@ -1,6 +1,5 @@
-<<<<<<< HEAD
 /home/smeshan/workspace/timers/build/CMakeFiles/rebuild_cache.dir
-/home/smeshan/workspace/timers/build/CMakeFiles/timers.dir
+/home/smeshan/workspace/timers/build/CMakeFiles/animations.dir
 /home/smeshan/workspace/timers/build/CMakeFiles/edit_cache.dir
 /home/smeshan/workspace/timers/build/utils/CMakeFiles/rebuild_cache.dir
 /home/smeshan/workspace/timers/build/utils/CMakeFiles/utils.dir
@@ -11,17 +10,3 @@
 /home/smeshan/workspace/timers/build/manager_utils/CMakeFiles/rebuild_cache.dir
 /home/smeshan/workspace/timers/build/manager_utils/CMakeFiles/manager_utils.dir
 /home/smeshan/workspace/timers/build/manager_utils/CMakeFiles/edit_cache.dir
-=======
-/home/smeshan/workspace/animations/build/CMakeFiles/rebuild_cache.dir
-/home/smeshan/workspace/animations/build/CMakeFiles/animations.dir
-/home/smeshan/workspace/animations/build/CMakeFiles/edit_cache.dir
-/home/smeshan/workspace/animations/build/utils/CMakeFiles/rebuild_cache.dir
-/home/smeshan/workspace/animations/build/utils/CMakeFiles/utils.dir
-/home/smeshan/workspace/animations/build/utils/CMakeFiles/edit_cache.dir
-/home/smeshan/workspace/animations/build/sdl_utils/CMakeFiles/rebuild_cache.dir
-/home/smeshan/workspace/animations/build/sdl_utils/CMakeFiles/sdl_utils.dir
-/home/smeshan/workspace/animations/build/sdl_utils/CMakeFiles/edit_cache.dir
-/home/smeshan/workspace/animations/build/manager_utils/CMakeFiles/rebuild_cache.dir
-/home/smeshan/workspace/animations/build/manager_utils/CMakeFiles/manager_utils.dir
-/home/smeshan/workspace/animations/build/manager_utils/CMakeFiles/edit_cache.dir
->>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
