@@ -48,10 +48,17 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/smeshan/workspace/timers
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/smeshan/workspace/timers/build
+=======
+CMAKE_SOURCE_DIR = /home/smeshan/workspace/animations
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/smeshan/workspace/animations/build
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +87,24 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/smeshan/workspace/timers/build/CMakeFiles /home/smeshan/workspace/timers/build/sdl_utils/CMakeFiles/progress.marks
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f CMakeFiles/Makefile2 sdl_utils/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/smeshan/workspace/timers/build/CMakeFiles 0
+=======
+	cd /home/smeshan/workspace/animations/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/smeshan/workspace/animations/build/CMakeFiles /home/smeshan/workspace/animations/build/sdl_utils/CMakeFiles/progress.marks
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f CMakeFiles/Makefile2 sdl_utils/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/smeshan/workspace/animations/build/CMakeFiles 0
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : all
 
 # The main clean target
 clean:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f CMakeFiles/Makefile2 sdl_utils/clean
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f CMakeFiles/Makefile2 sdl_utils/clean
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +114,38 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f CMakeFiles/Makefile2 sdl_utils/preinstall
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f CMakeFiles/Makefile2 sdl_utils/preinstall
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f CMakeFiles/Makefile2 sdl_utils/preinstall
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f CMakeFiles/Makefile2 sdl_utils/preinstall
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+=======
+	cd /home/smeshan/workspace/animations/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : depend
 
 # Convenience name for target.
 sdl_utils/CMakeFiles/sdl_utils.dir/rule:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f CMakeFiles/Makefile2 sdl_utils/CMakeFiles/sdl_utils.dir/rule
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f CMakeFiles/Makefile2 sdl_utils/CMakeFiles/sdl_utils.dir/rule
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : sdl_utils/CMakeFiles/sdl_utils.dir/rule
 
 # Convenience name for target.
@@ -122,7 +155,11 @@ sdl_utils: sdl_utils/CMakeFiles/sdl_utils.dir/rule
 
 # fast build rule for target.
 sdl_utils/fast:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/build
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/build
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : sdl_utils/fast
 
 src/InputEvent.o: src/InputEvent.cpp.o
@@ -131,7 +168,11 @@ src/InputEvent.o: src/InputEvent.cpp.o
 
 # target to build an object file
 src/InputEvent.cpp.o:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/InputEvent.cpp.o
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/InputEvent.cpp.o
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/InputEvent.cpp.o
 
 src/InputEvent.i: src/InputEvent.cpp.i
@@ -140,7 +181,11 @@ src/InputEvent.i: src/InputEvent.cpp.i
 
 # target to preprocess a source file
 src/InputEvent.cpp.i:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/InputEvent.cpp.i
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/InputEvent.cpp.i
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/InputEvent.cpp.i
 
 src/InputEvent.s: src/InputEvent.cpp.s
@@ -149,7 +194,11 @@ src/InputEvent.s: src/InputEvent.cpp.s
 
 # target to generate assembly for a file
 src/InputEvent.cpp.s:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/InputEvent.cpp.s
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/InputEvent.cpp.s
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/InputEvent.cpp.s
 
 src/Media.o: src/Media.cpp.o
@@ -158,7 +207,11 @@ src/Media.o: src/Media.cpp.o
 
 # target to build an object file
 src/Media.cpp.o:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/Media.cpp.o
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/Media.cpp.o
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/Media.cpp.o
 
 src/Media.i: src/Media.cpp.i
@@ -167,7 +220,11 @@ src/Media.i: src/Media.cpp.i
 
 # target to preprocess a source file
 src/Media.cpp.i:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/Media.cpp.i
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/Media.cpp.i
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/Media.cpp.i
 
 src/Media.s: src/Media.cpp.s
@@ -176,7 +233,11 @@ src/Media.s: src/Media.cpp.s
 
 # target to generate assembly for a file
 src/Media.cpp.s:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/Media.cpp.s
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/Media.cpp.s
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/Media.cpp.s
 
 src/Monitor.o: src/Monitor.cpp.o
@@ -185,7 +246,11 @@ src/Monitor.o: src/Monitor.cpp.o
 
 # target to build an object file
 src/Monitor.cpp.o:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/Monitor.cpp.o
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/Monitor.cpp.o
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/Monitor.cpp.o
 
 src/Monitor.i: src/Monitor.cpp.i
@@ -194,7 +259,11 @@ src/Monitor.i: src/Monitor.cpp.i
 
 # target to preprocess a source file
 src/Monitor.cpp.i:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/Monitor.cpp.i
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/Monitor.cpp.i
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/Monitor.cpp.i
 
 src/Monitor.s: src/Monitor.cpp.s
@@ -203,7 +272,11 @@ src/Monitor.s: src/Monitor.cpp.s
 
 # target to generate assembly for a file
 src/Monitor.cpp.s:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/Monitor.cpp.s
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/Monitor.cpp.s
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/Monitor.cpp.s
 
 src/Renderer.o: src/Renderer.cpp.o
@@ -212,7 +285,11 @@ src/Renderer.o: src/Renderer.cpp.o
 
 # target to build an object file
 src/Renderer.cpp.o:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/Renderer.cpp.o
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/Renderer.cpp.o
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/Renderer.cpp.o
 
 src/Renderer.i: src/Renderer.cpp.i
@@ -221,7 +298,11 @@ src/Renderer.i: src/Renderer.cpp.i
 
 # target to preprocess a source file
 src/Renderer.cpp.i:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/Renderer.cpp.i
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/Renderer.cpp.i
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/Renderer.cpp.i
 
 src/Renderer.s: src/Renderer.cpp.s
@@ -230,7 +311,11 @@ src/Renderer.s: src/Renderer.cpp.s
 
 # target to generate assembly for a file
 src/Renderer.cpp.s:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/Renderer.cpp.s
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/Renderer.cpp.s
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/Renderer.cpp.s
 
 src/SDLLoader.o: src/SDLLoader.cpp.o
@@ -239,7 +324,11 @@ src/SDLLoader.o: src/SDLLoader.cpp.o
 
 # target to build an object file
 src/SDLLoader.cpp.o:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/SDLLoader.cpp.o
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/SDLLoader.cpp.o
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/SDLLoader.cpp.o
 
 src/SDLLoader.i: src/SDLLoader.cpp.i
@@ -248,7 +337,11 @@ src/SDLLoader.i: src/SDLLoader.cpp.i
 
 # target to preprocess a source file
 src/SDLLoader.cpp.i:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/SDLLoader.cpp.i
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/SDLLoader.cpp.i
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/SDLLoader.cpp.i
 
 src/SDLLoader.s: src/SDLLoader.cpp.s
@@ -257,7 +350,11 @@ src/SDLLoader.s: src/SDLLoader.cpp.s
 
 # target to generate assembly for a file
 src/SDLLoader.cpp.s:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/SDLLoader.cpp.s
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/SDLLoader.cpp.s
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/SDLLoader.cpp.s
 
 src/Texture.o: src/Texture.cpp.o
@@ -266,7 +363,11 @@ src/Texture.o: src/Texture.cpp.o
 
 # target to build an object file
 src/Texture.cpp.o:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/Texture.cpp.o
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/Texture.cpp.o
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/Texture.cpp.o
 
 src/Texture.i: src/Texture.cpp.i
@@ -275,7 +376,11 @@ src/Texture.i: src/Texture.cpp.i
 
 # target to preprocess a source file
 src/Texture.cpp.i:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/Texture.cpp.i
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/Texture.cpp.i
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/Texture.cpp.i
 
 src/Texture.s: src/Texture.cpp.s
@@ -284,7 +389,11 @@ src/Texture.s: src/Texture.cpp.s
 
 # target to generate assembly for a file
 src/Texture.cpp.s:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/Texture.cpp.s
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/Texture.cpp.s
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/Texture.cpp.s
 
 src/config/ConfigApplier.o: src/config/ConfigApplier.cpp.o
@@ -293,7 +402,11 @@ src/config/ConfigApplier.o: src/config/ConfigApplier.cpp.o
 
 # target to build an object file
 src/config/ConfigApplier.cpp.o:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/config/ConfigApplier.cpp.o
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/config/ConfigApplier.cpp.o
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/config/ConfigApplier.cpp.o
 
 src/config/ConfigApplier.i: src/config/ConfigApplier.cpp.i
@@ -302,7 +415,11 @@ src/config/ConfigApplier.i: src/config/ConfigApplier.cpp.i
 
 # target to preprocess a source file
 src/config/ConfigApplier.cpp.i:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/config/ConfigApplier.cpp.i
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/config/ConfigApplier.cpp.i
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/config/ConfigApplier.cpp.i
 
 src/config/ConfigApplier.s: src/config/ConfigApplier.cpp.s
@@ -311,7 +428,11 @@ src/config/ConfigApplier.s: src/config/ConfigApplier.cpp.s
 
 # target to generate assembly for a file
 src/config/ConfigApplier.cpp.s:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/config/ConfigApplier.cpp.s
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/config/ConfigApplier.cpp.s
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/config/ConfigApplier.cpp.s
 
 src/containers/ImageContainer.o: src/containers/ImageContainer.cpp.o
@@ -320,7 +441,11 @@ src/containers/ImageContainer.o: src/containers/ImageContainer.cpp.o
 
 # target to build an object file
 src/containers/ImageContainer.cpp.o:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/ImageContainer.cpp.o
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/ImageContainer.cpp.o
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/containers/ImageContainer.cpp.o
 
 src/containers/ImageContainer.i: src/containers/ImageContainer.cpp.i
@@ -329,7 +454,11 @@ src/containers/ImageContainer.i: src/containers/ImageContainer.cpp.i
 
 # target to preprocess a source file
 src/containers/ImageContainer.cpp.i:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/ImageContainer.cpp.i
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/ImageContainer.cpp.i
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/containers/ImageContainer.cpp.i
 
 src/containers/ImageContainer.s: src/containers/ImageContainer.cpp.s
@@ -338,7 +467,11 @@ src/containers/ImageContainer.s: src/containers/ImageContainer.cpp.s
 
 # target to generate assembly for a file
 src/containers/ImageContainer.cpp.s:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/ImageContainer.cpp.s
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/ImageContainer.cpp.s
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/containers/ImageContainer.cpp.s
 
 src/containers/MusicContainer.o: src/containers/MusicContainer.cpp.o
@@ -374,7 +507,11 @@ src/containers/SoundContainer.o: src/containers/SoundContainer.cpp.o
 
 # target to build an object file
 src/containers/SoundContainer.cpp.o:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/SoundContainer.cpp.o
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/SoundContainer.cpp.o
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/containers/SoundContainer.cpp.o
 
 src/containers/SoundContainer.i: src/containers/SoundContainer.cpp.i
@@ -383,7 +520,11 @@ src/containers/SoundContainer.i: src/containers/SoundContainer.cpp.i
 
 # target to preprocess a source file
 src/containers/SoundContainer.cpp.i:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/SoundContainer.cpp.i
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/SoundContainer.cpp.i
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/containers/SoundContainer.cpp.i
 
 src/containers/SoundContainer.s: src/containers/SoundContainer.cpp.s
@@ -392,7 +533,11 @@ src/containers/SoundContainer.s: src/containers/SoundContainer.cpp.s
 
 # target to generate assembly for a file
 src/containers/SoundContainer.cpp.s:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/SoundContainer.cpp.s
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/SoundContainer.cpp.s
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/containers/SoundContainer.cpp.s
 
 src/containers/TextContainer.o: src/containers/TextContainer.cpp.o
@@ -401,7 +546,11 @@ src/containers/TextContainer.o: src/containers/TextContainer.cpp.o
 
 # target to build an object file
 src/containers/TextContainer.cpp.o:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/TextContainer.cpp.o
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/TextContainer.cpp.o
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/containers/TextContainer.cpp.o
 
 src/containers/TextContainer.i: src/containers/TextContainer.cpp.i
@@ -410,7 +559,11 @@ src/containers/TextContainer.i: src/containers/TextContainer.cpp.i
 
 # target to preprocess a source file
 src/containers/TextContainer.cpp.i:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/TextContainer.cpp.i
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/TextContainer.cpp.i
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/containers/TextContainer.cpp.i
 
 src/containers/TextContainer.s: src/containers/TextContainer.cpp.s
@@ -419,7 +572,11 @@ src/containers/TextContainer.s: src/containers/TextContainer.cpp.s
 
 # target to generate assembly for a file
 src/containers/TextContainer.cpp.s:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/TextContainer.cpp.s
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/TextContainer.cpp.s
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/containers/TextContainer.cpp.s
 
 # Help Target
@@ -475,6 +632,10 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+=======
+	cd /home/smeshan/workspace/animations/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : cmake_check_build_system
 

@@ -1,4 +1,5 @@
 Determining if the pthread_create exist failed with the following output:
+<<<<<<< HEAD
 Change Dir: /home/smeshan/workspace/timers/build/CMakeFiles/CMakeTmp
 
 Run Build Command:"/usr/bin/make" "cmTC_26ee2/fast"
@@ -19,6 +20,28 @@ Makefile:126: recipe for target 'cmTC_26ee2/fast' failed
 make: *** [cmTC_26ee2/fast] Error 2
 
 File /home/smeshan/workspace/timers/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+=======
+Change Dir: /home/smeshan/workspace/animations/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c3b44/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c3b44.dir/build.make CMakeFiles/cmTC_c3b44.dir/build
+make[1]: Entering directory '/home/smeshan/workspace/animations/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c3b44.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_c3b44.dir/CheckSymbolExists.cxx.o -c /home/smeshan/workspace/animations/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_c3b44
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c3b44.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_c3b44.dir/CheckSymbolExists.cxx.o  -o cmTC_c3b44 
+CMakeFiles/cmTC_c3b44.dir/CheckSymbolExists.cxx.o: In function `main':
+CheckSymbolExists.cxx:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_c3b44.dir/build.make:97: recipe for target 'cmTC_c3b44' failed
+make[1]: *** [cmTC_c3b44] Error 1
+make[1]: Leaving directory '/home/smeshan/workspace/animations/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_c3b44/fast' failed
+make: *** [cmTC_c3b44/fast] Error 2
+
+File /home/smeshan/workspace/animations/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 /* */
 #include <pthread.h>
 
@@ -34,6 +57,7 @@ int main(int argc, char** argv)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
+<<<<<<< HEAD
 Change Dir: /home/smeshan/workspace/timers/build/CMakeFiles/CMakeTmp
 
 Run Build Command:"/usr/bin/make" "cmTC_0f1db/fast"
@@ -51,5 +75,24 @@ make[1]: *** [cmTC_0f1db] Error 1
 make[1]: Leaving directory '/home/smeshan/workspace/timers/build/CMakeFiles/CMakeTmp'
 Makefile:126: recipe for target 'cmTC_0f1db/fast' failed
 make: *** [cmTC_0f1db/fast] Error 2
+=======
+Change Dir: /home/smeshan/workspace/animations/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e4ecb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e4ecb.dir/build.make CMakeFiles/cmTC_e4ecb.dir/build
+make[1]: Entering directory '/home/smeshan/workspace/animations/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e4ecb.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_e4ecb.dir/CheckFunctionExists.cxx.o -c /home/smeshan/workspace/animations/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_e4ecb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e4ecb.dir/link.txt --verbose=1
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_e4ecb.dir/CheckFunctionExists.cxx.o  -o cmTC_e4ecb -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_e4ecb.dir/build.make:97: recipe for target 'cmTC_e4ecb' failed
+make[1]: *** [cmTC_e4ecb] Error 1
+make[1]: Leaving directory '/home/smeshan/workspace/animations/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_e4ecb/fast' failed
+make: *** [cmTC_e4ecb/fast] Error 2
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 
 

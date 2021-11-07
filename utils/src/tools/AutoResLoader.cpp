@@ -36,6 +36,7 @@ std::vector<Resource> AutoResLoader::getResources(const int32_t folderId) {
     }
     std::vector<Resource> recources;
     switch (folderId) {
+<<<<<<< HEAD
     case IMAGE_FOLDER:
         recources = getResFromFolder(folderPath);
         break;
@@ -46,6 +47,18 @@ std::vector<Resource> AutoResLoader::getResources(const int32_t folderId) {
         recources = getResFromFolder(folderPath);
         break;
     case MUSIC_FOLDER:
+=======
+    case IMAGES:
+        recources = getResFromFolder(folderPath);
+        break;
+    case FONTS:
+        recources = getResFromFolder(folderPath);
+        break;
+    case SOUNDS:
+        recources = getResFromFolder(folderPath);
+        break;
+    case MUSIC:
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
         recources = getResFromFolder(folderPath);
         break;
     default:

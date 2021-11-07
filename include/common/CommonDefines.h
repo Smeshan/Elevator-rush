@@ -23,11 +23,16 @@ namespace TextureId {
         CONSOLE,
         CHECK_BOX,
         UNCHECK_BOX,
+<<<<<<< HEAD
         ELEVATOR_BUTTONS,
         FLOOR_TILE,
         CURSOR,
         BUTTON_START,
         BUTTON_STOP,
+=======
+        RUNNING_GIRL,
+        WHEEL,
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
         //add new here
         RES_COUNT
     };
@@ -38,7 +43,10 @@ namespace FontId {
     enum FontIdKeys {
         TERMINAL_14,
         TERMINAL_20,
+<<<<<<< HEAD
         MENU_40,
+=======
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
         //add new here
         FONT_COUNT
     };
@@ -48,7 +56,10 @@ namespace MediaId {
     enum SoundIds {
         RING_SFX,
         SINGLE_KEY_TYPE,
+<<<<<<< HEAD
         BUTTON_HOVER,
+=======
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
         //add new here
         SOUNDS_COUNT
     };

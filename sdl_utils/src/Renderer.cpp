@@ -88,8 +88,23 @@ void Renderer::setWidgetOpacity(SDL_Texture* texture, int32_t opacity) {
 }
 
 void Renderer::drawImage(const DrawParams& drawParams, SDL_Texture* texture) {
+<<<<<<< HEAD
     if (FULL_OPACITY == drawParams.opacity) {
         drawTextureInternal(drawParams, texture);
+=======
+    const SDL_Rect destRect = { .x = drawParams.pos.x, .y = drawParams.pos.y,
+                                .w = drawParams.width, .h = drawParams.height };
+
+    //std::cerr << "destRect: " << destRect.w << " x " << destRect.h << std::endl;  
+
+    const SDL_Rect* sourceRect =
+        reinterpret_cast<const SDL_Rect*>(&drawParams.frameRect);
+
+    int32_t err = EXIT_SUCCESS;
+    if (FULL_OPACITY != drawParams.opacity) {
+        //TODO SDL_RenderCopyEx with rotation and flipflag
+        err = SDL_RenderCopy(_sdlRenderer, texture, sourceRect, &destRect);
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
     }
     else {
         if (EXIT_SUCCESS != Texture::setAlphaTexture(texture, drawParams.opacity)) {
@@ -111,6 +126,7 @@ void Renderer::drawText(const DrawParams& drawParams, SDL_Texture* texture) {
 void Renderer::drawTextureInternal(const DrawParams& drawParams,
     SDL_Texture* texture) {
     const SDL_Rect destRect = { .x = drawParams.pos.x, .y = drawParams.pos.y,
+<<<<<<< HEAD
                            .w = drawParams.width, .h = drawParams.height };
     const SDL_Rect* sourceRect =
         reinterpret_cast<const SDL_Rect*>(&drawParams.frameRect);
@@ -121,6 +137,13 @@ void Renderer::drawTextureInternal(const DrawParams& drawParams,
     const int32_t err = SDL_RenderCopyEx(_sdlRenderer, texture, sourceRect,
         &destRect, drawParams.rotationAngle, rotPoint,
         static_cast<SDL_RendererFlip>(drawParams.flipType));
+=======
+                                .w = drawParams.width, .h = drawParams.height };
+    const SDL_Rect* sourceRect =
+        reinterpret_cast<const SDL_Rect*>(&drawParams.frameRect);
+
+    int32_t err = SDL_RenderCopy(_sdlRenderer, texture, sourceRect, &destRect);
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 
     if (EXIT_SUCCESS != err) {
         std::cerr << "SDL_RenderCopy() failed to draw widget with resID: "

@@ -77,6 +77,7 @@ std::string TextLine::getLastWord(size_t& begin) const {
 void TextLine::increaseFontSize() {
     _textFontId = FontId::TERMINAL_20;
     _textSize = 20;
+<<<<<<< HEAD
 }
 
 Point TextLine::getLastCharPos() const {
@@ -88,4 +89,6 @@ Point TextLine::getLastCharPos() const {
     pos.x += 12;
     pos.y += 2;
     return pos;
+=======
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 }

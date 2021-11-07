@@ -48,10 +48,17 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/smeshan/workspace/timers
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/smeshan/workspace/timers/build
+=======
+CMAKE_SOURCE_DIR = /home/smeshan/workspace/animations
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/smeshan/workspace/animations/build
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +87,15 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/smeshan/workspace/timers/build/CMakeFiles /home/smeshan/workspace/timers/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/smeshan/workspace/timers/build/CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/smeshan/workspace/animations/build/CMakeFiles /home/smeshan/workspace/animations/build/CMakeFiles/progress.marks
+	$(MAKE) -f CMakeFiles/Makefile2 all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/smeshan/workspace/animations/build/CMakeFiles 0
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : all
 
 # The main clean target
@@ -111,6 +124,7 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+<<<<<<< HEAD
 # Target rules for targets named timers
 
 # Build rule for target.
@@ -122,6 +136,19 @@ timers: cmake_check_build_system
 timers/fast:
 	$(MAKE) -f CMakeFiles/timers.dir/build.make CMakeFiles/timers.dir/build
 .PHONY : timers/fast
+=======
+# Target rules for targets named animations
+
+# Build rule for target.
+animations: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 animations
+.PHONY : animations
+
+# fast build rule for target.
+animations/fast:
+	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/build
+.PHONY : animations/fast
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 
 #=============================================================================
 # Target rules for targets named utils
@@ -168,7 +195,11 @@ src/engine/Engine.o: src/engine/Engine.cpp.o
 
 # target to build an object file
 src/engine/Engine.cpp.o:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles/timers.dir/build.make CMakeFiles/timers.dir/src/engine/Engine.cpp.o
+=======
+	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/engine/Engine.cpp.o
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/engine/Engine.cpp.o
 
 src/engine/Engine.i: src/engine/Engine.cpp.i
@@ -177,7 +208,11 @@ src/engine/Engine.i: src/engine/Engine.cpp.i
 
 # target to preprocess a source file
 src/engine/Engine.cpp.i:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles/timers.dir/build.make CMakeFiles/timers.dir/src/engine/Engine.cpp.i
+=======
+	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/engine/Engine.cpp.i
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/engine/Engine.cpp.i
 
 src/engine/Engine.s: src/engine/Engine.cpp.s
@@ -186,7 +221,11 @@ src/engine/Engine.s: src/engine/Engine.cpp.s
 
 # target to generate assembly for a file
 src/engine/Engine.cpp.s:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles/timers.dir/build.make CMakeFiles/timers.dir/src/engine/Engine.cpp.s
+=======
+	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/engine/Engine.cpp.s
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/engine/Engine.cpp.s
 
 src/engine/EngineConfigLoader.o: src/engine/EngineConfigLoader.cpp.o
@@ -195,7 +234,11 @@ src/engine/EngineConfigLoader.o: src/engine/EngineConfigLoader.cpp.o
 
 # target to build an object file
 src/engine/EngineConfigLoader.cpp.o:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles/timers.dir/build.make CMakeFiles/timers.dir/src/engine/EngineConfigLoader.cpp.o
+=======
+	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/engine/EngineConfigLoader.cpp.o
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/engine/EngineConfigLoader.cpp.o
 
 src/engine/EngineConfigLoader.i: src/engine/EngineConfigLoader.cpp.i
@@ -204,7 +247,11 @@ src/engine/EngineConfigLoader.i: src/engine/EngineConfigLoader.cpp.i
 
 # target to preprocess a source file
 src/engine/EngineConfigLoader.cpp.i:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles/timers.dir/build.make CMakeFiles/timers.dir/src/engine/EngineConfigLoader.cpp.i
+=======
+	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/engine/EngineConfigLoader.cpp.i
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/engine/EngineConfigLoader.cpp.i
 
 src/engine/EngineConfigLoader.s: src/engine/EngineConfigLoader.cpp.s
@@ -213,7 +260,11 @@ src/engine/EngineConfigLoader.s: src/engine/EngineConfigLoader.cpp.s
 
 # target to generate assembly for a file
 src/engine/EngineConfigLoader.cpp.s:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles/timers.dir/build.make CMakeFiles/timers.dir/src/engine/EngineConfigLoader.cpp.s
+=======
+	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/engine/EngineConfigLoader.cpp.s
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/engine/EngineConfigLoader.cpp.s
 
 src/game/Game.o: src/game/Game.cpp.o
@@ -222,7 +273,11 @@ src/game/Game.o: src/game/Game.cpp.o
 
 # target to build an object file
 src/game/Game.cpp.o:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles/timers.dir/build.make CMakeFiles/timers.dir/src/game/Game.cpp.o
+=======
+	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/Game.cpp.o
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/game/Game.cpp.o
 
 src/game/Game.i: src/game/Game.cpp.i
@@ -231,7 +286,11 @@ src/game/Game.i: src/game/Game.cpp.i
 
 # target to preprocess a source file
 src/game/Game.cpp.i:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles/timers.dir/build.make CMakeFiles/timers.dir/src/game/Game.cpp.i
+=======
+	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/Game.cpp.i
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/game/Game.cpp.i
 
 src/game/Game.s: src/game/Game.cpp.s
@@ -240,7 +299,11 @@ src/game/Game.s: src/game/Game.cpp.s
 
 # target to generate assembly for a file
 src/game/Game.cpp.s:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles/timers.dir/build.make CMakeFiles/timers.dir/src/game/Game.cpp.s
+=======
+	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/Game.cpp.s
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/game/Game.cpp.s
 
 src/game/animations/BuildingLigth.o: src/game/animations/BuildingLigth.cpp.o
@@ -276,7 +339,11 @@ src/game/entities/Console.o: src/game/entities/Console.cpp.o
 
 # target to build an object file
 src/game/entities/Console.cpp.o:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles/timers.dir/build.make CMakeFiles/timers.dir/src/game/entities/Console.cpp.o
+=======
+	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/Console.cpp.o
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/game/entities/Console.cpp.o
 
 src/game/entities/Console.i: src/game/entities/Console.cpp.i
@@ -285,7 +352,11 @@ src/game/entities/Console.i: src/game/entities/Console.cpp.i
 
 # target to preprocess a source file
 src/game/entities/Console.cpp.i:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles/timers.dir/build.make CMakeFiles/timers.dir/src/game/entities/Console.cpp.i
+=======
+	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/Console.cpp.i
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/game/entities/Console.cpp.i
 
 src/game/entities/Console.s: src/game/entities/Console.cpp.s
@@ -294,8 +365,39 @@ src/game/entities/Console.s: src/game/entities/Console.cpp.s
 
 # target to generate assembly for a file
 src/game/entities/Console.cpp.s:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles/timers.dir/build.make CMakeFiles/timers.dir/src/game/entities/Console.cpp.s
+=======
+	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/Console.cpp.s
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/game/entities/Console.cpp.s
+
+src/game/entities/Hero.o: src/game/entities/Hero.cpp.o
+
+.PHONY : src/game/entities/Hero.o
+
+# target to build an object file
+src/game/entities/Hero.cpp.o:
+	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/Hero.cpp.o
+.PHONY : src/game/entities/Hero.cpp.o
+
+src/game/entities/Hero.i: src/game/entities/Hero.cpp.i
+
+.PHONY : src/game/entities/Hero.i
+
+# target to preprocess a source file
+src/game/entities/Hero.cpp.i:
+	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/Hero.cpp.i
+.PHONY : src/game/entities/Hero.cpp.i
+
+src/game/entities/Hero.s: src/game/entities/Hero.cpp.s
+
+.PHONY : src/game/entities/Hero.s
+
+# target to generate assembly for a file
+src/game/entities/Hero.cpp.s:
+	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/Hero.cpp.s
+.PHONY : src/game/entities/Hero.cpp.s
 
 src/game/entities/KeyWords.o: src/game/entities/KeyWords.cpp.o
 
@@ -303,7 +405,11 @@ src/game/entities/KeyWords.o: src/game/entities/KeyWords.cpp.o
 
 # target to build an object file
 src/game/entities/KeyWords.cpp.o:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles/timers.dir/build.make CMakeFiles/timers.dir/src/game/entities/KeyWords.cpp.o
+=======
+	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/KeyWords.cpp.o
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/game/entities/KeyWords.cpp.o
 
 src/game/entities/KeyWords.i: src/game/entities/KeyWords.cpp.i
@@ -312,7 +418,11 @@ src/game/entities/KeyWords.i: src/game/entities/KeyWords.cpp.i
 
 # target to preprocess a source file
 src/game/entities/KeyWords.cpp.i:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles/timers.dir/build.make CMakeFiles/timers.dir/src/game/entities/KeyWords.cpp.i
+=======
+	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/KeyWords.cpp.i
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/game/entities/KeyWords.cpp.i
 
 src/game/entities/KeyWords.s: src/game/entities/KeyWords.cpp.s
@@ -321,8 +431,39 @@ src/game/entities/KeyWords.s: src/game/entities/KeyWords.cpp.s
 
 # target to generate assembly for a file
 src/game/entities/KeyWords.cpp.s:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles/timers.dir/build.make CMakeFiles/timers.dir/src/game/entities/KeyWords.cpp.s
+=======
+	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/KeyWords.cpp.s
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/game/entities/KeyWords.cpp.s
+
+src/game/entities/SettingsScreen.o: src/game/entities/SettingsScreen.cpp.o
+
+.PHONY : src/game/entities/SettingsScreen.o
+
+# target to build an object file
+src/game/entities/SettingsScreen.cpp.o:
+	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/SettingsScreen.cpp.o
+.PHONY : src/game/entities/SettingsScreen.cpp.o
+
+src/game/entities/SettingsScreen.i: src/game/entities/SettingsScreen.cpp.i
+
+.PHONY : src/game/entities/SettingsScreen.i
+
+# target to preprocess a source file
+src/game/entities/SettingsScreen.cpp.i:
+	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/SettingsScreen.cpp.i
+.PHONY : src/game/entities/SettingsScreen.cpp.i
+
+src/game/entities/SettingsScreen.s: src/game/entities/SettingsScreen.cpp.s
+
+.PHONY : src/game/entities/SettingsScreen.s
+
+# target to generate assembly for a file
+src/game/entities/SettingsScreen.cpp.s:
+	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/SettingsScreen.cpp.s
+.PHONY : src/game/entities/SettingsScreen.cpp.s
 
 src/game/entities/TextField.o: src/game/entities/TextField.cpp.o
 
@@ -330,7 +471,11 @@ src/game/entities/TextField.o: src/game/entities/TextField.cpp.o
 
 # target to build an object file
 src/game/entities/TextField.cpp.o:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles/timers.dir/build.make CMakeFiles/timers.dir/src/game/entities/TextField.cpp.o
+=======
+	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/TextField.cpp.o
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/game/entities/TextField.cpp.o
 
 src/game/entities/TextField.i: src/game/entities/TextField.cpp.i
@@ -339,7 +484,11 @@ src/game/entities/TextField.i: src/game/entities/TextField.cpp.i
 
 # target to preprocess a source file
 src/game/entities/TextField.cpp.i:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles/timers.dir/build.make CMakeFiles/timers.dir/src/game/entities/TextField.cpp.i
+=======
+	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/TextField.cpp.i
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/game/entities/TextField.cpp.i
 
 src/game/entities/TextField.s: src/game/entities/TextField.cpp.s
@@ -348,7 +497,11 @@ src/game/entities/TextField.s: src/game/entities/TextField.cpp.s
 
 # target to generate assembly for a file
 src/game/entities/TextField.cpp.s:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles/timers.dir/build.make CMakeFiles/timers.dir/src/game/entities/TextField.cpp.s
+=======
+	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/TextField.cpp.s
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/game/entities/TextField.cpp.s
 
 src/game/entities/TextLine.o: src/game/entities/TextLine.cpp.o
@@ -357,7 +510,11 @@ src/game/entities/TextLine.o: src/game/entities/TextLine.cpp.o
 
 # target to build an object file
 src/game/entities/TextLine.cpp.o:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles/timers.dir/build.make CMakeFiles/timers.dir/src/game/entities/TextLine.cpp.o
+=======
+	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/TextLine.cpp.o
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/game/entities/TextLine.cpp.o
 
 src/game/entities/TextLine.i: src/game/entities/TextLine.cpp.i
@@ -366,7 +523,11 @@ src/game/entities/TextLine.i: src/game/entities/TextLine.cpp.i
 
 # target to preprocess a source file
 src/game/entities/TextLine.cpp.i:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles/timers.dir/build.make CMakeFiles/timers.dir/src/game/entities/TextLine.cpp.i
+=======
+	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/TextLine.cpp.i
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/game/entities/TextLine.cpp.i
 
 src/game/entities/TextLine.s: src/game/entities/TextLine.cpp.s
@@ -375,7 +536,11 @@ src/game/entities/TextLine.s: src/game/entities/TextLine.cpp.s
 
 # target to generate assembly for a file
 src/game/entities/TextLine.cpp.s:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles/timers.dir/build.make CMakeFiles/timers.dir/src/game/entities/TextLine.cpp.s
+=======
+	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/TextLine.cpp.s
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/game/entities/TextLine.cpp.s
 
 src/game/entities/building/Building.o: src/game/entities/building/Building.cpp.o
@@ -573,7 +738,11 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles/timers.dir/build.make CMakeFiles/timers.dir/src/main.cpp.o
+=======
+	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/main.cpp.o
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -582,7 +751,11 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles/timers.dir/build.make CMakeFiles/timers.dir/src/main.cpp.i
+=======
+	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/main.cpp.i
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -591,7 +764,11 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles/timers.dir/build.make CMakeFiles/timers.dir/src/main.cpp.s
+=======
+	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/main.cpp.s
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -601,7 +778,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+<<<<<<< HEAD
 	@echo "... timers"
+=======
+	@echo "... animations"
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 	@echo "... edit_cache"
 	@echo "... utils"
 	@echo "... sdl_utils"
@@ -621,9 +802,15 @@ help:
 	@echo "... src/game/entities/Console.o"
 	@echo "... src/game/entities/Console.i"
 	@echo "... src/game/entities/Console.s"
+	@echo "... src/game/entities/Hero.o"
+	@echo "... src/game/entities/Hero.i"
+	@echo "... src/game/entities/Hero.s"
 	@echo "... src/game/entities/KeyWords.o"
 	@echo "... src/game/entities/KeyWords.i"
 	@echo "... src/game/entities/KeyWords.s"
+	@echo "... src/game/entities/SettingsScreen.o"
+	@echo "... src/game/entities/SettingsScreen.i"
+	@echo "... src/game/entities/SettingsScreen.s"
 	@echo "... src/game/entities/TextField.o"
 	@echo "... src/game/entities/TextField.i"
 	@echo "... src/game/entities/TextField.s"

@@ -27,6 +27,7 @@ static void populateImageContainerConfig(ImageContainerConfig& cfg) {
     AutoResLoader resLoader;
     resLoader.init();
 
+<<<<<<< HEAD
     const std::vector<Resource> imgFiles = resLoader.getResources(IMAGE_FOLDER);
     std::vector<ImageConfig> imgConfigs = ConfigProcessor::processImageFiles(imgFiles);
 
@@ -35,15 +36,31 @@ static void populateImageContainerConfig(ImageContainerConfig& cfg) {
     }
 
     /* for (const auto& image : cfg.imageConfigs) {
+=======
+    const std::vector<Resource> imgFiles = resLoader.getResources(IMAGES);
+    const std::vector<ImageConfig> imgConfigs = ConfigProcessor::processImageFiles(imgFiles);
+
+    for (const auto& config : imgConfigs) {
+        cfg.imageConfigs.insert(std::make_pair(config.id, config));
+        //emplace
+    }
+
+    for (const auto& image : cfg.imageConfigs) {
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
         std::cerr << "File loaded -> ID:" << image.second.id << " Name: "
             << image.second.name << " Location: " << image.second.location << " Width: "
             << image.second.frames[0].w << " Height: " << image.second.frames[0].h
             << " Frames: " << image.second.framesCount << std::endl;
+<<<<<<< HEAD
     } */
+=======
+    }
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 }
 
 static void populateTextContainerConfig(TextContainerConfig& cfg) {
     FontConfig fontConfig;
+<<<<<<< HEAD
     fontConfig.location = TERMINAL_FONT_PATH;
     fontConfig.fontSize = 14;
     cfg.fontConfigs.insert(std::make_pair(FontId::TERMINAL_14, fontConfig));
@@ -55,6 +72,15 @@ static void populateTextContainerConfig(TextContainerConfig& cfg) {
     fontConfig.location = MENU_FONT_PATH;
     fontConfig.fontSize = 40;
     cfg.fontConfigs.insert(std::make_pair(FontId::MENU_40, fontConfig));
+=======
+    fontConfig.location = FONT_FILE;
+    fontConfig.fontSize = 14;
+    cfg.fontConfigs.insert(std::make_pair(FontId::TERMINAL_14, fontConfig));
+
+    fontConfig.location = FONT_FILE;
+    fontConfig.fontSize = 20;
+    cfg.fontConfigs.insert(std::make_pair(FontId::TERMINAL_20, fontConfig));
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 }
 
 static void populateSoundContainerConfig(SoundContainerConfig& cfg) {
@@ -99,8 +125,13 @@ static void populateManagerHandlerConfig(ManagerHandlerConfig& outConfig) {
 }
 
 // GAME
+<<<<<<< HEAD
 static void populateGameConfig(GameConfig& outConfig) {
     outConfig.movingUpAndDownTimerId = TimerId::BUUILDING_LIGHT_UPDOWN;
+=======
+static void populateGameConfig([[maybe_unused]] GameConfig& outConfig) {
+    //empty
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 }
 
 EngineConfig EngineConfigLoader::loadConfig() {

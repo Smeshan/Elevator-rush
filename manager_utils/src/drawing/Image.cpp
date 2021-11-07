@@ -25,7 +25,11 @@ void Image::create(int32_t resId, const Point& pos) {
     }
     const Frames& frames = gRsrcMgr->getImageFrame(resId);
     const auto& firstFrame = frames.front();
+<<<<<<< HEAD
     _maxFrames = static_cast<int32_t>(frames.size());
+=======
+    
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
     _drawParams.resId = resId;
     _drawParams.frameRect = firstFrame;
     _drawParams.width = firstFrame.w;
@@ -59,15 +63,19 @@ int32_t Image::getFrame() const {
 
 void Image::nextFrame() {
     _currFrame++;
+<<<<<<< HEAD
     if (_currFrame == _maxFrames) {
         _currFrame = 0;
     }
     const Frames& frames = gRsrcMgr->getImageFrame(_drawParams.resId);
     _drawParams.frameRect = frames[_currFrame];
+=======
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 }
 
 void Image::prevFrame() {
     _currFrame--;
+<<<<<<< HEAD
     if (_currFrame < 0) {
         _currFrame = _maxFrames - 1;
     }
@@ -84,4 +92,12 @@ void Image::setFrame(int32_t frameIndx) {
     _drawParams.frameRect = frames[frameIndx];
 
     _currFrame = frameIndx;
+=======
+}
+
+void Image::setFrame(int32_t frameIndx) {
+    if (frameIndx >= 0 && frameIndx < _maxFrames) {
+        _currFrame = frameIndx;
+    }
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 }

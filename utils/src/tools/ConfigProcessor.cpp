@@ -71,7 +71,10 @@ std::vector<ImageConfig> ConfigProcessor::processImageFiles(
             //if there is no frames or zero frames in the file name
             info.frames.emplace_back(0, 0, info.width, info.height);
         }
+<<<<<<< HEAD
         
+=======
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
         configs.push_back(info);
     }
     return configs;

@@ -54,12 +54,15 @@ cstdlib
 string
 -
 utils/drawing/Point.h
+<<<<<<< HEAD
 -
 
 ../sdl_utils/include/sdl_utils/config/MusicContainerConfig.h
 cstdint
 -
 unordered_map
+=======
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 -
 
 ../sdl_utils/include/sdl_utils/config/SoundContainerConfig.h
@@ -164,25 +167,43 @@ vector
 utils/drawing/Rectangle.h
 ../utils/include/utils/tools/config/utils/drawing/Rectangle.h
 
+<<<<<<< HEAD
 /home/smeshan/workspace/timers/sdl_utils/src/InputEvent.cpp
 sdl_utils/InputEvent.h
 /home/smeshan/workspace/timers/sdl_utils/src/sdl_utils/InputEvent.h
+=======
+/home/smeshan/workspace/animations/sdl_utils/src/InputEvent.cpp
+sdl_utils/InputEvent.h
+/home/smeshan/workspace/animations/sdl_utils/src/sdl_utils/InputEvent.h
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 iostream
 -
 SDL_events.h
 -
 
+<<<<<<< HEAD
 /home/smeshan/workspace/timers/sdl_utils/src/Media.cpp
 sdl_utils/Media.h
 /home/smeshan/workspace/timers/sdl_utils/src/sdl_utils/Media.h
+=======
+/home/smeshan/workspace/animations/sdl_utils/src/Media.cpp
+sdl_utils/Media.h
+/home/smeshan/workspace/animations/sdl_utils/src/sdl_utils/Media.h
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 iostream
 -
 cstdint
 -
 
+<<<<<<< HEAD
 /home/smeshan/workspace/timers/sdl_utils/src/Monitor.cpp
 sdl_utils/Monitor.h
 /home/smeshan/workspace/timers/sdl_utils/src/sdl_utils/Monitor.h
+=======
+/home/smeshan/workspace/animations/sdl_utils/src/Monitor.cpp
+sdl_utils/Monitor.h
+/home/smeshan/workspace/animations/sdl_utils/src/sdl_utils/Monitor.h
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 iostream
 -
 SDL.h
@@ -192,9 +213,15 @@ SDL_video.h
 sdl_utils/config/MonitorConfig.h
 -
 
+<<<<<<< HEAD
 /home/smeshan/workspace/timers/sdl_utils/src/Renderer.cpp
 sdl_utils/Renderer.h
 /home/smeshan/workspace/timers/sdl_utils/src/sdl_utils/Renderer.h
+=======
+/home/smeshan/workspace/animations/sdl_utils/src/Renderer.cpp
+sdl_utils/Renderer.h
+/home/smeshan/workspace/animations/sdl_utils/src/sdl_utils/Renderer.h
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 iostream
 -
 SDL_hints.h
@@ -202,11 +229,19 @@ SDL_hints.h
 SDL_render.h
 -
 sdl_utils/Texture.h
+<<<<<<< HEAD
 /home/smeshan/workspace/timers/sdl_utils/src/sdl_utils/Texture.h
 
 /home/smeshan/workspace/timers/sdl_utils/src/SDLLoader.cpp
 sdl_utils/SDLLoader.h
 /home/smeshan/workspace/timers/sdl_utils/src/sdl_utils/SDLLoader.h
+=======
+/home/smeshan/workspace/animations/sdl_utils/src/sdl_utils/Texture.h
+
+/home/smeshan/workspace/animations/sdl_utils/src/SDLLoader.cpp
+sdl_utils/SDLLoader.h
+/home/smeshan/workspace/animations/sdl_utils/src/sdl_utils/SDLLoader.h
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 cstdlib
 -
 iostream
@@ -220,9 +255,15 @@ SDL_image.h
 SDL_mixer.h
 -
 
+<<<<<<< HEAD
 /home/smeshan/workspace/timers/sdl_utils/src/Texture.cpp
 sdl_utils/Texture.h
 /home/smeshan/workspace/timers/sdl_utils/src/sdl_utils/Texture.h
+=======
+/home/smeshan/workspace/animations/sdl_utils/src/Texture.cpp
+sdl_utils/Texture.h
+/home/smeshan/workspace/animations/sdl_utils/src/sdl_utils/Texture.h
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 iostream
 -
 SDL_surface.h
@@ -234,6 +275,7 @@ SDL_render.h
 SDL_ttf.h
 -
 utils/drawing/Color.h
+<<<<<<< HEAD
 /home/smeshan/workspace/timers/sdl_utils/src/utils/drawing/Color.h
 
 /home/smeshan/workspace/timers/sdl_utils/src/config/ConfigApplier.cpp
@@ -277,14 +319,59 @@ sdl_utils/Media.h
 /home/smeshan/workspace/timers/sdl_utils/src/containers/TextContainer.cpp
 sdl_utils/containers/TextContainer.h
 /home/smeshan/workspace/timers/sdl_utils/src/containers/sdl_utils/containers/TextContainer.h
+=======
+/home/smeshan/workspace/animations/sdl_utils/src/utils/drawing/Color.h
+
+/home/smeshan/workspace/animations/sdl_utils/src/config/ConfigApplier.cpp
+sdl_utils/config/ConfigApplier.h
+/home/smeshan/workspace/animations/sdl_utils/src/config/sdl_utils/config/ConfigApplier.h
+vector
+-
+iostream
+-
+utils/tools/ConfigValidator.h
+/home/smeshan/workspace/animations/sdl_utils/src/config/utils/tools/ConfigValidator.h
+utils/tools/ConfigExtractor.h
+/home/smeshan/workspace/animations/sdl_utils/src/config/utils/tools/ConfigExtractor.h
+utils/common/CommonPaths.h
+/home/smeshan/workspace/animations/sdl_utils/src/config/utils/common/CommonPaths.h
+sdl_utils/config/MonitorConfig.h
+/home/smeshan/workspace/animations/sdl_utils/src/config/sdl_utils/config/MonitorConfig.h
+
+/home/smeshan/workspace/animations/sdl_utils/src/containers/ImageContainer.cpp
+sdl_utils/containers/ImageContainer.h
+/home/smeshan/workspace/animations/sdl_utils/src/containers/sdl_utils/containers/ImageContainer.h
+iostream
+-
+sdl_utils/Texture.h
+/home/smeshan/workspace/animations/sdl_utils/src/containers/sdl_utils/Texture.h
+
+/home/smeshan/workspace/animations/sdl_utils/src/containers/SoundContainer.cpp
+sdl_utils/containers/SoundContainer.h
+/home/smeshan/workspace/animations/sdl_utils/src/containers/sdl_utils/containers/SoundContainer.h
+iostream
+-
+sdl_utils/Media.h
+/home/smeshan/workspace/animations/sdl_utils/src/containers/sdl_utils/Media.h
+
+/home/smeshan/workspace/animations/sdl_utils/src/containers/TextContainer.cpp
+sdl_utils/containers/TextContainer.h
+/home/smeshan/workspace/animations/sdl_utils/src/containers/sdl_utils/containers/TextContainer.h
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 iostream
 -
 SDL_ttf.h
 -
 utils/drawing/Color.h
+<<<<<<< HEAD
 /home/smeshan/workspace/timers/sdl_utils/src/containers/utils/drawing/Color.h
 sdl_utils/Texture.h
 /home/smeshan/workspace/timers/sdl_utils/src/containers/sdl_utils/Texture.h
+=======
+/home/smeshan/workspace/animations/sdl_utils/src/containers/utils/drawing/Color.h
+sdl_utils/Texture.h
+/home/smeshan/workspace/animations/sdl_utils/src/containers/sdl_utils/Texture.h
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 
 /usr/include/SDL2/SDL.h
 SDL_main.h

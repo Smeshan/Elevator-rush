@@ -26,7 +26,10 @@ add_library(
 	${_INC_DIR}/config/ImageContainerConfig.h
 	${_INC_DIR}/config/TextContainerConfig.h
 	${_INC_DIR}/config/SoundContainerConfig.h
+<<<<<<< HEAD
 	${_INC_DIR}/config/MusicContainerConfig.h
+=======
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 
 	${_SRC_DIR}/SDLLoader.cpp
 	${_SRC_DIR}/Monitor.cpp
@@ -42,6 +45,11 @@ add_library(
 
 	${_SRC_DIR}/config/ConfigApplier.cpp
 
+<<<<<<< HEAD
+=======
+	${_SRC_DIR}/config/ConfigApplier.cpp
+
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 )
 
 set_target_cpp_standard(${PROJECT_NAME} 17)

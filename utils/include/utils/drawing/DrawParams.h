@@ -52,8 +52,12 @@ public:
     int32_t width = 0;
     int32_t height = 0;
 
+<<<<<<< HEAD
     double rotationAngle = 0.0;
     Point rotationCenter = Point::ZERO;
+=======
+    double rotation = 0.0;
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 
     int32_t opacity = FULL_OPACITY;
     //unique resourceId

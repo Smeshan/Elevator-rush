@@ -43,10 +43,17 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/smeshan/workspace/timers
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/smeshan/workspace/timers/build
+=======
+CMAKE_SOURCE_DIR = /home/smeshan/workspace/animations
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/smeshan/workspace/animations/build
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 
 # Include any dependencies generated for this target.
 include sdl_utils/CMakeFiles/sdl_utils.dir/depend.make
@@ -59,6 +66,7 @@ include sdl_utils/CMakeFiles/sdl_utils.dir/flags.make
 
 sdl_utils/CMakeFiles/sdl_utils.dir/src/SDLLoader.cpp.o: sdl_utils/CMakeFiles/sdl_utils.dir/flags.make
 sdl_utils/CMakeFiles/sdl_utils.dir/src/SDLLoader.cpp.o: ../sdl_utils/src/SDLLoader.cpp
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/timers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sdl_utils/CMakeFiles/sdl_utils.dir/src/SDLLoader.cpp.o"
 	cd /home/smeshan/workspace/timers/build/sdl_utils && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdl_utils.dir/src/SDLLoader.cpp.o -c /home/smeshan/workspace/timers/sdl_utils/src/SDLLoader.cpp
 
@@ -69,6 +77,18 @@ sdl_utils/CMakeFiles/sdl_utils.dir/src/SDLLoader.cpp.i: cmake_force
 sdl_utils/CMakeFiles/sdl_utils.dir/src/SDLLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdl_utils.dir/src/SDLLoader.cpp.s"
 	cd /home/smeshan/workspace/timers/build/sdl_utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/timers/sdl_utils/src/SDLLoader.cpp -o CMakeFiles/sdl_utils.dir/src/SDLLoader.cpp.s
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/animations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sdl_utils/CMakeFiles/sdl_utils.dir/src/SDLLoader.cpp.o"
+	cd /home/smeshan/workspace/animations/build/sdl_utils && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdl_utils.dir/src/SDLLoader.cpp.o -c /home/smeshan/workspace/animations/sdl_utils/src/SDLLoader.cpp
+
+sdl_utils/CMakeFiles/sdl_utils.dir/src/SDLLoader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sdl_utils.dir/src/SDLLoader.cpp.i"
+	cd /home/smeshan/workspace/animations/build/sdl_utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/smeshan/workspace/animations/sdl_utils/src/SDLLoader.cpp > CMakeFiles/sdl_utils.dir/src/SDLLoader.cpp.i
+
+sdl_utils/CMakeFiles/sdl_utils.dir/src/SDLLoader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdl_utils.dir/src/SDLLoader.cpp.s"
+	cd /home/smeshan/workspace/animations/build/sdl_utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/animations/sdl_utils/src/SDLLoader.cpp -o CMakeFiles/sdl_utils.dir/src/SDLLoader.cpp.s
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 
 sdl_utils/CMakeFiles/sdl_utils.dir/src/SDLLoader.cpp.o.requires:
 
@@ -83,6 +103,7 @@ sdl_utils/CMakeFiles/sdl_utils.dir/src/SDLLoader.cpp.o.provides.build: sdl_utils
 
 sdl_utils/CMakeFiles/sdl_utils.dir/src/Monitor.cpp.o: sdl_utils/CMakeFiles/sdl_utils.dir/flags.make
 sdl_utils/CMakeFiles/sdl_utils.dir/src/Monitor.cpp.o: ../sdl_utils/src/Monitor.cpp
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/timers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object sdl_utils/CMakeFiles/sdl_utils.dir/src/Monitor.cpp.o"
 	cd /home/smeshan/workspace/timers/build/sdl_utils && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdl_utils.dir/src/Monitor.cpp.o -c /home/smeshan/workspace/timers/sdl_utils/src/Monitor.cpp
 
@@ -93,6 +114,18 @@ sdl_utils/CMakeFiles/sdl_utils.dir/src/Monitor.cpp.i: cmake_force
 sdl_utils/CMakeFiles/sdl_utils.dir/src/Monitor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdl_utils.dir/src/Monitor.cpp.s"
 	cd /home/smeshan/workspace/timers/build/sdl_utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/timers/sdl_utils/src/Monitor.cpp -o CMakeFiles/sdl_utils.dir/src/Monitor.cpp.s
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/animations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object sdl_utils/CMakeFiles/sdl_utils.dir/src/Monitor.cpp.o"
+	cd /home/smeshan/workspace/animations/build/sdl_utils && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdl_utils.dir/src/Monitor.cpp.o -c /home/smeshan/workspace/animations/sdl_utils/src/Monitor.cpp
+
+sdl_utils/CMakeFiles/sdl_utils.dir/src/Monitor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sdl_utils.dir/src/Monitor.cpp.i"
+	cd /home/smeshan/workspace/animations/build/sdl_utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/smeshan/workspace/animations/sdl_utils/src/Monitor.cpp > CMakeFiles/sdl_utils.dir/src/Monitor.cpp.i
+
+sdl_utils/CMakeFiles/sdl_utils.dir/src/Monitor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdl_utils.dir/src/Monitor.cpp.s"
+	cd /home/smeshan/workspace/animations/build/sdl_utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/animations/sdl_utils/src/Monitor.cpp -o CMakeFiles/sdl_utils.dir/src/Monitor.cpp.s
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 
 sdl_utils/CMakeFiles/sdl_utils.dir/src/Monitor.cpp.o.requires:
 
@@ -107,6 +140,7 @@ sdl_utils/CMakeFiles/sdl_utils.dir/src/Monitor.cpp.o.provides.build: sdl_utils/C
 
 sdl_utils/CMakeFiles/sdl_utils.dir/src/Texture.cpp.o: sdl_utils/CMakeFiles/sdl_utils.dir/flags.make
 sdl_utils/CMakeFiles/sdl_utils.dir/src/Texture.cpp.o: ../sdl_utils/src/Texture.cpp
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/timers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object sdl_utils/CMakeFiles/sdl_utils.dir/src/Texture.cpp.o"
 	cd /home/smeshan/workspace/timers/build/sdl_utils && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdl_utils.dir/src/Texture.cpp.o -c /home/smeshan/workspace/timers/sdl_utils/src/Texture.cpp
 
@@ -117,6 +151,18 @@ sdl_utils/CMakeFiles/sdl_utils.dir/src/Texture.cpp.i: cmake_force
 sdl_utils/CMakeFiles/sdl_utils.dir/src/Texture.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdl_utils.dir/src/Texture.cpp.s"
 	cd /home/smeshan/workspace/timers/build/sdl_utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/timers/sdl_utils/src/Texture.cpp -o CMakeFiles/sdl_utils.dir/src/Texture.cpp.s
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/animations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object sdl_utils/CMakeFiles/sdl_utils.dir/src/Texture.cpp.o"
+	cd /home/smeshan/workspace/animations/build/sdl_utils && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdl_utils.dir/src/Texture.cpp.o -c /home/smeshan/workspace/animations/sdl_utils/src/Texture.cpp
+
+sdl_utils/CMakeFiles/sdl_utils.dir/src/Texture.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sdl_utils.dir/src/Texture.cpp.i"
+	cd /home/smeshan/workspace/animations/build/sdl_utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/smeshan/workspace/animations/sdl_utils/src/Texture.cpp > CMakeFiles/sdl_utils.dir/src/Texture.cpp.i
+
+sdl_utils/CMakeFiles/sdl_utils.dir/src/Texture.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdl_utils.dir/src/Texture.cpp.s"
+	cd /home/smeshan/workspace/animations/build/sdl_utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/animations/sdl_utils/src/Texture.cpp -o CMakeFiles/sdl_utils.dir/src/Texture.cpp.s
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 
 sdl_utils/CMakeFiles/sdl_utils.dir/src/Texture.cpp.o.requires:
 
@@ -131,6 +177,7 @@ sdl_utils/CMakeFiles/sdl_utils.dir/src/Texture.cpp.o.provides.build: sdl_utils/C
 
 sdl_utils/CMakeFiles/sdl_utils.dir/src/Renderer.cpp.o: sdl_utils/CMakeFiles/sdl_utils.dir/flags.make
 sdl_utils/CMakeFiles/sdl_utils.dir/src/Renderer.cpp.o: ../sdl_utils/src/Renderer.cpp
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/timers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object sdl_utils/CMakeFiles/sdl_utils.dir/src/Renderer.cpp.o"
 	cd /home/smeshan/workspace/timers/build/sdl_utils && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdl_utils.dir/src/Renderer.cpp.o -c /home/smeshan/workspace/timers/sdl_utils/src/Renderer.cpp
 
@@ -141,6 +188,18 @@ sdl_utils/CMakeFiles/sdl_utils.dir/src/Renderer.cpp.i: cmake_force
 sdl_utils/CMakeFiles/sdl_utils.dir/src/Renderer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdl_utils.dir/src/Renderer.cpp.s"
 	cd /home/smeshan/workspace/timers/build/sdl_utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/timers/sdl_utils/src/Renderer.cpp -o CMakeFiles/sdl_utils.dir/src/Renderer.cpp.s
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/animations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object sdl_utils/CMakeFiles/sdl_utils.dir/src/Renderer.cpp.o"
+	cd /home/smeshan/workspace/animations/build/sdl_utils && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdl_utils.dir/src/Renderer.cpp.o -c /home/smeshan/workspace/animations/sdl_utils/src/Renderer.cpp
+
+sdl_utils/CMakeFiles/sdl_utils.dir/src/Renderer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sdl_utils.dir/src/Renderer.cpp.i"
+	cd /home/smeshan/workspace/animations/build/sdl_utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/smeshan/workspace/animations/sdl_utils/src/Renderer.cpp > CMakeFiles/sdl_utils.dir/src/Renderer.cpp.i
+
+sdl_utils/CMakeFiles/sdl_utils.dir/src/Renderer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdl_utils.dir/src/Renderer.cpp.s"
+	cd /home/smeshan/workspace/animations/build/sdl_utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/animations/sdl_utils/src/Renderer.cpp -o CMakeFiles/sdl_utils.dir/src/Renderer.cpp.s
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 
 sdl_utils/CMakeFiles/sdl_utils.dir/src/Renderer.cpp.o.requires:
 
@@ -155,6 +214,7 @@ sdl_utils/CMakeFiles/sdl_utils.dir/src/Renderer.cpp.o.provides.build: sdl_utils/
 
 sdl_utils/CMakeFiles/sdl_utils.dir/src/InputEvent.cpp.o: sdl_utils/CMakeFiles/sdl_utils.dir/flags.make
 sdl_utils/CMakeFiles/sdl_utils.dir/src/InputEvent.cpp.o: ../sdl_utils/src/InputEvent.cpp
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/timers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object sdl_utils/CMakeFiles/sdl_utils.dir/src/InputEvent.cpp.o"
 	cd /home/smeshan/workspace/timers/build/sdl_utils && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdl_utils.dir/src/InputEvent.cpp.o -c /home/smeshan/workspace/timers/sdl_utils/src/InputEvent.cpp
 
@@ -165,6 +225,18 @@ sdl_utils/CMakeFiles/sdl_utils.dir/src/InputEvent.cpp.i: cmake_force
 sdl_utils/CMakeFiles/sdl_utils.dir/src/InputEvent.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdl_utils.dir/src/InputEvent.cpp.s"
 	cd /home/smeshan/workspace/timers/build/sdl_utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/timers/sdl_utils/src/InputEvent.cpp -o CMakeFiles/sdl_utils.dir/src/InputEvent.cpp.s
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/animations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object sdl_utils/CMakeFiles/sdl_utils.dir/src/InputEvent.cpp.o"
+	cd /home/smeshan/workspace/animations/build/sdl_utils && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdl_utils.dir/src/InputEvent.cpp.o -c /home/smeshan/workspace/animations/sdl_utils/src/InputEvent.cpp
+
+sdl_utils/CMakeFiles/sdl_utils.dir/src/InputEvent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sdl_utils.dir/src/InputEvent.cpp.i"
+	cd /home/smeshan/workspace/animations/build/sdl_utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/smeshan/workspace/animations/sdl_utils/src/InputEvent.cpp > CMakeFiles/sdl_utils.dir/src/InputEvent.cpp.i
+
+sdl_utils/CMakeFiles/sdl_utils.dir/src/InputEvent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdl_utils.dir/src/InputEvent.cpp.s"
+	cd /home/smeshan/workspace/animations/build/sdl_utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/animations/sdl_utils/src/InputEvent.cpp -o CMakeFiles/sdl_utils.dir/src/InputEvent.cpp.s
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 
 sdl_utils/CMakeFiles/sdl_utils.dir/src/InputEvent.cpp.o.requires:
 
@@ -179,6 +251,7 @@ sdl_utils/CMakeFiles/sdl_utils.dir/src/InputEvent.cpp.o.provides.build: sdl_util
 
 sdl_utils/CMakeFiles/sdl_utils.dir/src/Media.cpp.o: sdl_utils/CMakeFiles/sdl_utils.dir/flags.make
 sdl_utils/CMakeFiles/sdl_utils.dir/src/Media.cpp.o: ../sdl_utils/src/Media.cpp
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/timers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object sdl_utils/CMakeFiles/sdl_utils.dir/src/Media.cpp.o"
 	cd /home/smeshan/workspace/timers/build/sdl_utils && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdl_utils.dir/src/Media.cpp.o -c /home/smeshan/workspace/timers/sdl_utils/src/Media.cpp
 
@@ -189,6 +262,18 @@ sdl_utils/CMakeFiles/sdl_utils.dir/src/Media.cpp.i: cmake_force
 sdl_utils/CMakeFiles/sdl_utils.dir/src/Media.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdl_utils.dir/src/Media.cpp.s"
 	cd /home/smeshan/workspace/timers/build/sdl_utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/timers/sdl_utils/src/Media.cpp -o CMakeFiles/sdl_utils.dir/src/Media.cpp.s
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/animations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object sdl_utils/CMakeFiles/sdl_utils.dir/src/Media.cpp.o"
+	cd /home/smeshan/workspace/animations/build/sdl_utils && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdl_utils.dir/src/Media.cpp.o -c /home/smeshan/workspace/animations/sdl_utils/src/Media.cpp
+
+sdl_utils/CMakeFiles/sdl_utils.dir/src/Media.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sdl_utils.dir/src/Media.cpp.i"
+	cd /home/smeshan/workspace/animations/build/sdl_utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/smeshan/workspace/animations/sdl_utils/src/Media.cpp > CMakeFiles/sdl_utils.dir/src/Media.cpp.i
+
+sdl_utils/CMakeFiles/sdl_utils.dir/src/Media.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdl_utils.dir/src/Media.cpp.s"
+	cd /home/smeshan/workspace/animations/build/sdl_utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/animations/sdl_utils/src/Media.cpp -o CMakeFiles/sdl_utils.dir/src/Media.cpp.s
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 
 sdl_utils/CMakeFiles/sdl_utils.dir/src/Media.cpp.o.requires:
 
@@ -203,6 +288,7 @@ sdl_utils/CMakeFiles/sdl_utils.dir/src/Media.cpp.o.provides.build: sdl_utils/CMa
 
 sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/ImageContainer.cpp.o: sdl_utils/CMakeFiles/sdl_utils.dir/flags.make
 sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/ImageContainer.cpp.o: ../sdl_utils/src/containers/ImageContainer.cpp
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/timers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/ImageContainer.cpp.o"
 	cd /home/smeshan/workspace/timers/build/sdl_utils && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdl_utils.dir/src/containers/ImageContainer.cpp.o -c /home/smeshan/workspace/timers/sdl_utils/src/containers/ImageContainer.cpp
 
@@ -213,6 +299,18 @@ sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/ImageContainer.cpp.i: cmake_fo
 sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/ImageContainer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdl_utils.dir/src/containers/ImageContainer.cpp.s"
 	cd /home/smeshan/workspace/timers/build/sdl_utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/timers/sdl_utils/src/containers/ImageContainer.cpp -o CMakeFiles/sdl_utils.dir/src/containers/ImageContainer.cpp.s
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/animations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/ImageContainer.cpp.o"
+	cd /home/smeshan/workspace/animations/build/sdl_utils && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdl_utils.dir/src/containers/ImageContainer.cpp.o -c /home/smeshan/workspace/animations/sdl_utils/src/containers/ImageContainer.cpp
+
+sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/ImageContainer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sdl_utils.dir/src/containers/ImageContainer.cpp.i"
+	cd /home/smeshan/workspace/animations/build/sdl_utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/smeshan/workspace/animations/sdl_utils/src/containers/ImageContainer.cpp > CMakeFiles/sdl_utils.dir/src/containers/ImageContainer.cpp.i
+
+sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/ImageContainer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdl_utils.dir/src/containers/ImageContainer.cpp.s"
+	cd /home/smeshan/workspace/animations/build/sdl_utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/animations/sdl_utils/src/containers/ImageContainer.cpp -o CMakeFiles/sdl_utils.dir/src/containers/ImageContainer.cpp.s
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 
 sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/ImageContainer.cpp.o.requires:
 
@@ -227,6 +325,7 @@ sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/ImageContainer.cpp.o.provides.
 
 sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/TextContainer.cpp.o: sdl_utils/CMakeFiles/sdl_utils.dir/flags.make
 sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/TextContainer.cpp.o: ../sdl_utils/src/containers/TextContainer.cpp
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/timers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/TextContainer.cpp.o"
 	cd /home/smeshan/workspace/timers/build/sdl_utils && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdl_utils.dir/src/containers/TextContainer.cpp.o -c /home/smeshan/workspace/timers/sdl_utils/src/containers/TextContainer.cpp
 
@@ -237,6 +336,18 @@ sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/TextContainer.cpp.i: cmake_for
 sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/TextContainer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdl_utils.dir/src/containers/TextContainer.cpp.s"
 	cd /home/smeshan/workspace/timers/build/sdl_utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/timers/sdl_utils/src/containers/TextContainer.cpp -o CMakeFiles/sdl_utils.dir/src/containers/TextContainer.cpp.s
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/animations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/TextContainer.cpp.o"
+	cd /home/smeshan/workspace/animations/build/sdl_utils && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdl_utils.dir/src/containers/TextContainer.cpp.o -c /home/smeshan/workspace/animations/sdl_utils/src/containers/TextContainer.cpp
+
+sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/TextContainer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sdl_utils.dir/src/containers/TextContainer.cpp.i"
+	cd /home/smeshan/workspace/animations/build/sdl_utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/smeshan/workspace/animations/sdl_utils/src/containers/TextContainer.cpp > CMakeFiles/sdl_utils.dir/src/containers/TextContainer.cpp.i
+
+sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/TextContainer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdl_utils.dir/src/containers/TextContainer.cpp.s"
+	cd /home/smeshan/workspace/animations/build/sdl_utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/animations/sdl_utils/src/containers/TextContainer.cpp -o CMakeFiles/sdl_utils.dir/src/containers/TextContainer.cpp.s
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 
 sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/TextContainer.cpp.o.requires:
 
@@ -251,6 +362,7 @@ sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/TextContainer.cpp.o.provides.b
 
 sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/SoundContainer.cpp.o: sdl_utils/CMakeFiles/sdl_utils.dir/flags.make
 sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/SoundContainer.cpp.o: ../sdl_utils/src/containers/SoundContainer.cpp
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/timers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/SoundContainer.cpp.o"
 	cd /home/smeshan/workspace/timers/build/sdl_utils && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdl_utils.dir/src/containers/SoundContainer.cpp.o -c /home/smeshan/workspace/timers/sdl_utils/src/containers/SoundContainer.cpp
 
@@ -261,6 +373,18 @@ sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/SoundContainer.cpp.i: cmake_fo
 sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/SoundContainer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdl_utils.dir/src/containers/SoundContainer.cpp.s"
 	cd /home/smeshan/workspace/timers/build/sdl_utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/timers/sdl_utils/src/containers/SoundContainer.cpp -o CMakeFiles/sdl_utils.dir/src/containers/SoundContainer.cpp.s
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/animations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/SoundContainer.cpp.o"
+	cd /home/smeshan/workspace/animations/build/sdl_utils && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdl_utils.dir/src/containers/SoundContainer.cpp.o -c /home/smeshan/workspace/animations/sdl_utils/src/containers/SoundContainer.cpp
+
+sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/SoundContainer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sdl_utils.dir/src/containers/SoundContainer.cpp.i"
+	cd /home/smeshan/workspace/animations/build/sdl_utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/smeshan/workspace/animations/sdl_utils/src/containers/SoundContainer.cpp > CMakeFiles/sdl_utils.dir/src/containers/SoundContainer.cpp.i
+
+sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/SoundContainer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdl_utils.dir/src/containers/SoundContainer.cpp.s"
+	cd /home/smeshan/workspace/animations/build/sdl_utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/animations/sdl_utils/src/containers/SoundContainer.cpp -o CMakeFiles/sdl_utils.dir/src/containers/SoundContainer.cpp.s
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 
 sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/SoundContainer.cpp.o.requires:
 
@@ -273,6 +397,7 @@ sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/SoundContainer.cpp.o.provides:
 sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/SoundContainer.cpp.o.provides.build: sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/SoundContainer.cpp.o
 
 
+<<<<<<< HEAD
 sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/MusicContainer.cpp.o: sdl_utils/CMakeFiles/sdl_utils.dir/flags.make
 sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/MusicContainer.cpp.o: ../sdl_utils/src/containers/MusicContainer.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/timers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/MusicContainer.cpp.o"
@@ -318,6 +443,29 @@ sdl_utils/CMakeFiles/sdl_utils.dir/src/config/ConfigApplier.cpp.o.provides: sdl_
 	$(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/config/ConfigApplier.cpp.o.provides.build
 .PHONY : sdl_utils/CMakeFiles/sdl_utils.dir/src/config/ConfigApplier.cpp.o.provides
 
+=======
+sdl_utils/CMakeFiles/sdl_utils.dir/src/config/ConfigApplier.cpp.o: sdl_utils/CMakeFiles/sdl_utils.dir/flags.make
+sdl_utils/CMakeFiles/sdl_utils.dir/src/config/ConfigApplier.cpp.o: ../sdl_utils/src/config/ConfigApplier.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smeshan/workspace/animations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object sdl_utils/CMakeFiles/sdl_utils.dir/src/config/ConfigApplier.cpp.o"
+	cd /home/smeshan/workspace/animations/build/sdl_utils && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdl_utils.dir/src/config/ConfigApplier.cpp.o -c /home/smeshan/workspace/animations/sdl_utils/src/config/ConfigApplier.cpp
+
+sdl_utils/CMakeFiles/sdl_utils.dir/src/config/ConfigApplier.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sdl_utils.dir/src/config/ConfigApplier.cpp.i"
+	cd /home/smeshan/workspace/animations/build/sdl_utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/smeshan/workspace/animations/sdl_utils/src/config/ConfigApplier.cpp > CMakeFiles/sdl_utils.dir/src/config/ConfigApplier.cpp.i
+
+sdl_utils/CMakeFiles/sdl_utils.dir/src/config/ConfigApplier.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdl_utils.dir/src/config/ConfigApplier.cpp.s"
+	cd /home/smeshan/workspace/animations/build/sdl_utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smeshan/workspace/animations/sdl_utils/src/config/ConfigApplier.cpp -o CMakeFiles/sdl_utils.dir/src/config/ConfigApplier.cpp.s
+
+sdl_utils/CMakeFiles/sdl_utils.dir/src/config/ConfigApplier.cpp.o.requires:
+
+.PHONY : sdl_utils/CMakeFiles/sdl_utils.dir/src/config/ConfigApplier.cpp.o.requires
+
+sdl_utils/CMakeFiles/sdl_utils.dir/src/config/ConfigApplier.cpp.o.provides: sdl_utils/CMakeFiles/sdl_utils.dir/src/config/ConfigApplier.cpp.o.requires
+	$(MAKE) -f sdl_utils/CMakeFiles/sdl_utils.dir/build.make sdl_utils/CMakeFiles/sdl_utils.dir/src/config/ConfigApplier.cpp.o.provides.build
+.PHONY : sdl_utils/CMakeFiles/sdl_utils.dir/src/config/ConfigApplier.cpp.o.provides
+
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 sdl_utils/CMakeFiles/sdl_utils.dir/src/config/ConfigApplier.cpp.o.provides.build: sdl_utils/CMakeFiles/sdl_utils.dir/src/config/ConfigApplier.cpp.o
 
 
@@ -332,7 +480,10 @@ sdl_utils_OBJECTS = \
 "CMakeFiles/sdl_utils.dir/src/containers/ImageContainer.cpp.o" \
 "CMakeFiles/sdl_utils.dir/src/containers/TextContainer.cpp.o" \
 "CMakeFiles/sdl_utils.dir/src/containers/SoundContainer.cpp.o" \
+<<<<<<< HEAD
 "CMakeFiles/sdl_utils.dir/src/containers/MusicContainer.cpp.o" \
+=======
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 "CMakeFiles/sdl_utils.dir/src/config/ConfigApplier.cpp.o"
 
 # External object files for target sdl_utils
@@ -347,6 +498,7 @@ sdl_utils/libsdl_utils.a: sdl_utils/CMakeFiles/sdl_utils.dir/src/Media.cpp.o
 sdl_utils/libsdl_utils.a: sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/ImageContainer.cpp.o
 sdl_utils/libsdl_utils.a: sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/TextContainer.cpp.o
 sdl_utils/libsdl_utils.a: sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/SoundContainer.cpp.o
+<<<<<<< HEAD
 sdl_utils/libsdl_utils.a: sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/MusicContainer.cpp.o
 sdl_utils/libsdl_utils.a: sdl_utils/CMakeFiles/sdl_utils.dir/src/config/ConfigApplier.cpp.o
 sdl_utils/libsdl_utils.a: sdl_utils/CMakeFiles/sdl_utils.dir/build.make
@@ -354,6 +506,14 @@ sdl_utils/libsdl_utils.a: sdl_utils/CMakeFiles/sdl_utils.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/smeshan/workspace/timers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX static library libsdl_utils.a"
 	cd /home/smeshan/workspace/timers/build/sdl_utils && $(CMAKE_COMMAND) -P CMakeFiles/sdl_utils.dir/cmake_clean_target.cmake
 	cd /home/smeshan/workspace/timers/build/sdl_utils && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sdl_utils.dir/link.txt --verbose=$(VERBOSE)
+=======
+sdl_utils/libsdl_utils.a: sdl_utils/CMakeFiles/sdl_utils.dir/src/config/ConfigApplier.cpp.o
+sdl_utils/libsdl_utils.a: sdl_utils/CMakeFiles/sdl_utils.dir/build.make
+sdl_utils/libsdl_utils.a: sdl_utils/CMakeFiles/sdl_utils.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/smeshan/workspace/animations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX static library libsdl_utils.a"
+	cd /home/smeshan/workspace/animations/build/sdl_utils && $(CMAKE_COMMAND) -P CMakeFiles/sdl_utils.dir/cmake_clean_target.cmake
+	cd /home/smeshan/workspace/animations/build/sdl_utils && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sdl_utils.dir/link.txt --verbose=$(VERBOSE)
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 
 # Rule to build all files generated by this target.
 sdl_utils/CMakeFiles/sdl_utils.dir/build: sdl_utils/libsdl_utils.a
@@ -369,16 +529,27 @@ sdl_utils/CMakeFiles/sdl_utils.dir/requires: sdl_utils/CMakeFiles/sdl_utils.dir/
 sdl_utils/CMakeFiles/sdl_utils.dir/requires: sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/ImageContainer.cpp.o.requires
 sdl_utils/CMakeFiles/sdl_utils.dir/requires: sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/TextContainer.cpp.o.requires
 sdl_utils/CMakeFiles/sdl_utils.dir/requires: sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/SoundContainer.cpp.o.requires
+<<<<<<< HEAD
 sdl_utils/CMakeFiles/sdl_utils.dir/requires: sdl_utils/CMakeFiles/sdl_utils.dir/src/containers/MusicContainer.cpp.o.requires
+=======
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 sdl_utils/CMakeFiles/sdl_utils.dir/requires: sdl_utils/CMakeFiles/sdl_utils.dir/src/config/ConfigApplier.cpp.o.requires
 
 .PHONY : sdl_utils/CMakeFiles/sdl_utils.dir/requires
 
 sdl_utils/CMakeFiles/sdl_utils.dir/clean:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build/sdl_utils && $(CMAKE_COMMAND) -P CMakeFiles/sdl_utils.dir/cmake_clean.cmake
 .PHONY : sdl_utils/CMakeFiles/sdl_utils.dir/clean
 
 sdl_utils/CMakeFiles/sdl_utils.dir/depend:
 	cd /home/smeshan/workspace/timers/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/smeshan/workspace/timers /home/smeshan/workspace/timers/sdl_utils /home/smeshan/workspace/timers/build /home/smeshan/workspace/timers/build/sdl_utils /home/smeshan/workspace/timers/build/sdl_utils/CMakeFiles/sdl_utils.dir/DependInfo.cmake --color=$(COLOR)
+=======
+	cd /home/smeshan/workspace/animations/build/sdl_utils && $(CMAKE_COMMAND) -P CMakeFiles/sdl_utils.dir/cmake_clean.cmake
+.PHONY : sdl_utils/CMakeFiles/sdl_utils.dir/clean
+
+sdl_utils/CMakeFiles/sdl_utils.dir/depend:
+	cd /home/smeshan/workspace/animations/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/smeshan/workspace/animations /home/smeshan/workspace/animations/sdl_utils /home/smeshan/workspace/animations/build /home/smeshan/workspace/animations/build/sdl_utils /home/smeshan/workspace/animations/build/sdl_utils/CMakeFiles/sdl_utils.dir/DependInfo.cmake --color=$(COLOR)
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : sdl_utils/CMakeFiles/sdl_utils.dir/depend
 

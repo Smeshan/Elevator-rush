@@ -139,7 +139,10 @@ manager_utils/CMakeFiles/manager_utils.dir/src/managers/ManagerHandler.cpp.o: ..
 manager_utils/CMakeFiles/manager_utils.dir/src/managers/ManagerHandler.cpp.o: ../utils/include/utils/drawing/DrawParams.h
 manager_utils/CMakeFiles/manager_utils.dir/src/managers/ManagerHandler.cpp.o: ../utils/include/utils/drawing/Point.h
 manager_utils/CMakeFiles/manager_utils.dir/src/managers/ManagerHandler.cpp.o: ../utils/include/utils/drawing/Rectangle.h
+<<<<<<< HEAD
 manager_utils/CMakeFiles/manager_utils.dir/src/managers/ManagerHandler.cpp.o: ../utils/include/utils/time/Time.h
+=======
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 manager_utils/CMakeFiles/manager_utils.dir/src/managers/ManagerHandler.cpp.o: ../utils/include/utils/tools/config/ImageConfig.h
 manager_utils/CMakeFiles/manager_utils.dir/src/managers/ManagerHandler.cpp.o: ../manager_utils/src/managers/ManagerHandler.cpp
 

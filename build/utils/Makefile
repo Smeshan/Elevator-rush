@@ -48,10 +48,17 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/smeshan/workspace/timers
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/smeshan/workspace/timers/build
+=======
+CMAKE_SOURCE_DIR = /home/smeshan/workspace/animations
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/smeshan/workspace/animations/build
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +87,24 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/smeshan/workspace/timers/build/CMakeFiles /home/smeshan/workspace/timers/build/utils/CMakeFiles/progress.marks
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f CMakeFiles/Makefile2 utils/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/smeshan/workspace/timers/build/CMakeFiles 0
+=======
+	cd /home/smeshan/workspace/animations/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/smeshan/workspace/animations/build/CMakeFiles /home/smeshan/workspace/animations/build/utils/CMakeFiles/progress.marks
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f CMakeFiles/Makefile2 utils/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/smeshan/workspace/animations/build/CMakeFiles 0
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : all
 
 # The main clean target
 clean:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f CMakeFiles/Makefile2 utils/clean
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f CMakeFiles/Makefile2 utils/clean
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +114,38 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f CMakeFiles/Makefile2 utils/preinstall
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f CMakeFiles/Makefile2 utils/preinstall
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f CMakeFiles/Makefile2 utils/preinstall
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f CMakeFiles/Makefile2 utils/preinstall
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+=======
+	cd /home/smeshan/workspace/animations/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : depend
 
 # Convenience name for target.
 utils/CMakeFiles/utils.dir/rule:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f CMakeFiles/Makefile2 utils/CMakeFiles/utils.dir/rule
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f CMakeFiles/Makefile2 utils/CMakeFiles/utils.dir/rule
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : utils/CMakeFiles/utils.dir/rule
 
 # Convenience name for target.
@@ -122,7 +155,11 @@ utils: utils/CMakeFiles/utils.dir/rule
 
 # fast build rule for target.
 utils/fast:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/build
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/build
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : utils/fast
 
 src/drawing/Color.o: src/drawing/Color.cpp.o
@@ -131,7 +168,11 @@ src/drawing/Color.o: src/drawing/Color.cpp.o
 
 # target to build an object file
 src/drawing/Color.cpp.o:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/drawing/Color.cpp.o
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/drawing/Color.cpp.o
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/drawing/Color.cpp.o
 
 src/drawing/Color.i: src/drawing/Color.cpp.i
@@ -140,7 +181,11 @@ src/drawing/Color.i: src/drawing/Color.cpp.i
 
 # target to preprocess a source file
 src/drawing/Color.cpp.i:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/drawing/Color.cpp.i
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/drawing/Color.cpp.i
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/drawing/Color.cpp.i
 
 src/drawing/Color.s: src/drawing/Color.cpp.s
@@ -149,7 +194,11 @@ src/drawing/Color.s: src/drawing/Color.cpp.s
 
 # target to generate assembly for a file
 src/drawing/Color.cpp.s:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/drawing/Color.cpp.s
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/drawing/Color.cpp.s
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/drawing/Color.cpp.s
 
 src/drawing/DrawParams.o: src/drawing/DrawParams.cpp.o
@@ -158,7 +207,11 @@ src/drawing/DrawParams.o: src/drawing/DrawParams.cpp.o
 
 # target to build an object file
 src/drawing/DrawParams.cpp.o:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/drawing/DrawParams.cpp.o
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/drawing/DrawParams.cpp.o
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/drawing/DrawParams.cpp.o
 
 src/drawing/DrawParams.i: src/drawing/DrawParams.cpp.i
@@ -167,7 +220,11 @@ src/drawing/DrawParams.i: src/drawing/DrawParams.cpp.i
 
 # target to preprocess a source file
 src/drawing/DrawParams.cpp.i:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/drawing/DrawParams.cpp.i
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/drawing/DrawParams.cpp.i
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/drawing/DrawParams.cpp.i
 
 src/drawing/DrawParams.s: src/drawing/DrawParams.cpp.s
@@ -176,7 +233,11 @@ src/drawing/DrawParams.s: src/drawing/DrawParams.cpp.s
 
 # target to generate assembly for a file
 src/drawing/DrawParams.cpp.s:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/drawing/DrawParams.cpp.s
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/drawing/DrawParams.cpp.s
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/drawing/DrawParams.cpp.s
 
 src/drawing/Point.o: src/drawing/Point.cpp.o
@@ -185,7 +246,11 @@ src/drawing/Point.o: src/drawing/Point.cpp.o
 
 # target to build an object file
 src/drawing/Point.cpp.o:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/drawing/Point.cpp.o
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/drawing/Point.cpp.o
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/drawing/Point.cpp.o
 
 src/drawing/Point.i: src/drawing/Point.cpp.i
@@ -194,7 +259,11 @@ src/drawing/Point.i: src/drawing/Point.cpp.i
 
 # target to preprocess a source file
 src/drawing/Point.cpp.i:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/drawing/Point.cpp.i
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/drawing/Point.cpp.i
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/drawing/Point.cpp.i
 
 src/drawing/Point.s: src/drawing/Point.cpp.s
@@ -203,7 +272,11 @@ src/drawing/Point.s: src/drawing/Point.cpp.s
 
 # target to generate assembly for a file
 src/drawing/Point.cpp.s:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/drawing/Point.cpp.s
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/drawing/Point.cpp.s
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/drawing/Point.cpp.s
 
 src/drawing/Rectangle.o: src/drawing/Rectangle.cpp.o
@@ -212,7 +285,11 @@ src/drawing/Rectangle.o: src/drawing/Rectangle.cpp.o
 
 # target to build an object file
 src/drawing/Rectangle.cpp.o:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/drawing/Rectangle.cpp.o
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/drawing/Rectangle.cpp.o
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/drawing/Rectangle.cpp.o
 
 src/drawing/Rectangle.i: src/drawing/Rectangle.cpp.i
@@ -221,7 +298,11 @@ src/drawing/Rectangle.i: src/drawing/Rectangle.cpp.i
 
 # target to preprocess a source file
 src/drawing/Rectangle.cpp.i:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/drawing/Rectangle.cpp.i
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/drawing/Rectangle.cpp.i
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/drawing/Rectangle.cpp.i
 
 src/drawing/Rectangle.s: src/drawing/Rectangle.cpp.s
@@ -230,7 +311,11 @@ src/drawing/Rectangle.s: src/drawing/Rectangle.cpp.s
 
 # target to generate assembly for a file
 src/drawing/Rectangle.cpp.s:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/drawing/Rectangle.cpp.s
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/drawing/Rectangle.cpp.s
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/drawing/Rectangle.cpp.s
 
 src/thread/ThreadUtils.o: src/thread/ThreadUtils.cpp.o
@@ -239,7 +324,11 @@ src/thread/ThreadUtils.o: src/thread/ThreadUtils.cpp.o
 
 # target to build an object file
 src/thread/ThreadUtils.cpp.o:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/thread/ThreadUtils.cpp.o
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/thread/ThreadUtils.cpp.o
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/thread/ThreadUtils.cpp.o
 
 src/thread/ThreadUtils.i: src/thread/ThreadUtils.cpp.i
@@ -248,7 +337,11 @@ src/thread/ThreadUtils.i: src/thread/ThreadUtils.cpp.i
 
 # target to preprocess a source file
 src/thread/ThreadUtils.cpp.i:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/thread/ThreadUtils.cpp.i
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/thread/ThreadUtils.cpp.i
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/thread/ThreadUtils.cpp.i
 
 src/thread/ThreadUtils.s: src/thread/ThreadUtils.cpp.s
@@ -257,7 +350,11 @@ src/thread/ThreadUtils.s: src/thread/ThreadUtils.cpp.s
 
 # target to generate assembly for a file
 src/thread/ThreadUtils.cpp.s:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/thread/ThreadUtils.cpp.s
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/thread/ThreadUtils.cpp.s
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/thread/ThreadUtils.cpp.s
 
 src/time/Time.o: src/time/Time.cpp.o
@@ -266,7 +363,11 @@ src/time/Time.o: src/time/Time.cpp.o
 
 # target to build an object file
 src/time/Time.cpp.o:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/time/Time.cpp.o
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/time/Time.cpp.o
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/time/Time.cpp.o
 
 src/time/Time.i: src/time/Time.cpp.i
@@ -275,7 +376,11 @@ src/time/Time.i: src/time/Time.cpp.i
 
 # target to preprocess a source file
 src/time/Time.cpp.i:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/time/Time.cpp.i
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/time/Time.cpp.i
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/time/Time.cpp.i
 
 src/time/Time.s: src/time/Time.cpp.s
@@ -284,7 +389,11 @@ src/time/Time.s: src/time/Time.cpp.s
 
 # target to generate assembly for a file
 src/time/Time.cpp.s:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/time/Time.cpp.s
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/time/Time.cpp.s
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/time/Time.cpp.s
 
 src/tools/AutoResLoader.o: src/tools/AutoResLoader.cpp.o
@@ -293,7 +402,11 @@ src/tools/AutoResLoader.o: src/tools/AutoResLoader.cpp.o
 
 # target to build an object file
 src/tools/AutoResLoader.cpp.o:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/tools/AutoResLoader.cpp.o
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/tools/AutoResLoader.cpp.o
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/tools/AutoResLoader.cpp.o
 
 src/tools/AutoResLoader.i: src/tools/AutoResLoader.cpp.i
@@ -302,7 +415,11 @@ src/tools/AutoResLoader.i: src/tools/AutoResLoader.cpp.i
 
 # target to preprocess a source file
 src/tools/AutoResLoader.cpp.i:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/tools/AutoResLoader.cpp.i
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/tools/AutoResLoader.cpp.i
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/tools/AutoResLoader.cpp.i
 
 src/tools/AutoResLoader.s: src/tools/AutoResLoader.cpp.s
@@ -311,7 +428,11 @@ src/tools/AutoResLoader.s: src/tools/AutoResLoader.cpp.s
 
 # target to generate assembly for a file
 src/tools/AutoResLoader.cpp.s:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/tools/AutoResLoader.cpp.s
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/tools/AutoResLoader.cpp.s
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/tools/AutoResLoader.cpp.s
 
 src/tools/ConfigExtractor.o: src/tools/ConfigExtractor.cpp.o
@@ -320,7 +441,11 @@ src/tools/ConfigExtractor.o: src/tools/ConfigExtractor.cpp.o
 
 # target to build an object file
 src/tools/ConfigExtractor.cpp.o:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/tools/ConfigExtractor.cpp.o
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/tools/ConfigExtractor.cpp.o
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/tools/ConfigExtractor.cpp.o
 
 src/tools/ConfigExtractor.i: src/tools/ConfigExtractor.cpp.i
@@ -329,7 +454,11 @@ src/tools/ConfigExtractor.i: src/tools/ConfigExtractor.cpp.i
 
 # target to preprocess a source file
 src/tools/ConfigExtractor.cpp.i:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/tools/ConfigExtractor.cpp.i
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/tools/ConfigExtractor.cpp.i
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/tools/ConfigExtractor.cpp.i
 
 src/tools/ConfigExtractor.s: src/tools/ConfigExtractor.cpp.s
@@ -338,7 +467,11 @@ src/tools/ConfigExtractor.s: src/tools/ConfigExtractor.cpp.s
 
 # target to generate assembly for a file
 src/tools/ConfigExtractor.cpp.s:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/tools/ConfigExtractor.cpp.s
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/tools/ConfigExtractor.cpp.s
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/tools/ConfigExtractor.cpp.s
 
 src/tools/ConfigProcessor.o: src/tools/ConfigProcessor.cpp.o
@@ -347,7 +480,11 @@ src/tools/ConfigProcessor.o: src/tools/ConfigProcessor.cpp.o
 
 # target to build an object file
 src/tools/ConfigProcessor.cpp.o:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/tools/ConfigProcessor.cpp.o
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/tools/ConfigProcessor.cpp.o
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/tools/ConfigProcessor.cpp.o
 
 src/tools/ConfigProcessor.i: src/tools/ConfigProcessor.cpp.i
@@ -356,7 +493,11 @@ src/tools/ConfigProcessor.i: src/tools/ConfigProcessor.cpp.i
 
 # target to preprocess a source file
 src/tools/ConfigProcessor.cpp.i:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/tools/ConfigProcessor.cpp.i
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/tools/ConfigProcessor.cpp.i
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/tools/ConfigProcessor.cpp.i
 
 src/tools/ConfigProcessor.s: src/tools/ConfigProcessor.cpp.s
@@ -365,7 +506,11 @@ src/tools/ConfigProcessor.s: src/tools/ConfigProcessor.cpp.s
 
 # target to generate assembly for a file
 src/tools/ConfigProcessor.cpp.s:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/tools/ConfigProcessor.cpp.s
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/tools/ConfigProcessor.cpp.s
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/tools/ConfigProcessor.cpp.s
 
 src/tools/ConfigValidator.o: src/tools/ConfigValidator.cpp.o
@@ -374,7 +519,11 @@ src/tools/ConfigValidator.o: src/tools/ConfigValidator.cpp.o
 
 # target to build an object file
 src/tools/ConfigValidator.cpp.o:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/tools/ConfigValidator.cpp.o
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/tools/ConfigValidator.cpp.o
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/tools/ConfigValidator.cpp.o
 
 src/tools/ConfigValidator.i: src/tools/ConfigValidator.cpp.i
@@ -383,7 +532,11 @@ src/tools/ConfigValidator.i: src/tools/ConfigValidator.cpp.i
 
 # target to preprocess a source file
 src/tools/ConfigValidator.cpp.i:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/tools/ConfigValidator.cpp.i
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/tools/ConfigValidator.cpp.i
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/tools/ConfigValidator.cpp.i
 
 src/tools/ConfigValidator.s: src/tools/ConfigValidator.cpp.s
@@ -392,7 +545,11 @@ src/tools/ConfigValidator.s: src/tools/ConfigValidator.cpp.s
 
 # target to generate assembly for a file
 src/tools/ConfigValidator.cpp.s:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/tools/ConfigValidator.cpp.s
+=======
+	cd /home/smeshan/workspace/animations/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/tools/ConfigValidator.cpp.s
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : src/tools/ConfigValidator.cpp.s
 
 # Help Target
@@ -445,6 +602,10 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+<<<<<<< HEAD
 	cd /home/smeshan/workspace/timers/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+=======
+	cd /home/smeshan/workspace/animations/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+>>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 .PHONY : cmake_check_build_system
 
