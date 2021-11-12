@@ -55,7 +55,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/animations.dir/DependInfo.cmake"
+  "CMakeFiles/elevator_rush.dir/DependInfo.cmake"
   "utils/CMakeFiles/utils.dir/DependInfo.cmake"
   "sdl_utils/CMakeFiles/sdl_utils.dir/DependInfo.cmake"
   "manager_utils/CMakeFiles/manager_utils.dir/DependInfo.cmake"

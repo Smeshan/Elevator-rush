@@ -11,22 +11,16 @@
 /* Own icnludes */
 #include "sdl_utils/InputEvent.h"
 
-int32_t Game::init([[maybe_unused]] const GameConfig& config) {
+int32_t Game::init(const GameConfig& config) {
 
-<<<<<<< HEAD
     _menuScreen.init(this, config.movingUpAndDownTimerId);
 
     _menuMusic.create(MediaId::MENU_MUSIC);
-    _menuMusic.setVolumeMusic(3);
+    _menuMusic.setVolumeMusic(25);
 
-    _gameScreen.init();
+    //TODO make pass level ID
+    _gameScreen.init(1);
 
-=======
-    _map.create(TextureId::GAMEMAP);
-    _wheel.create(TextureId::WHEEL);
-    _console.init();
-    _girl.init();
->>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
     _settingsScreen.init();
 
     return EXIT_SUCCESS;
@@ -35,20 +29,11 @@ int32_t Game::init([[maybe_unused]] const GameConfig& config) {
 void Game::draw() {
     switch (_screen) {
     case MAINMENU:
-<<<<<<< HEAD
         _menuScreen.draw();
-        _menuMusic.play();
+        //_menuMusic.play();
         break;
     case GAME:
         _gameScreen.draw();
-=======
-        _map.draw();
-        break;
-    case GAME:
-        _console.draw();
-        _wheel.draw();
-        _girl.draw();
->>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
         break;
     case SETTINGS:
         _settingsScreen.draw();
@@ -58,8 +43,11 @@ void Game::draw() {
     }
 }
 
+void Game::process() {
+    _gameScreen.process();
+}
+
 void Game::handleEvent(const InputEvent& e) {
-<<<<<<< HEAD
     switch (_screen) {
     case MAINMENU:
         _menuScreen.handleEvent(e);
@@ -71,9 +59,6 @@ void Game::handleEvent(const InputEvent& e) {
         break;
     }
 
-=======
-    _girl.handleEvent(e);
->>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
     if (TouchEvent::KEYBOARD_PRESS == e.type) {
         switch (e.key) {
         case Keyboard::KEY_F1:
@@ -85,28 +70,20 @@ void Game::handleEvent(const InputEvent& e) {
         case Keyboard::KEY_F3:
             _screen = SETTINGS;
             break;
-<<<<<<< HEAD
-            case Keyboard::KEY_F7:
+            //TODO remove music keys
+        case Keyboard::KEY_F7:
             _menuMusic.playPauseMusic();
             break;
-            case Keyboard::KEY_F9:
+        case Keyboard::KEY_F9:
             _menuMusic.setVolumeMusic(60);
             break;
-            case Keyboard::KEY_F10:
+        case Keyboard::KEY_F10:
             _menuMusic.setVolumeMusic(128);
             break;
         default:
             break;
         }
-    } 
-=======
-        default:
-            break;
-        }
     }
-    //QUESTION how to make text field active only on the game screen
-    _console.handleEvent(e);
->>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 }
 
 void Game::deinit() {
@@ -114,15 +91,19 @@ void Game::deinit() {
 }
 
 void Game::onButtonPressed(int32_t buttonId) {
+    //std::cerr << "Button pressed: " << buttonId << std::endl;
     switch (buttonId) {
-    case MainMenuButtons::START_BUTTON:
+    case Buttons::START_BUTTON:
         _screen = GAME;
         break;
-    case MainMenuButtons::SETTINGS_BUTTON:
+    case Buttons::SETTINGS_BUTTON:
         _screen = SETTINGS;
         break;
-    case MainMenuButtons::EXIT_BUTTON:
+    case Buttons::EXIT_BUTTON:
         _screen = EXIT;
+        break;
+    case Buttons::MUSIC_BUTTON:
+        _menuMusic.playPauseMusic();
         break;
     default:
         break;

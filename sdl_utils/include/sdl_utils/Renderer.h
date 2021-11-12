@@ -39,12 +39,7 @@ private:
 	void drawImage(const DrawParams& drawParams, SDL_Texture* texture);
 	void drawText(const DrawParams& drawParams, SDL_Texture* texture);
 
-<<<<<<< HEAD
 	void drawTextureInternal(const DrawParams& drawParams, SDL_Texture* texture);
-=======
-	//TODO
-	//DrawTextureInternal
->>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 };
 
 #endif

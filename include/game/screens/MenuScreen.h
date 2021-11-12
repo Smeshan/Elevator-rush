@@ -12,20 +12,12 @@
 #include "game/proxies/GameProxy.h"
 #include "game/ui_buttons/MenuButton.h"
 #include "game/animations/BuildingLigth.h"
+#include "game/ui_buttons/Button.h"
 
 /* Forward Declaration */
 struct InputEvent;
 
 constexpr auto LIGHTS_COUNT = 6;
-
-enum MainMenuButtons {
-    START_BUTTON,
-    LEVELS_BUTTON,
-    HIGH_SCORES_BUTTON,
-    SETTINGS_BUTTON,
-    EXIT_BUTTON,
-    BUTTONS_COUNT
-};
 
 class MenuScreen {
 public:
@@ -37,6 +29,7 @@ private:
 	//void onButtonPressed(int32_t buttonId) final;
 	Image _background;
 	Image _screenServer;
+	Button _musicButton;
 	//Image _gameTitle
 	std::vector<BuildingLigth> _buildingLigths;
 	//

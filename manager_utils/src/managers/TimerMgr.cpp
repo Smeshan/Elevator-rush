@@ -35,7 +35,6 @@ void TimerMgr::removeTimersInternal() {
 }
 
 void TimerMgr::onTimerTimeout(int32_t timerId, TimerData& timer) {
-    std::cerr << "onTimerTimeout - timerId: " << timerId << std::endl;
     if (timer.timerType == TimerType::ONESHOT) {
         _removeTimerSet.insert(timerId);
         return;
@@ -45,20 +44,19 @@ void TimerMgr::onTimerTimeout(int32_t timerId, TimerData& timer) {
 }
 
 void TimerMgr::process() {
+    removeTimersInternal();
     const int64_t msElapsed = _elapsedTime.getElapsed().toMilliseconds();
     
     for (auto it = _timerMap.begin(); it != _timerMap.end(); ++it) {
         it->second.remaining -= msElapsed;
         if (0 > it->second.remaining) {
             onTimerTimeout(it->first, it->second);
-            std::cerr << "TimerMgr::process onTimerTimeout " << std::endl;
         }
     }
     removeTimersInternal();
 }
 
-void TimerMgr::startTimer(int32_t timerId, const TimerData& data) {
-    std::cerr << "TimerMgr::startTimer timerId: " << timerId << std::endl;
+void TimerMgr::startTimer(const int32_t timerId, const TimerData& data) {
     if (isActiveTimerId(timerId)) {
         std::cerr << "Error, trying to start an already existing timer with ID: "
         << timerId << std::endl;
@@ -76,7 +74,7 @@ void TimerMgr::stopTimer(int32_t timerId) {
     _removeTimerSet.insert(timerId);
 }
 
-bool TimerMgr::isActiveTimerId(int32_t timerId) const {
+bool TimerMgr::isActiveTimerId(const int32_t timerId) const {
     return (_removeTimerSet.end() == _removeTimerSet.find(timerId))
         && (_timerMap.end() != _timerMap.find(timerId));
 }

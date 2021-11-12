@@ -5,10 +5,7 @@ include(${CMAKE_CURRENT_SOURCE_DIR}/cmake_helpers/helpers.cmake)
 set(CMAKE_MODULE_PATH
 	${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake_helpers/find_modules)
 
-project(timers LANGUAGES CXX)
-
-project(animations LANGUAGES CXX)
-
+project(elevator_rush LANGUAGES CXX)
 
 if(UNIX)
 	set(SDL2_image_name SDL2_image)
@@ -34,26 +31,28 @@ add_executable(${PROJECT_NAME}
 	
 	${_INC_DIR}/game/Game.h
 	${_INC_DIR}/game/config/GameConfig.h
-	${_INC_DIR}/game/entities/Console.h
-	${_INC_DIR}/game/entities/KeyWords.h
-	${_INC_DIR}/game/entities/TextField.h
-	${_INC_DIR}/game/entities/TextLine.h
-	${_INC_DIR}/game/entities/SettingsScreen.h
-	${_INC_DIR}/game/entities/Hero.h
-
-	${_INC_DIR}/game/entities/building/FloorTile.h
-	${_INC_DIR}/game/entities/building/Building.h
 
 	${_INC_DIR}/game/proxies/GameProxy.h
+	${_INC_DIR}/game/proxies/ElevatorProxy.h
 
 	${_INC_DIR}/game/animations/BuildingLigth.h
+	${_INC_DIR}/game/animations/AnimationsConfig.h
 
-	${_INC_DIR}/game/ui_buttons/TestButton.h
+	${_INC_DIR}/game/ui_buttons/Button.h
 	${_INC_DIR}/game/ui_buttons/MenuButton.h
 
 	${_INC_DIR}/game/screens/SettingsScreen.h
 	${_INC_DIR}/game/screens/MenuScreen.h
 	${_INC_DIR}/game/screens/GameScreen.h
+
+	${_INC_DIR}/game/entities/Person.h
+	${_INC_DIR}/game/entities/Office.h
+	${_INC_DIR}/game/entities/Elevator.h
+
+	${_INC_DIR}/game/levels/LevelsConfig.h
+	${_INC_DIR}/game/levels/Level.h
+	${_INC_DIR}/game/levels/ElevatorTile.h
+	${_INC_DIR}/game/levels/LevelPos.h
 
 	${_INC_DIR}/engine/config/EngineConfig.h
 	${_INC_DIR}/engine/EngineConfigLoader.h
@@ -62,25 +61,23 @@ add_executable(${PROJECT_NAME}
 	${_SRC_DIR}/main.cpp
 
 	${_SRC_DIR}/game/Game.cpp
-	${_SRC_DIR}/game/entities/Console.cpp
-	${_SRC_DIR}/game/entities/KeyWords.cpp
-	${_SRC_DIR}/game/entities/TextField.cpp
-	${_SRC_DIR}/game/entities/TextLine.cpp
-	
-	${_SRC_DIR}/game/entities/building/FloorTile.cpp
-	${_SRC_DIR}/game/entities/building/Building.cpp
 
 	${_SRC_DIR}/game/animations/BuildingLigth.cpp
 
-	${_SRC_DIR}/game/ui_buttons/TestButton.cpp
+	${_SRC_DIR}/game/ui_buttons/Button.cpp
 	${_SRC_DIR}/game/ui_buttons/MenuButton.cpp
 
 	${_SRC_DIR}/game/screens/SettingsScreen.cpp
 	${_SRC_DIR}/game/screens/MenuScreen.cpp
 	${_SRC_DIR}/game/screens/GameScreen.cpp
 
-	${_SRC_DIR}/game/entities/SettingsScreen.cpp
-	${_SRC_DIR}/game/entities/Hero.cpp
+	${_SRC_DIR}/game/entities/Person.cpp
+	${_SRC_DIR}/game/entities/Office.cpp
+	${_SRC_DIR}/game/entities/Elevator.cpp
+
+	${_SRC_DIR}/game/levels/Level.cpp
+	${_SRC_DIR}/game/levels/LevelPos.cpp
+	${_SRC_DIR}/game/levels/ElevatorTile.cpp
 
 	${_SRC_DIR}/engine/Engine.cpp
 	${_SRC_DIR}/engine/EngineConfigLoader.cpp

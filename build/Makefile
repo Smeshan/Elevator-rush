@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/smeshan/workspace/timers
+CMAKE_SOURCE_DIR = "/home/smeshan/workspace/elevator rush"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/smeshan/workspace/timers/build
+CMAKE_BINARY_DIR = "/home/smeshan/workspace/elevator rush/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/smeshan/workspace/timers/build/CMakeFiles /home/smeshan/workspace/timers/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/smeshan/workspace/elevator rush/build/CMakeFiles" "/home/smeshan/workspace/elevator rush/build/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/smeshan/workspace/timers/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/smeshan/workspace/elevator rush/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named animations
+# Target rules for targets named elevator_rush
 
 # Build rule for target.
-animations: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 animations
-.PHONY : animations
+elevator_rush: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 elevator_rush
+.PHONY : elevator_rush
 
 # fast build rule for target.
-animations/fast:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/build
-.PHONY : animations/fast
+elevator_rush/fast:
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/build
+.PHONY : elevator_rush/fast
 
 #=============================================================================
 # Target rules for targets named utils
@@ -168,7 +168,7 @@ src/engine/Engine.o: src/engine/Engine.cpp.o
 
 # target to build an object file
 src/engine/Engine.cpp.o:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/engine/Engine.cpp.o
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/engine/Engine.cpp.o
 .PHONY : src/engine/Engine.cpp.o
 
 src/engine/Engine.i: src/engine/Engine.cpp.i
@@ -177,7 +177,7 @@ src/engine/Engine.i: src/engine/Engine.cpp.i
 
 # target to preprocess a source file
 src/engine/Engine.cpp.i:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/engine/Engine.cpp.i
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/engine/Engine.cpp.i
 .PHONY : src/engine/Engine.cpp.i
 
 src/engine/Engine.s: src/engine/Engine.cpp.s
@@ -186,7 +186,7 @@ src/engine/Engine.s: src/engine/Engine.cpp.s
 
 # target to generate assembly for a file
 src/engine/Engine.cpp.s:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/engine/Engine.cpp.s
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/engine/Engine.cpp.s
 .PHONY : src/engine/Engine.cpp.s
 
 src/engine/EngineConfigLoader.o: src/engine/EngineConfigLoader.cpp.o
@@ -195,7 +195,7 @@ src/engine/EngineConfigLoader.o: src/engine/EngineConfigLoader.cpp.o
 
 # target to build an object file
 src/engine/EngineConfigLoader.cpp.o:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/engine/EngineConfigLoader.cpp.o
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/engine/EngineConfigLoader.cpp.o
 .PHONY : src/engine/EngineConfigLoader.cpp.o
 
 src/engine/EngineConfigLoader.i: src/engine/EngineConfigLoader.cpp.i
@@ -204,7 +204,7 @@ src/engine/EngineConfigLoader.i: src/engine/EngineConfigLoader.cpp.i
 
 # target to preprocess a source file
 src/engine/EngineConfigLoader.cpp.i:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/engine/EngineConfigLoader.cpp.i
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/engine/EngineConfigLoader.cpp.i
 .PHONY : src/engine/EngineConfigLoader.cpp.i
 
 src/engine/EngineConfigLoader.s: src/engine/EngineConfigLoader.cpp.s
@@ -213,7 +213,7 @@ src/engine/EngineConfigLoader.s: src/engine/EngineConfigLoader.cpp.s
 
 # target to generate assembly for a file
 src/engine/EngineConfigLoader.cpp.s:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/engine/EngineConfigLoader.cpp.s
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/engine/EngineConfigLoader.cpp.s
 .PHONY : src/engine/EngineConfigLoader.cpp.s
 
 src/game/Game.o: src/game/Game.cpp.o
@@ -222,7 +222,7 @@ src/game/Game.o: src/game/Game.cpp.o
 
 # target to build an object file
 src/game/Game.cpp.o:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/Game.cpp.o
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/game/Game.cpp.o
 .PHONY : src/game/Game.cpp.o
 
 src/game/Game.i: src/game/Game.cpp.i
@@ -231,7 +231,7 @@ src/game/Game.i: src/game/Game.cpp.i
 
 # target to preprocess a source file
 src/game/Game.cpp.i:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/Game.cpp.i
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/game/Game.cpp.i
 .PHONY : src/game/Game.cpp.i
 
 src/game/Game.s: src/game/Game.cpp.s
@@ -240,7 +240,7 @@ src/game/Game.s: src/game/Game.cpp.s
 
 # target to generate assembly for a file
 src/game/Game.cpp.s:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/Game.cpp.s
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/game/Game.cpp.s
 .PHONY : src/game/Game.cpp.s
 
 src/game/animations/BuildingLigth.o: src/game/animations/BuildingLigth.cpp.o
@@ -249,7 +249,7 @@ src/game/animations/BuildingLigth.o: src/game/animations/BuildingLigth.cpp.o
 
 # target to build an object file
 src/game/animations/BuildingLigth.cpp.o:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/animations/BuildingLigth.cpp.o
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/game/animations/BuildingLigth.cpp.o
 .PHONY : src/game/animations/BuildingLigth.cpp.o
 
 src/game/animations/BuildingLigth.i: src/game/animations/BuildingLigth.cpp.i
@@ -258,7 +258,7 @@ src/game/animations/BuildingLigth.i: src/game/animations/BuildingLigth.cpp.i
 
 # target to preprocess a source file
 src/game/animations/BuildingLigth.cpp.i:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/animations/BuildingLigth.cpp.i
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/game/animations/BuildingLigth.cpp.i
 .PHONY : src/game/animations/BuildingLigth.cpp.i
 
 src/game/animations/BuildingLigth.s: src/game/animations/BuildingLigth.cpp.s
@@ -267,224 +267,170 @@ src/game/animations/BuildingLigth.s: src/game/animations/BuildingLigth.cpp.s
 
 # target to generate assembly for a file
 src/game/animations/BuildingLigth.cpp.s:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/animations/BuildingLigth.cpp.s
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/game/animations/BuildingLigth.cpp.s
 .PHONY : src/game/animations/BuildingLigth.cpp.s
 
-src/game/entities/Console.o: src/game/entities/Console.cpp.o
+src/game/entities/Elevator.o: src/game/entities/Elevator.cpp.o
 
-.PHONY : src/game/entities/Console.o
-
-# target to build an object file
-src/game/entities/Console.cpp.o:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/Console.cpp.o
-.PHONY : src/game/entities/Console.cpp.o
-
-src/game/entities/Console.i: src/game/entities/Console.cpp.i
-
-.PHONY : src/game/entities/Console.i
-
-# target to preprocess a source file
-src/game/entities/Console.cpp.i:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/Console.cpp.i
-.PHONY : src/game/entities/Console.cpp.i
-
-src/game/entities/Console.s: src/game/entities/Console.cpp.s
-
-.PHONY : src/game/entities/Console.s
-
-# target to generate assembly for a file
-src/game/entities/Console.cpp.s:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/Console.cpp.s
-.PHONY : src/game/entities/Console.cpp.s
-
-src/game/entities/Hero.o: src/game/entities/Hero.cpp.o
-
-.PHONY : src/game/entities/Hero.o
+.PHONY : src/game/entities/Elevator.o
 
 # target to build an object file
-src/game/entities/Hero.cpp.o:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/Hero.cpp.o
-.PHONY : src/game/entities/Hero.cpp.o
+src/game/entities/Elevator.cpp.o:
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/game/entities/Elevator.cpp.o
+.PHONY : src/game/entities/Elevator.cpp.o
 
-src/game/entities/Hero.i: src/game/entities/Hero.cpp.i
+src/game/entities/Elevator.i: src/game/entities/Elevator.cpp.i
 
-.PHONY : src/game/entities/Hero.i
+.PHONY : src/game/entities/Elevator.i
 
 # target to preprocess a source file
-src/game/entities/Hero.cpp.i:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/Hero.cpp.i
-.PHONY : src/game/entities/Hero.cpp.i
+src/game/entities/Elevator.cpp.i:
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/game/entities/Elevator.cpp.i
+.PHONY : src/game/entities/Elevator.cpp.i
 
-src/game/entities/Hero.s: src/game/entities/Hero.cpp.s
+src/game/entities/Elevator.s: src/game/entities/Elevator.cpp.s
 
-.PHONY : src/game/entities/Hero.s
+.PHONY : src/game/entities/Elevator.s
 
 # target to generate assembly for a file
-src/game/entities/Hero.cpp.s:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/Hero.cpp.s
-.PHONY : src/game/entities/Hero.cpp.s
+src/game/entities/Elevator.cpp.s:
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/game/entities/Elevator.cpp.s
+.PHONY : src/game/entities/Elevator.cpp.s
 
-src/game/entities/KeyWords.o: src/game/entities/KeyWords.cpp.o
+src/game/entities/Office.o: src/game/entities/Office.cpp.o
 
-.PHONY : src/game/entities/KeyWords.o
+.PHONY : src/game/entities/Office.o
 
 # target to build an object file
-src/game/entities/KeyWords.cpp.o:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/KeyWords.cpp.o
-.PHONY : src/game/entities/KeyWords.cpp.o
+src/game/entities/Office.cpp.o:
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/game/entities/Office.cpp.o
+.PHONY : src/game/entities/Office.cpp.o
 
-src/game/entities/KeyWords.i: src/game/entities/KeyWords.cpp.i
+src/game/entities/Office.i: src/game/entities/Office.cpp.i
 
-.PHONY : src/game/entities/KeyWords.i
+.PHONY : src/game/entities/Office.i
 
 # target to preprocess a source file
-src/game/entities/KeyWords.cpp.i:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/KeyWords.cpp.i
-.PHONY : src/game/entities/KeyWords.cpp.i
+src/game/entities/Office.cpp.i:
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/game/entities/Office.cpp.i
+.PHONY : src/game/entities/Office.cpp.i
 
-src/game/entities/KeyWords.s: src/game/entities/KeyWords.cpp.s
+src/game/entities/Office.s: src/game/entities/Office.cpp.s
 
-.PHONY : src/game/entities/KeyWords.s
+.PHONY : src/game/entities/Office.s
 
 # target to generate assembly for a file
-src/game/entities/KeyWords.cpp.s:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/KeyWords.cpp.s
-.PHONY : src/game/entities/KeyWords.cpp.s
+src/game/entities/Office.cpp.s:
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/game/entities/Office.cpp.s
+.PHONY : src/game/entities/Office.cpp.s
 
-src/game/entities/SettingsScreen.o: src/game/entities/SettingsScreen.cpp.o
+src/game/entities/Person.o: src/game/entities/Person.cpp.o
 
-.PHONY : src/game/entities/SettingsScreen.o
+.PHONY : src/game/entities/Person.o
 
 # target to build an object file
-src/game/entities/SettingsScreen.cpp.o:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/SettingsScreen.cpp.o
-.PHONY : src/game/entities/SettingsScreen.cpp.o
+src/game/entities/Person.cpp.o:
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/game/entities/Person.cpp.o
+.PHONY : src/game/entities/Person.cpp.o
 
-src/game/entities/SettingsScreen.i: src/game/entities/SettingsScreen.cpp.i
+src/game/entities/Person.i: src/game/entities/Person.cpp.i
 
-.PHONY : src/game/entities/SettingsScreen.i
+.PHONY : src/game/entities/Person.i
 
 # target to preprocess a source file
-src/game/entities/SettingsScreen.cpp.i:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/SettingsScreen.cpp.i
-.PHONY : src/game/entities/SettingsScreen.cpp.i
+src/game/entities/Person.cpp.i:
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/game/entities/Person.cpp.i
+.PHONY : src/game/entities/Person.cpp.i
 
-src/game/entities/SettingsScreen.s: src/game/entities/SettingsScreen.cpp.s
+src/game/entities/Person.s: src/game/entities/Person.cpp.s
 
-.PHONY : src/game/entities/SettingsScreen.s
+.PHONY : src/game/entities/Person.s
 
 # target to generate assembly for a file
-src/game/entities/SettingsScreen.cpp.s:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/SettingsScreen.cpp.s
-.PHONY : src/game/entities/SettingsScreen.cpp.s
+src/game/entities/Person.cpp.s:
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/game/entities/Person.cpp.s
+.PHONY : src/game/entities/Person.cpp.s
 
-src/game/entities/TextField.o: src/game/entities/TextField.cpp.o
+src/game/levels/ElevatorTile.o: src/game/levels/ElevatorTile.cpp.o
 
-.PHONY : src/game/entities/TextField.o
+.PHONY : src/game/levels/ElevatorTile.o
 
 # target to build an object file
-src/game/entities/TextField.cpp.o:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/TextField.cpp.o
-.PHONY : src/game/entities/TextField.cpp.o
+src/game/levels/ElevatorTile.cpp.o:
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/game/levels/ElevatorTile.cpp.o
+.PHONY : src/game/levels/ElevatorTile.cpp.o
 
-src/game/entities/TextField.i: src/game/entities/TextField.cpp.i
+src/game/levels/ElevatorTile.i: src/game/levels/ElevatorTile.cpp.i
 
-.PHONY : src/game/entities/TextField.i
+.PHONY : src/game/levels/ElevatorTile.i
 
 # target to preprocess a source file
-src/game/entities/TextField.cpp.i:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/TextField.cpp.i
-.PHONY : src/game/entities/TextField.cpp.i
+src/game/levels/ElevatorTile.cpp.i:
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/game/levels/ElevatorTile.cpp.i
+.PHONY : src/game/levels/ElevatorTile.cpp.i
 
-src/game/entities/TextField.s: src/game/entities/TextField.cpp.s
+src/game/levels/ElevatorTile.s: src/game/levels/ElevatorTile.cpp.s
 
-.PHONY : src/game/entities/TextField.s
+.PHONY : src/game/levels/ElevatorTile.s
 
 # target to generate assembly for a file
-src/game/entities/TextField.cpp.s:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/TextField.cpp.s
-.PHONY : src/game/entities/TextField.cpp.s
+src/game/levels/ElevatorTile.cpp.s:
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/game/levels/ElevatorTile.cpp.s
+.PHONY : src/game/levels/ElevatorTile.cpp.s
 
-src/game/entities/TextLine.o: src/game/entities/TextLine.cpp.o
+src/game/levels/Level.o: src/game/levels/Level.cpp.o
 
-.PHONY : src/game/entities/TextLine.o
+.PHONY : src/game/levels/Level.o
 
 # target to build an object file
-src/game/entities/TextLine.cpp.o:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/TextLine.cpp.o
-.PHONY : src/game/entities/TextLine.cpp.o
+src/game/levels/Level.cpp.o:
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/game/levels/Level.cpp.o
+.PHONY : src/game/levels/Level.cpp.o
 
-src/game/entities/TextLine.i: src/game/entities/TextLine.cpp.i
+src/game/levels/Level.i: src/game/levels/Level.cpp.i
 
-.PHONY : src/game/entities/TextLine.i
+.PHONY : src/game/levels/Level.i
 
 # target to preprocess a source file
-src/game/entities/TextLine.cpp.i:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/TextLine.cpp.i
-.PHONY : src/game/entities/TextLine.cpp.i
+src/game/levels/Level.cpp.i:
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/game/levels/Level.cpp.i
+.PHONY : src/game/levels/Level.cpp.i
 
-src/game/entities/TextLine.s: src/game/entities/TextLine.cpp.s
+src/game/levels/Level.s: src/game/levels/Level.cpp.s
 
-.PHONY : src/game/entities/TextLine.s
+.PHONY : src/game/levels/Level.s
 
 # target to generate assembly for a file
-src/game/entities/TextLine.cpp.s:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/TextLine.cpp.s
-.PHONY : src/game/entities/TextLine.cpp.s
+src/game/levels/Level.cpp.s:
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/game/levels/Level.cpp.s
+.PHONY : src/game/levels/Level.cpp.s
 
-src/game/entities/building/Building.o: src/game/entities/building/Building.cpp.o
+src/game/levels/LevelPos.o: src/game/levels/LevelPos.cpp.o
 
-.PHONY : src/game/entities/building/Building.o
+.PHONY : src/game/levels/LevelPos.o
 
 # target to build an object file
-src/game/entities/building/Building.cpp.o:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/building/Building.cpp.o
-.PHONY : src/game/entities/building/Building.cpp.o
+src/game/levels/LevelPos.cpp.o:
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/game/levels/LevelPos.cpp.o
+.PHONY : src/game/levels/LevelPos.cpp.o
 
-src/game/entities/building/Building.i: src/game/entities/building/Building.cpp.i
+src/game/levels/LevelPos.i: src/game/levels/LevelPos.cpp.i
 
-.PHONY : src/game/entities/building/Building.i
-
-# target to preprocess a source file
-src/game/entities/building/Building.cpp.i:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/building/Building.cpp.i
-.PHONY : src/game/entities/building/Building.cpp.i
-
-src/game/entities/building/Building.s: src/game/entities/building/Building.cpp.s
-
-.PHONY : src/game/entities/building/Building.s
-
-# target to generate assembly for a file
-src/game/entities/building/Building.cpp.s:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/building/Building.cpp.s
-.PHONY : src/game/entities/building/Building.cpp.s
-
-src/game/entities/building/FloorTile.o: src/game/entities/building/FloorTile.cpp.o
-
-.PHONY : src/game/entities/building/FloorTile.o
-
-# target to build an object file
-src/game/entities/building/FloorTile.cpp.o:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/building/FloorTile.cpp.o
-.PHONY : src/game/entities/building/FloorTile.cpp.o
-
-src/game/entities/building/FloorTile.i: src/game/entities/building/FloorTile.cpp.i
-
-.PHONY : src/game/entities/building/FloorTile.i
+.PHONY : src/game/levels/LevelPos.i
 
 # target to preprocess a source file
-src/game/entities/building/FloorTile.cpp.i:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/building/FloorTile.cpp.i
-.PHONY : src/game/entities/building/FloorTile.cpp.i
+src/game/levels/LevelPos.cpp.i:
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/game/levels/LevelPos.cpp.i
+.PHONY : src/game/levels/LevelPos.cpp.i
 
-src/game/entities/building/FloorTile.s: src/game/entities/building/FloorTile.cpp.s
+src/game/levels/LevelPos.s: src/game/levels/LevelPos.cpp.s
 
-.PHONY : src/game/entities/building/FloorTile.s
+.PHONY : src/game/levels/LevelPos.s
 
 # target to generate assembly for a file
-src/game/entities/building/FloorTile.cpp.s:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/entities/building/FloorTile.cpp.s
-.PHONY : src/game/entities/building/FloorTile.cpp.s
+src/game/levels/LevelPos.cpp.s:
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/game/levels/LevelPos.cpp.s
+.PHONY : src/game/levels/LevelPos.cpp.s
 
 src/game/screens/GameScreen.o: src/game/screens/GameScreen.cpp.o
 
@@ -492,7 +438,7 @@ src/game/screens/GameScreen.o: src/game/screens/GameScreen.cpp.o
 
 # target to build an object file
 src/game/screens/GameScreen.cpp.o:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/screens/GameScreen.cpp.o
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/game/screens/GameScreen.cpp.o
 .PHONY : src/game/screens/GameScreen.cpp.o
 
 src/game/screens/GameScreen.i: src/game/screens/GameScreen.cpp.i
@@ -501,7 +447,7 @@ src/game/screens/GameScreen.i: src/game/screens/GameScreen.cpp.i
 
 # target to preprocess a source file
 src/game/screens/GameScreen.cpp.i:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/screens/GameScreen.cpp.i
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/game/screens/GameScreen.cpp.i
 .PHONY : src/game/screens/GameScreen.cpp.i
 
 src/game/screens/GameScreen.s: src/game/screens/GameScreen.cpp.s
@@ -510,7 +456,7 @@ src/game/screens/GameScreen.s: src/game/screens/GameScreen.cpp.s
 
 # target to generate assembly for a file
 src/game/screens/GameScreen.cpp.s:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/screens/GameScreen.cpp.s
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/game/screens/GameScreen.cpp.s
 .PHONY : src/game/screens/GameScreen.cpp.s
 
 src/game/screens/MenuScreen.o: src/game/screens/MenuScreen.cpp.o
@@ -519,7 +465,7 @@ src/game/screens/MenuScreen.o: src/game/screens/MenuScreen.cpp.o
 
 # target to build an object file
 src/game/screens/MenuScreen.cpp.o:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/screens/MenuScreen.cpp.o
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/game/screens/MenuScreen.cpp.o
 .PHONY : src/game/screens/MenuScreen.cpp.o
 
 src/game/screens/MenuScreen.i: src/game/screens/MenuScreen.cpp.i
@@ -528,7 +474,7 @@ src/game/screens/MenuScreen.i: src/game/screens/MenuScreen.cpp.i
 
 # target to preprocess a source file
 src/game/screens/MenuScreen.cpp.i:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/screens/MenuScreen.cpp.i
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/game/screens/MenuScreen.cpp.i
 .PHONY : src/game/screens/MenuScreen.cpp.i
 
 src/game/screens/MenuScreen.s: src/game/screens/MenuScreen.cpp.s
@@ -537,7 +483,7 @@ src/game/screens/MenuScreen.s: src/game/screens/MenuScreen.cpp.s
 
 # target to generate assembly for a file
 src/game/screens/MenuScreen.cpp.s:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/screens/MenuScreen.cpp.s
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/game/screens/MenuScreen.cpp.s
 .PHONY : src/game/screens/MenuScreen.cpp.s
 
 src/game/screens/SettingsScreen.o: src/game/screens/SettingsScreen.cpp.o
@@ -546,7 +492,7 @@ src/game/screens/SettingsScreen.o: src/game/screens/SettingsScreen.cpp.o
 
 # target to build an object file
 src/game/screens/SettingsScreen.cpp.o:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/screens/SettingsScreen.cpp.o
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/game/screens/SettingsScreen.cpp.o
 .PHONY : src/game/screens/SettingsScreen.cpp.o
 
 src/game/screens/SettingsScreen.i: src/game/screens/SettingsScreen.cpp.i
@@ -555,7 +501,7 @@ src/game/screens/SettingsScreen.i: src/game/screens/SettingsScreen.cpp.i
 
 # target to preprocess a source file
 src/game/screens/SettingsScreen.cpp.i:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/screens/SettingsScreen.cpp.i
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/game/screens/SettingsScreen.cpp.i
 .PHONY : src/game/screens/SettingsScreen.cpp.i
 
 src/game/screens/SettingsScreen.s: src/game/screens/SettingsScreen.cpp.s
@@ -564,8 +510,35 @@ src/game/screens/SettingsScreen.s: src/game/screens/SettingsScreen.cpp.s
 
 # target to generate assembly for a file
 src/game/screens/SettingsScreen.cpp.s:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/screens/SettingsScreen.cpp.s
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/game/screens/SettingsScreen.cpp.s
 .PHONY : src/game/screens/SettingsScreen.cpp.s
+
+src/game/ui_buttons/Button.o: src/game/ui_buttons/Button.cpp.o
+
+.PHONY : src/game/ui_buttons/Button.o
+
+# target to build an object file
+src/game/ui_buttons/Button.cpp.o:
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/game/ui_buttons/Button.cpp.o
+.PHONY : src/game/ui_buttons/Button.cpp.o
+
+src/game/ui_buttons/Button.i: src/game/ui_buttons/Button.cpp.i
+
+.PHONY : src/game/ui_buttons/Button.i
+
+# target to preprocess a source file
+src/game/ui_buttons/Button.cpp.i:
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/game/ui_buttons/Button.cpp.i
+.PHONY : src/game/ui_buttons/Button.cpp.i
+
+src/game/ui_buttons/Button.s: src/game/ui_buttons/Button.cpp.s
+
+.PHONY : src/game/ui_buttons/Button.s
+
+# target to generate assembly for a file
+src/game/ui_buttons/Button.cpp.s:
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/game/ui_buttons/Button.cpp.s
+.PHONY : src/game/ui_buttons/Button.cpp.s
 
 src/game/ui_buttons/MenuButton.o: src/game/ui_buttons/MenuButton.cpp.o
 
@@ -573,7 +546,7 @@ src/game/ui_buttons/MenuButton.o: src/game/ui_buttons/MenuButton.cpp.o
 
 # target to build an object file
 src/game/ui_buttons/MenuButton.cpp.o:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/ui_buttons/MenuButton.cpp.o
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/game/ui_buttons/MenuButton.cpp.o
 .PHONY : src/game/ui_buttons/MenuButton.cpp.o
 
 src/game/ui_buttons/MenuButton.i: src/game/ui_buttons/MenuButton.cpp.i
@@ -582,7 +555,7 @@ src/game/ui_buttons/MenuButton.i: src/game/ui_buttons/MenuButton.cpp.i
 
 # target to preprocess a source file
 src/game/ui_buttons/MenuButton.cpp.i:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/ui_buttons/MenuButton.cpp.i
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/game/ui_buttons/MenuButton.cpp.i
 .PHONY : src/game/ui_buttons/MenuButton.cpp.i
 
 src/game/ui_buttons/MenuButton.s: src/game/ui_buttons/MenuButton.cpp.s
@@ -591,35 +564,8 @@ src/game/ui_buttons/MenuButton.s: src/game/ui_buttons/MenuButton.cpp.s
 
 # target to generate assembly for a file
 src/game/ui_buttons/MenuButton.cpp.s:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/ui_buttons/MenuButton.cpp.s
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/game/ui_buttons/MenuButton.cpp.s
 .PHONY : src/game/ui_buttons/MenuButton.cpp.s
-
-src/game/ui_buttons/TestButton.o: src/game/ui_buttons/TestButton.cpp.o
-
-.PHONY : src/game/ui_buttons/TestButton.o
-
-# target to build an object file
-src/game/ui_buttons/TestButton.cpp.o:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/ui_buttons/TestButton.cpp.o
-.PHONY : src/game/ui_buttons/TestButton.cpp.o
-
-src/game/ui_buttons/TestButton.i: src/game/ui_buttons/TestButton.cpp.i
-
-.PHONY : src/game/ui_buttons/TestButton.i
-
-# target to preprocess a source file
-src/game/ui_buttons/TestButton.cpp.i:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/ui_buttons/TestButton.cpp.i
-.PHONY : src/game/ui_buttons/TestButton.cpp.i
-
-src/game/ui_buttons/TestButton.s: src/game/ui_buttons/TestButton.cpp.s
-
-.PHONY : src/game/ui_buttons/TestButton.s
-
-# target to generate assembly for a file
-src/game/ui_buttons/TestButton.cpp.s:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/game/ui_buttons/TestButton.cpp.s
-.PHONY : src/game/ui_buttons/TestButton.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -627,7 +573,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/main.cpp.o
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -636,7 +582,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/main.cpp.i
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -645,7 +591,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/animations.dir/build.make CMakeFiles/animations.dir/src/main.cpp.s
+	$(MAKE) -f CMakeFiles/elevator_rush.dir/build.make CMakeFiles/elevator_rush.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -655,7 +601,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... animations"
+	@echo "... elevator_rush"
 	@echo "... edit_cache"
 	@echo "... utils"
 	@echo "... sdl_utils"
@@ -672,30 +618,24 @@ help:
 	@echo "... src/game/animations/BuildingLigth.o"
 	@echo "... src/game/animations/BuildingLigth.i"
 	@echo "... src/game/animations/BuildingLigth.s"
-	@echo "... src/game/entities/Console.o"
-	@echo "... src/game/entities/Console.i"
-	@echo "... src/game/entities/Console.s"
-	@echo "... src/game/entities/Hero.o"
-	@echo "... src/game/entities/Hero.i"
-	@echo "... src/game/entities/Hero.s"
-	@echo "... src/game/entities/KeyWords.o"
-	@echo "... src/game/entities/KeyWords.i"
-	@echo "... src/game/entities/KeyWords.s"
-	@echo "... src/game/entities/SettingsScreen.o"
-	@echo "... src/game/entities/SettingsScreen.i"
-	@echo "... src/game/entities/SettingsScreen.s"
-	@echo "... src/game/entities/TextField.o"
-	@echo "... src/game/entities/TextField.i"
-	@echo "... src/game/entities/TextField.s"
-	@echo "... src/game/entities/TextLine.o"
-	@echo "... src/game/entities/TextLine.i"
-	@echo "... src/game/entities/TextLine.s"
-	@echo "... src/game/entities/building/Building.o"
-	@echo "... src/game/entities/building/Building.i"
-	@echo "... src/game/entities/building/Building.s"
-	@echo "... src/game/entities/building/FloorTile.o"
-	@echo "... src/game/entities/building/FloorTile.i"
-	@echo "... src/game/entities/building/FloorTile.s"
+	@echo "... src/game/entities/Elevator.o"
+	@echo "... src/game/entities/Elevator.i"
+	@echo "... src/game/entities/Elevator.s"
+	@echo "... src/game/entities/Office.o"
+	@echo "... src/game/entities/Office.i"
+	@echo "... src/game/entities/Office.s"
+	@echo "... src/game/entities/Person.o"
+	@echo "... src/game/entities/Person.i"
+	@echo "... src/game/entities/Person.s"
+	@echo "... src/game/levels/ElevatorTile.o"
+	@echo "... src/game/levels/ElevatorTile.i"
+	@echo "... src/game/levels/ElevatorTile.s"
+	@echo "... src/game/levels/Level.o"
+	@echo "... src/game/levels/Level.i"
+	@echo "... src/game/levels/Level.s"
+	@echo "... src/game/levels/LevelPos.o"
+	@echo "... src/game/levels/LevelPos.i"
+	@echo "... src/game/levels/LevelPos.s"
 	@echo "... src/game/screens/GameScreen.o"
 	@echo "... src/game/screens/GameScreen.i"
 	@echo "... src/game/screens/GameScreen.s"
@@ -705,12 +645,12 @@ help:
 	@echo "... src/game/screens/SettingsScreen.o"
 	@echo "... src/game/screens/SettingsScreen.i"
 	@echo "... src/game/screens/SettingsScreen.s"
+	@echo "... src/game/ui_buttons/Button.o"
+	@echo "... src/game/ui_buttons/Button.i"
+	@echo "... src/game/ui_buttons/Button.s"
 	@echo "... src/game/ui_buttons/MenuButton.o"
 	@echo "... src/game/ui_buttons/MenuButton.i"
 	@echo "... src/game/ui_buttons/MenuButton.s"
-	@echo "... src/game/ui_buttons/TestButton.o"
-	@echo "... src/game/ui_buttons/TestButton.i"
-	@echo "... src/game/ui_buttons/TestButton.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

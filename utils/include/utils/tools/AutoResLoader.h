@@ -16,17 +16,10 @@
 /* Forward Declaration */
 
 enum resFolder {
-<<<<<<< HEAD
     IMAGE_FOLDER,
     FONT_FOLDER,
     SOUND_FOLDER,
     MUSIC_FOLDER,
-=======
-    IMAGES,
-    FONTS,
-    SOUNDS,
-    MUSIC,
->>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
     RES_FOLDER_COUNT
 };
 

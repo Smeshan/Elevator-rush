@@ -83,6 +83,7 @@ bool Engine::processFrame() {
     }
     drawFrame();
     _managerHandler.process();
+    _game.process();
     return false;
 }
 

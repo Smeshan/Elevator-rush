@@ -15,7 +15,6 @@ class Widget {
 public:
 	void draw();
 	void reset();
-<<<<<<< HEAD
 
 	void setFlipType(WidgetFlip flipType);
 	void setRotation(double angle);
@@ -23,12 +22,6 @@ public:
 	void rotate(double delta);
 	void setRotationCenter(const Point& rotCenter);
 
-=======
-	//TODO setFlipType
-	//TODO setRotation
-	//TODO getRotation
-	//TODO rotate() functions
->>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 	void setWidth(int32_t width);
 	void setHeight(int32_t height);
 

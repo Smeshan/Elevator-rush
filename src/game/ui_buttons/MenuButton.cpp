@@ -32,12 +32,14 @@ void MenuButton::handleEvent(const InputEvent& e) {
         }
         
         Text::setColor(Colors::BLUE);
+        //Text::setColor(Colors::WHITE); //not working
         if (e.type == TouchEvent::TOUCH_RELEASE) {
             _gameProxy->onButtonPressed(_buttonId);
         }
     }
     else {
         _isSoundPlayed = false;
-        Text::setColor(Colors::BLACK);
+        Text::setColor(Colors::CYAN);
+        //Text::setColor(Colors::GRAY); //not working
     }
 }

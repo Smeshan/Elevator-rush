@@ -31,7 +31,8 @@ protected:
 	bool _isDestroyed = true;
 	bool _isPlaying = false;
 
-	int32_t _volume = 50;
+	//TODO make it constant
+	int32_t _volume = 0;
 
 	int32_t _audioId;
 	AudioType _audioType = AudioType::NONE;

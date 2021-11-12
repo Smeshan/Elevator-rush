@@ -22,7 +22,9 @@ public:
 	int32_t init();
 	void deinit() final;
 	void process() final;
-	void startTimer(int32_t timerId, const TimerData& data);
+
+	void startTimer(const int32_t timerId, const TimerData& data);
+
 	void stopTimer(int32_t timerId);
 	//void detachTimerClient(int32_t timerId);
 	bool isActiveTimerId(int32_t timerId) const;

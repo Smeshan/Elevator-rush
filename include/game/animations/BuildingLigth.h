@@ -27,5 +27,7 @@ private:
 	void processAnimation();
 	int32_t _movingUpAndDownTimerId = -1;
 	Image _ligth;
+	int32_t _indx = -1;
+	bool _goingUp = true;
 };
 #endif

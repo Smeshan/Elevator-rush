@@ -19,20 +19,12 @@ namespace TextureId {
         BACKGROUND,
         SCREEN_SERVER_BGR,
         BUILDING_LIGHT,
-        PEOPLE,
-        CONSOLE,
-        CHECK_BOX,
-        UNCHECK_BOX,
-<<<<<<< HEAD
-        ELEVATOR_BUTTONS,
-        FLOOR_TILE,
-        CURSOR,
-        BUTTON_START,
-        BUTTON_STOP,
-=======
-        RUNNING_GIRL,
-        WHEEL,
->>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
+        MUSIC_BUTTON,
+        BLUE_OFFICES,
+        BLUE_PERSON,
+        ELEVATOR,
+        ELEVATOR_TILE,
+        OFFICE_TILE,
         //add new here
         RES_COUNT
     };
@@ -43,10 +35,7 @@ namespace FontId {
     enum FontIdKeys {
         TERMINAL_14,
         TERMINAL_20,
-<<<<<<< HEAD
         MENU_40,
-=======
->>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
         //add new here
         FONT_COUNT
     };
@@ -56,10 +45,7 @@ namespace MediaId {
     enum SoundIds {
         RING_SFX,
         SINGLE_KEY_TYPE,
-<<<<<<< HEAD
         BUTTON_HOVER,
-=======
->>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
         //add new here
         SOUNDS_COUNT
     };
@@ -71,10 +57,35 @@ namespace MediaId {
     };
 }
 
+enum Internals {
+  MAX_BUILDING_LIGHTS_TIMERS = 6
+};
+
 namespace TimerId {
     enum Timers {
-        BUUILDING_LIGHT_UPDOWN
+        SOME_TIMER_ID,
+        ANOTHER_TIMER_ID,
+        BUILDING_LIGHT_UPDOWN_ID = 1000,
+        //reserved
+        LAST_BUILD_LIGHT_UPDOWN_ID = BUILDING_LIGHT_UPDOWN_ID + MAX_BUILDING_LIGHTS_TIMERS,
+        YET_ANOTEHR_TIMER_ID
     };
 }
+
+namespace Buttons {
+    enum ButtonsKeys {
+        //main menu
+        START_BUTTON,
+        LEVELS_BUTTON,
+        HIGH_SCORES_BUTTON,
+        SETTINGS_BUTTON,
+        EXIT_BUTTON,
+        MUSIC_BUTTON,
+        //gamee
+
+    };
+
+}
+
 
 #endif //COMMONDEFINES_H

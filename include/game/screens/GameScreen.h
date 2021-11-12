@@ -7,31 +7,23 @@
 /* Third-party icnludes */
 
 /* Own icnludes */
-#include "game/entities/Console.h"
-#include "game/entities/building/Building.h"
+#include "game/levels/Level.h"
 
 /* Forward Declaration */
+struct InputEvent;
 
 class GameScreen {
 public:
-	int32_t init();
+	int32_t init(const int32_t levelId);
 	void deinit();
 	void draw();
+	void process();
 	void handleEvent(const InputEvent& e);
+
 private:
-	Building _building;
-	//vector BUTTONS:
-	//play button
-	//stop button
-	//code button
-
+	Level _level;
 	//timer
-	//score
-
-	Console _console;
-	//cards
-
-	//intense music
-
+	//powerups menu
+	//fps
 };
 #endif

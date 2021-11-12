@@ -18,7 +18,7 @@ Text::~Text() {
 }
 
 void Text::create(const char* text, int32_t fontId,
-                  const Color& color, const Point& pos) {
+    const Color& color, const Point& pos) {
     if (_isCreated) {
         std::cerr << "Error, text with fondId: "
             << fontId << " was already created. Will not create twice." << std::endl;
@@ -49,8 +49,13 @@ void Text::destroy() {
             << "was already destroyed." << std::endl;
         return;
     }
+
     _isDestroyed = true;
     _isCreated = false;
+
+    /* if (gRsrcMgr) {
+        gRsrcMgr->unloadText(_drawParams.textId);
+    } */
     Widget::reset();
 }
 

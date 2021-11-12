@@ -22,12 +22,6 @@ public:
 	void draw();
 	//void handleEvent(const InputEvent& e);
 private:
-	Text _tital;
-	Text _fullScreen;
-	Text _sounds;
-	Text _music;
 
-	Image _checkBox;
-	Image _uncheckBox;
 };
 #endif

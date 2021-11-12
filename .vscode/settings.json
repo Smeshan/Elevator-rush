@@ -47,7 +47,8 @@
         "codecvt": "cpp",
         "thread": "cpp",
         "set": "cpp",
-        "map": "cpp"
+        "map": "cpp",
+        "queue": "cpp"
     },
     "C_Cpp.errorSquiggles": "Enabled"
 }
