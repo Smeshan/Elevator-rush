@@ -29,13 +29,8 @@ public:
 
 private:
 	int32_t _indx;
-<<<<<<< HEAD
-	int32_t _textFontId = FontId::TERMINAL_20;
-	int32_t _textSize = 20;
-=======
 	int32_t _textFontId = FontId::TERMINAL_14;
 	int32_t _textSize = 14;
->>>>>>> 6bb771e45190decd39b99884f258ab88a9b899ff
 	int32_t _currChar = 0;
 	std::vector<Text> _line;
 	std::string _text;
